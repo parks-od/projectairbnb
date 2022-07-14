@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>회원정보관리</title>
+    <title>숙소관리</title>
 
     <!-- Custom fonts for this template -->
     <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,6 +22,7 @@
 
     <!-- Custom styles for this page -->
     <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    
 
 </head>
 
@@ -40,7 +41,6 @@
                 </div>
                 <div class="sidebar-brand-text mx-3">Airbnb</div>
             </a>
-
 
 
             <!-- Divider -->
@@ -118,7 +118,6 @@
                 </div>
             </li>
             </ul>
-        <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -336,133 +335,441 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">회원정보관리 페이지</h1>
-                    <p class="mb-4">회원정보관리 페이지</p>
+                    <h1 class="h3 mb-2 text-gray-800">숙소 관리</h1>
+                    <p class="mb-4"></p>
 
-                    <!-- DataTales Example -->
+
+
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">회원정보관리 페이지</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">사진 관리</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <table>
+                                    <tr>
+                                    <td><img alt="" src="https://a0.muscache.com/im/pictures/35d03179-3b9b-4898-b161-eb466bf533c6.jpg?im_w=720" width="250px" height="250px"></td>
+                                    <td><img alt="" src="https://a0.muscache.com/im/pictures/35d03179-3b9b-4898-b161-eb466bf533c6.jpg?im_w=720" width="250px" height="250px"></td>
+                                    <td><img alt="" src="https://a0.muscache.com/im/pictures/35d03179-3b9b-4898-b161-eb466bf533c6.jpg?im_w=720" width="250px" height="250px"></td>
+                                    <td><img alt="" src="https://a0.muscache.com/im/pictures/35d03179-3b9b-4898-b161-eb466bf533c6.jpg?im_w=720" width="250px" height="250px"></td>
+
+                                    <td><td><button onclick="location.href='/table/table_photo_edit.html'" target="_blank" style="margin-left: 100px;">수정</button></td></td>
+                                    <tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">선택한 숙소 예약 정보</h6>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>NO.</th>
+                                            <th>게스트 정보</th>
+                                            <th>금액</th>
+                                            <th>숙박 기간</th>
+                                            <th>숙박 공간</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><a href="/member_info.html">갓철수</a></td>
+                                            <td>45$</td>
+                                            <td>2022-06-22 ~ 2022-06-24</td>
+                                            <td>침실, 침대, 욕실</td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>2</td>
+                                            <td><a href="/member_info.html">갓철수</a></td>
+                                            <td>45$</td>
+                                            <td>2022-06-22 ~ 2022-06-24</td>
+                                            <td>침실, 침대, 욕실</td>
+                                        </tr>
+
+                                            <td>3</td>
+                                            <td><a href="/member_info.html">갓철수</a></td>
+                                            <td>45$</td>
+                                            <td>2022-06-22 ~ 2022-06-24</td>
+                                            <td>침실, 침대, 욕실</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>4</td>
+                                        <td><a href="/member_info.html">갓철수</a></td>
+                                            <td>45$</td>
+                                            <td>2022-06-22 ~ 2022-06-24</td>
+                                            <td>침실, 침대, 욕실</td>
+                                    </tr>
+
+                                    <td>5</td>
+                                    <td><a href="/member_info.html">갓철수</a></td>
+                                            <td>45$</td>
+                                            <td>2022-06-22 ~ 2022-06-24</td>
+                                            <td>침실, 침대, 욕실</td>
+                                </tr>
+
+                                <tr>
+                                    <td>6</td>
+                                    <td><a href="/member_info.html">갓철수</a></td>
+                                    <td>45$</td>
+                                    <td>2022-06-22 ~ 2022-06-24</td>
+                                    <td>침실, 침대, 욕실</td>
+                                </tr>
+                                <td>7</td>
+                                <td><a href="/member_info.html">갓철수</a></td>
+                                <td>45$</td>
+                                <td>2022-06-22 ~ 2022-06-24</td>
+                                <td>침실, 침대, 욕실</td>
+                            </tr>
+
+                            <tr>
+                                <td>8</td>
+                                <td><a href="/member_info.html">갓철수</a></td>
+                                <td>45$</td>
+                                <td>2022-06-22 ~ 2022-06-24</td>
+                                <td>침실, 침대, 욕실</td>
+                            </tr>
+                            <td>9</td>
+                            <td><a href="/member_info.html">갓철수</a></td>
+                            <td>45$</td>
+                            <td>2022-06-22 ~ 2022-06-24</td>
+                            <td>침실, 침대, 욕실</td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td><a href="/member_info.html">갓철수</a></td>
+                            <td>45$</td>
+                            <td>2022-06-22 ~ 2022-06-24</td>
+                            <td>침실, 침대, 욕실</td>
+                        </tr>
+                        <td>11</td>
+                        <td><a href="/member_info.html">갓철수</a></td>
+                        <td>45$</td>
+                        <td>2022-06-22 ~ 2022-06-24</td>
+                        <td>침실, 침대, 욕실</td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td><a href="/member_info.html">갓철수</a></td>
+                        <td>45$</td>
+                        <td>2022-06-22 ~ 2022-06-24</td>
+                        <td>침실, 침대, 욕실</td>
+                    </tr>
+                    <td>13</td>
+                    <td><a href="/member_info.html">갓철수</a></td>
+                    <td>45$</td>
+                    <td>2022-06-22 ~ 2022-06-24</td>
+                    <td>침실, 침대, 욕실</td>
+                </tr>
+
+                <tr>
+                    <td>14</td>
+                    <td><a href="/member_info.html">갓철수</a></td>
+                    <td>45$</td>
+                    <td>2022-06-22 ~ 2022-06-24</td>
+                    <td>침실, 침대, 욕실</td>
+                </tr>
+                <td>15</td>
+                <td><a href="/member_info.html">갓철수</a></td>
+                <td>45$</td>
+                <td>2022-06-22 ~ 2022-06-24</td>
+                <td>침실, 침대, 욕실</td>
+            </tr>
+
+            <tr>
+                <td>16</td>
+                <td><a href="/member_info.html">갓철수</a></td>
+                <td>45$</td>
+                <td>2022-06-22 ~ 2022-06-24</td>
+                <td>침실, 침대, 욕실</td>
+            </tr>
+            <td>17</td>
+            <td><a href="/member_info.html">갓철수</a></td>
+            <td>45$</td>
+            <td>2022-06-22 ~ 2022-06-24</td>
+            <td>침실, 침대, 욕실</td>
+        </tr>
+
+        <tr>
+            <td>18</td>
+            <td><a href="/member_info.html">갓철수</a></td>
+            <td>45$</td>
+            <td>2022-06-22 ~ 2022-06-24</td>
+            <td>침실, 침대, 욕실</td>
+        </tr>
+
+
+
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">숙소 정보 수정</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        
+                                        <tbody>
+                                            <tr>
+                                                <td style="background-color: pink;">숙소명</td>
+                                                <td>파티오가 있는 강남스타일의 현대식 아파트</td>
+                                                <td><a href="/popupacc/edit_name.html"onclick="window.open('/popupacc/edit_name.html','edit_name','status=no, width=420, height=260');return false"><img src="/img/edit.png" width="24px" height="24px" id="popup_open_btn"></a></td>
+                                                <td style="background-color: pink;">숙소 위치</td>
+                                                <td>서울시 강남구 역삼동 111-11</td>
+                                                <td><a href="/popupexp/edit_adr.html" onclick="window.open('/popupexp/edit_adr.html','edit_adr','status=no, width=420, height=530');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            </tr>
+    
+                                            <tr>
+                                                <td style="background-color: pink;">체크인 방식</td>
+                                                <td>셀프 체크인</td>
+                                                <td><a href="/popupacc/edit_checkin.html" onclick="window.open('/popupacc/edit_checkin.html','edit_checkin','status=no, width=420, height=260');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>>
+                                                <td style="background-color: pink;">숙박 장소</td>
+                                                <td>거실,다락밤,침실</td>
+                                                <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color: pink;">편의시설</td>
+                                                <td>tv, 세탁기, 주차장 외 22건</td>
+                                                <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                                <td style="background-color: pink;">숙소 설명</td>
+                                                <td>역삼역과 강남역 사이에 위치한 예쁜 빌라입니다</td>
+                                                <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            </tr>
+    
+                                            <tr>
+                                                <td style="background-color: pink;">호스트</td>
+                                                <td>김광석 님</td>
+                                                <td><a href="/table/table_host.html"><img src="/img/arrow.png" width="24px" height="24px"></a></td>
+                                                <td style="background-color: pink;">호스팅 근처 지역</td>
+                                                <td>강남역,역삼역과 가까우며, 서울전역으로의 교통이 편합니다</td>
+                                                <td><a href="#"><img src="/img/arrow.png" width="24px" height="24px"></a></td>
+                                            </tr>
+    
+                                            <tr>
+                                                <td style="background-color: pink;">후기 바로가기</td>
+                                                <td>25건 보기</td>
+                                                <td><a href="#"><img src="/img/arrow.png" width="24px" height="24px"></a></td>
+                                                <td style="background-color: pink;">알아둬야할 사항</td>
+                                                <td>이용규칙, 건강과 안전, 환불정책</td>
+                                                <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            </tr>
+    
+                                            <tr>
+                                                <td style="background-color: pink;">기본 요금</td>
+                                                <td>50000$</td>
+                                                <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                                <td style="background-color: pink;">할인설정</td>
+                                                <td>주간, 장기투숙 할인</td>
+                                                <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            </tr>
+    
+                                            <tr>
+                                                <td style="background-color: pink;">추가요금</td>
+                                                <td>청소비,거주세 등</td>
+                                                <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                                <td style="background-color: pink;"></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+    
+                                            
+                                            
+                                            
+                                        </tbody>
+    
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">예약 결제 내역</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>번호</th>
-                                            <th>이름</th>
-                                            <th>생년월일</th>
-                                            <th>연락처</th>
-                                            <th>가입날짜</th>
+                                            <th>NO.</th>
+                                            <th>게스트명</th>
+                                            <th>카드종류</th>
+                                            <th>카드번호</th>
+                                            <th>금액</th>
+                                            <th>예약일</th>
                                         </tr>
                                     </thead>
+
+                                
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
                                         </tr>
+
                                         <tr>
                                             <td>2</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>3</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>4</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>5</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>6</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>7</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>8</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>9</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>10</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>11</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
-                                        <tr>
-                                            <td>12</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>13</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>14</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
+
+
+
+                                        
                                     </tbody>
                                 </table>
+                                <input class="pay_del"
+                    type="button"
+                    value="결제취소">
                             </div>
                         </div>
+
                     </div>
 
+                    <input class="add"
+                    type="button"
+                    value="뒤로">
+                    <input class="delete"
+                    type="button"
+                    value="변경 취소">
+                    <input class="save"
+                    type="button"
+                    value="변경 사항 저장" style="float: right;">
                 </div>
+
+
+
+<style>
+    .ck-editor__editable { height: 400px; }
+</style>
                 <!-- /.container-fluid -->
+
+
 
             </div>
             <!-- End of Main Content -->

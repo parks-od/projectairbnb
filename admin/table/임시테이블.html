@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>회원정보관리</title>
+    <title>숙소관리</title>
 
     <!-- Custom fonts for this template -->
     <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,6 +22,7 @@
 
     <!-- Custom styles for this page -->
     <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 
 </head>
 
@@ -40,8 +41,6 @@
                 </div>
                 <div class="sidebar-brand-text mx-3">Airbnb</div>
             </a>
-
-
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -118,7 +117,8 @@
                 </div>
             </li>
             </ul>
-        <!-- End of Sidebar -->
+    
+    
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -336,130 +336,95 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">회원정보관리 페이지</h1>
-                    <p class="mb-4">회원정보관리 페이지</p>
+                    <h1 class="h3 mb-2 text-gray-800">숙소 정보 수정</h1>
+                    <p class="mb-4"> </p>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">회원정보관리 페이지</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">숙소 정보 수정</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>번호</th>
-                                            <th>이름</th>
-                                            <th>생년월일</th>
-                                            <th>연락처</th>
-                                            <th>가입날짜</th>
-                                        </tr>
-                                    </thead>
+                                    
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td style="background-color: pink;">숙소명</td>
+                                            <td>파티오가 있는 강남스타일의 현대식 아파트</td>
+                                            <td><a href="#"><img src="/img/edit.png" width="24px" height="24px" id="popup_open_btn"></a></td>
+                                            <td style="background-color: pink;">숙소 위치</td>
+                                            <td>서울시 강남구 역삼동 111-11</td>
+                                            <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="background-color: pink;">체크인 방식</td>
+                                            <td>셀프 체크인</td>
+                                            <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>>
+                                            <td style="background-color: pink;">숙박 장소</td>
+                                            <td>거실,다락밤,침실</td>
+                                            <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
                                         </tr>
                                         <tr>
-                                            <td>2</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td style="background-color: pink;">편의시설</td>
+                                            <td>tv, 세탁기, 주차장 외 22건</td>
+                                            <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            <td style="background-color: pink;">숙소 설명</td>
+                                            <td>역삼역과 강남역 사이에 위치한 예쁜 빌라입니다</td>
+                                            <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
                                         </tr>
+
                                         <tr>
-                                            <td>3</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td style="background-color: pink;">호스트</td>
+                                            <td>김광석 님</td>
+                                            <td><a href="#"><img src="/img/arrow.png" width="24px" height="24px"></a></td>
+                                            <td style="background-color: pink;">호스팅 근처 지역</td>
+                                            <td>강남역,역삼역과 가까우며, 서울전역으로의 교통이 편합니다</td>
+                                            <td><a href="#"><img src="/img/arrow.png" width="24px" height="24px"></a></td>
                                         </tr>
+
                                         <tr>
-                                            <td>4</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td style="background-color: pink;">후기 바로가기</td>
+                                            <td>25건 보기</td>
+                                            <td><a href="#"><img src="/img/arrow.png" width="24px" height="24px"></a></td>
+                                            <td style="background-color: pink;">알아둬야할 사항</td>
+                                            <td>이용규칙, 건강과 안전, 환불정책</td>
+                                            <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
                                         </tr>
+
                                         <tr>
-                                            <td>5</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td style="background-color: pink;">기본 요금</td>
+                                            <td>50000$</td>
+                                            <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            <td style="background-color: pink;">할인설정</td>
+                                            <td>주간, 장기투숙 할인</td>
+                                            <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
                                         </tr>
+
                                         <tr>
-                                            <td>6</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td style="background-color: pink;">추가요금</td>
+                                            <td>청소비,거주세 등</td>
+                                            <td><a href="#"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            <td style="background-color: pink;"></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>11</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>13</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>14</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
+
+                                        
+                                        
+                                        
                                     </tbody>
+
                                 </table>
                             </div>
                         </div>
                     </div>
+
+
+                    <input class="delete"
+                    type="button"
+                    value="삭제">
 
                 </div>
                 <!-- /.container-fluid -->

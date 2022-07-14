@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>회원정보관리</title>
+    <title>현장체험 상세페이지</title>
 
     <!-- Custom fonts for this template -->
     <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,6 +22,7 @@
 
     <!-- Custom styles for this page -->
     <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    
 
 </head>
 
@@ -40,7 +41,6 @@
                 </div>
                 <div class="sidebar-brand-text mx-3">Airbnb</div>
             </a>
-
 
 
             <!-- Divider -->
@@ -118,7 +118,6 @@
                 </div>
             </li>
             </ul>
-        <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -336,133 +335,417 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">회원정보관리 페이지</h1>
-                    <p class="mb-4">회원정보관리 페이지</p>
+                    <h1 class="h3 mb-2 text-gray-800">현장 체험 설정</h1>
+                    <p class="mb-4"></p>
 
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
+
+
+                    
+
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">체험 정보 수정</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        
+                                        <tbody>
+                                            <tr>
+                                                <td style="background-color: pink;">체험명</td>
+                                                <td>경복궁 한복 체험</td>
+                                                <td><a href="/popupexp/edit_name.html"onclick="window.open('/popupexp/edit_name.html','edit_name','status=no, width=420, height=260');return false"><img src="/img/edit.png" width="24px" height="24px" id="popup_open_btn"></a></td>
+                                                <td style="background-color: pink;">체험 지역</td>
+                                                <td>서울</td>
+                                                <td><a href="/popupexp/edit_adr.html" onclick="window.open('/popupexp/edit_adr.html','edit_adr','status=no, width=420, height=530');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            </tr>
+
+                                        
+
+
+    
+                                            <tr>
+                                                <td style="background-color: pink;">체험 테마</td>
+                                                <td>관광 쇼핑 및 교통편</td>
+                                                <td><a href="/popupexp/edit_theme.html" onclick="window.open('/popupexp/edit_theme.html','edit_theme','status=no, width=500, height=600');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>>
+                                                <td style="background-color: pink;">제공 언어</td>
+                                                <td>한국어(KR)</td>
+                                                <td><a href="/popupexp/edit_lang.html" onclick="window.open('/popupexp/edit_lang.html','edit_lang','status=no, width=420, height=260');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color: pink;">프로그램소개</td>
+                                                <td>지지배배한복은 저희 부모님 부터.....</td>
+                                                <td><a href="/popupexp/edit_program.html" onclick="window.open('/popupexp/edit_program.html','edit_program','status=no, width=420, height=260');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                                <td style="background-color: pink;">준비물</td>
+                                                <td>수영모,갈아입을 여분 옷</td>
+                                                <td><a href="/popupexp/edit_prep.html" onclick="window.open('/popupexp/edit_prep.html','edit_prep','status=no, width=420, height=260');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            </tr>
+    
+                                            <tr>
+                                                <td style="background-color: pink;">호스트</td>
+                                                <td>김광석 님</td>
+                                                <td><a href="/table/table_host.html"><img src="/img/arrow.png" width="24px" height="24px"></a></td>
+                                                <td style="background-color: pink;">방문주소</td>
+                                                <td>방문주소+방문설명</td>
+                                                <td><a href="/popupexp/edit_bangmoon.html" onclick="window.open('/popupexp/edit_bangmoon.html','edit_bangmoon','status=no, width=420, height=550');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            </tr>
+    
+                                            <tr>
+                                                <td style="background-color: pink;">후기 바로가기</td>
+                                                <td>25건 보기</td>
+                                                <td><a href="#scrollbottom"><img src="/img/arrow.png" width="24px" height="24px"></a></td>
+                                                <td style="background-color: pink;">체험소요시간</td>
+                                                <td>2시간</td>
+                                                <td><a href="/popupexp/edit_time.html" onclick="window.open('/popupexp/edit_time.html','edit_time','status=no, width=420, height=260');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            </tr>
+    
+                                            <tr>
+                                                <td style="background-color: pink;">프라이빗 예약 설정 여부</td>
+                                                <td>프라이빗 예약 x</td>
+                                                <td><a href="/popupexp/edit_privacy.html" onclick="window.open('/popupexp/edit_privacy.html','edit_privacy','status=no, width=420, height=440');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                                <td style="background-color: pink;">체험일</td>
+                                                <td>2022-06-25</td>
+                                                <td><a href="/popupexp/edit_calender.html" onclick="window.open('/popupexp/edit_calender.html','edit_calender','status=no, width=420, height=440');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            </tr>
+    
+                                            <tr>
+                                                <td style="background-color: pink;">체험 시작시간</td>
+                                                <td>14:00</td>
+                                                <td><a href="/popupexp/edit_starttime.html" onclick="window.open('/popupexp/edit_starttime.html','edit_starttime','status=no, width=420, height=260');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                                <td style="background-color: pink;">프라이빗예약 요금</td>
+                                                <td>38.5$</td>
+                                                <td><a href="/popupexp/edit_pfares.html" onclick="window.open('/popupexp/edit_pfares.html','edit_pfares','status=no, width=420, height=260');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="background-color: pink;">체험 요금</td>
+                                                <td>28.5$</td>
+                                                <td><a href="/popupexp/edit_fares.html" onclick="window.open('/popupexp/edit_fares.html','edit_fares','status=no, width=420, height=260');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                                <td style="background-color: pink;">프라이빗인원</td>
+                                                <td>5명</td>
+                                                <td><a href="/popupexp/edit_privnum.html" onclick="window.open('/popupexp/edit_privnum.html','edit_privnum','status=no, width=420, height=260');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="background-color: pink;">게스트 인원</td>
+                                                <td>3명</td>
+                                                <td><a href="/popupexp/edit_guestnum.html" onclick="window.open('/popupexp/edit_guestnum.html','edit_guestnum','status=no, width=420, height=260');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                                <td style="background-color: pink;">알아둬야할사항</td>
+                                                <td>준비물을 반드시 챙겨오고...</td>
+                                                <td><a href="/popupexp/edit_know.html" onclick="window.open('/popupexp/edit_know.html','edit_know','status=no, width=420, height=260');return false"><img src="/img/edit.png" width="24px" height="24px"></a></td>
+                                            </tr>
+    
+                                            
+                                            
+                                            
+                                        </tbody>
+    
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">회원정보관리 페이지</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">예약 결제 내역</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>번호</th>
-                                            <th>이름</th>
-                                            <th>생년월일</th>
-                                            <th>연락처</th>
-                                            <th>가입날짜</th>
+                                            <th>NO.</th>
+                                            <th>게스트명</th>
+                                            <th>카드종류</th>
+                                            <th>카드번호</th>
+                                            <th>금액</th>
+                                            <th>예약일</th>
                                         </tr>
                                     </thead>
+
+                                
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
                                         </tr>
+
                                         <tr>
                                             <td>2</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>3</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>4</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>5</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>6</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>7</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>8</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>9</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>10</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
                                         <tr>
                                             <td>11</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td>VISA</td>
+                                            <td><a href="#">1234-1111-1111-1111</a></td>
+                                            <td>38.50$</td>
+                                            <td>2022-06-30</td>
+            
+            
                                         </tr>
+
+
+
+                                        
+                                    </tbody>
+                                </table>
+                                <input class="pay_del"
+                                type="button"
+                                value="결제취소">
+                            </div>
+                            
+
+                        </div>
+                        
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">후기 관리</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
                                         <tr>
-                                            <td>12</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <th>NO.</th>
+                                            <th>게스트명</th>
+                                            <th>후기내용</th>
+                                            <th>등록일</th>
+                                            <th>체험내용</th>
                                         </tr>
+                                    </thead>
+
+                                
+                                    <tbody>
                                         <tr>
-                                            <td>13</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td>1</td>
+                                            <td><a href="#">게스트명</a></td>
+                                            <td><a href="/table/table_review.html">후기수정으로 이동</a></td>
+                                            <td>22-06-29</td>
+                                            <td>한복입고 경복궁 체험하기</td>
+            
                                         </tr>
+
                                         <tr>
-                                            <td>14</td>
-                                            <td><a href="/member_info.html">박해찬</a></td>
-                                            <td>2000/01/01</td>
-                                            <td>010-1234-1234</td>
-                                            <td>2011/04/25</td>
+                                            <td>2</td>
+                                            <td><a href="#">게스트2</a></td>
+                                            <td><a href="/table/table_review.html">후기수정으로 이동</a></td>
+                                            <td>22-06-29</td>
+                                            <td>한복입고 경복궁 체험하기</td>
+            
                                         </tr>
+
+                                        <tr>
+                                            <td>3</td>
+                                            <td><a href="#">게스트3</a></td>
+                                            <td><a href="/table/table_review.html">후기수정으로 이동</a></td>
+                                            <td>22-06-29</td>
+                                            <td>한복입고 경복궁 체험하기</td>
+            
+                                        </tr>
+
+                                        <tr>
+                                            <td>4</td>
+                                            <td><a href="#">게스트4</a></td>
+                                            <td><a href="/table/table_review.html">후기수정으로 이동</a></td>
+                                            <td>22-06-29</td>
+                                            <td>한복입고 경복궁 체험하기</td>
+            
+                                        </tr>
+
+                                        <tr>
+                                            <td>5</td>
+                                            <td><a href="#">게스트5</a></td>
+                                            <td><a href="/table/table_review.html">후기수정으로 이동</a></td>
+                                            <td>22-06-29</td>
+                                            <td>한복입고 경복궁 체험하기</td>
+            
+                                        </tr>
+
+                                        <tr>
+                                            <td>6</td>
+                                            <td><a href="#">게스트6</a></td>
+                                            <td><a href="/table/table_review.html">후기수정으로 이동</a></td>
+                                            <td>22-06-29</td>
+                                            <td>한복입고 경복궁 체험하기</td>
+            
+                                        </tr>
+
+                                        <tr>
+                                            <td>7</td>
+                                            <td><a href="#">게스트7</a></td>
+                                            <td><a href="/table/table_review.html">후기수정으로 이동</a></td>
+                                            <td>22-06-29</td>
+                                            <td>한복입고 경복궁 체험하기</td>
+            
+                                        </tr>
+
+                                        <tr>
+                                            <td>8</td>
+                                            <td><a href="#">게스트8</a></td>
+                                            <td><a href="/table/table_review.html">후기수정으로 이동</a></td>
+                                            <td>22-06-29</td>
+                                            <td>한복입고 경복궁 체험하기</td>
+            
+                                        </tr>
+
+                                        <tr>
+                                            <td>9</td>
+                                            <td><a href="#">게스트9</a></td>
+                                            <td><a href="/table/table_review.html">후기수정으로 이동</a></td>
+                                            <td>22-06-29</td>
+                                            <td>한복입고 경복궁 체험하기</td>
+            
+                                        </tr>
+
+                                        <tr>
+                                            <td>10</td>
+                                            <td><a href="#">게스트10</a></td>
+                                            <td><a href="/table/table_review.html">후기수정으로 이동</a></td>
+                                            <td>22-06-29</td>
+                                            <td>한복입고 경복궁 체험하기</td>
+            
+                                        </tr>
+
+                                        <tr>
+                                            <td>11</td>
+                                            <td><a href="#">게스트11</a></td>
+                                            <td><a href="/table/table_review.html">후기수정으로 이동</a></td>
+                                            <td>22-06-29</td>
+                                            <td>한복입고 경복궁 체험하기</td>
+            
+                                        </tr>
+
+
+
+                                        
                                     </tbody>
                                 </table>
                             </div>
                         </div>
+                        
+
+
                     </div>
 
+                    <input class="add"
+                    type="button"
+                    value="뒤로">
+                    <input class="delete"
+                    type="button"
+                    value="변경 취소">
+                    <input class="save"
+                    type="button"
+                    value="변경 사항 저장" style="float: right;">
                 </div>
+            </div>
+            <div class="scrollbottom"></div>
+
+
+<style>
+    .ck-editor__editable { height: 400px; }
+</style>
                 <!-- /.container-fluid -->
+
+
 
             </div>
             <!-- End of Main Content -->
