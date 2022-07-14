@@ -43,66 +43,66 @@
 //     }
 // });
 //     // else{
-    //     $('._16kl056s').attr("class","_1pulvtcv");
-    //     $('._k568g25').attr("class","_1y61moct");
-    //     $('._xzfqmcp').attr("class","_1fnnpuw6");
-    //     $('._hjxf4mi').attr("class","_lbaapj");
-    //     $('._fad0ioi').attr("class","_1l0iogx");
-    //     $('._18c48cum').attr("class","_171jtg");
-    //     $('._1p5zqcr').attr("class","_1p5zqcr1");
-    // }
-    // let hide = true;
-    // $('._rcxi5a').on('click', function(e){
-    //     $('._1pulvtcv').attr("class","_16kl056s");
-    //     $('._1y61moct').attr("class","_k568g25");
-    //     $('._1fnnpuw6').attr("class","_xzfqmcp");
-    //     $('._lbaapj').attr("class","_hjxf4mi");
-    //     $('._1l0iogx').attr("class","_fad0ioi");
-    //     $('._171jtg').attr("class","_18c48cum");
-    //     $('._1p5zqcr1').attr("class","_1p5zqcr");
-    //     console.log(e.target);
-    // });
-    // $('body').on('click', function(e){
-    //     if(hide){
-    //         $('._16kl056s').attr("class","_1pulvtcv");
-    //         $('._k568g25').attr("class","_1y61moct");
-    //         $('._xzfqmcp').attr("class","_1fnnpuw6");
-    //         $('._hjxf4mi').attr("class","_lbaapj");
-    //         $('._fad0ioi').attr("class","_1l0iogx");
-    //         $('._18c48cum').attr("class","_171jtg");
-    //         $('._1p5zqcr').attr("class","_1p5zqcr1");
-            
-    //     }
-    //     console.log(e.target);
-    // })
+//     $('._16kl056s').attr("class","_1pulvtcv");
+//     $('._k568g25').attr("class","_1y61moct");
+//     $('._xzfqmcp').attr("class","_1fnnpuw6");
+//     $('._hjxf4mi').attr("class","_lbaapj");
+//     $('._fad0ioi').attr("class","_1l0iogx");
+//     $('._18c48cum').attr("class","_171jtg");
+//     $('._1p5zqcr').attr("class","_1p5zqcr1");
+// }
+// let hide = true;
+// $('._rcxi5a').on('click', function(e){
+//     $('._1pulvtcv').attr("class","_16kl056s");
+//     $('._1y61moct').attr("class","_k568g25");
+//     $('._1fnnpuw6').attr("class","_xzfqmcp");
+//     $('._lbaapj').attr("class","_hjxf4mi");
+//     $('._1l0iogx').attr("class","_fad0ioi");
+//     $('._171jtg').attr("class","_18c48cum");
+//     $('._1p5zqcr1').attr("class","_1p5zqcr");
+//     console.log(e.target);
+// });
+// $('body').on('click', function(e){
+//     if(hide){
+//         $('._16kl056s').attr("class","_1pulvtcv");
+//         $('._k568g25').attr("class","_1y61moct");
+//         $('._xzfqmcp').attr("class","_1fnnpuw6");
+//         $('._hjxf4mi').attr("class","_lbaapj");
+//         $('._fad0ioi').attr("class","_1l0iogx");
+//         $('._18c48cum').attr("class","_171jtg");
+//         $('._1p5zqcr').attr("class","_1p5zqcr1");
 
-    // let showsearch = false;
-    // $('._rcxi5a').click(function(e){
-    //     if(!showsearch){
-    //         $('#testtest').toggleClass('_16kl056s _1pulvtcv');
-    //         $('#testtest1').toggleClass('_k568g25 _1y61moct');
-    //         $('#testtest2').toggleClass('_xzfqmcp _1fnnpuw6');
-    //         $('#testtest3').toggleClass('_hjxf4mi _lbaapj');
-    //         $('#testtest4').toggleClass('_fad0ioi _1l0iogx');
-    //         $('#testtest5').toggleClass('_18c48cum _171jtg');
-    //         $('#autocomplete-results').toggleClass('_1p5zqcr _1p5zqcr1');
-    //         showsearch = true;
-    //     }
-    // });
+//     }
+//     console.log(e.target);
+// })
 
-    // $('body').click(function(e){
-    //     console.log(e.target.className)
-    //     if(showsearch === true && e.target.className === '_rcxi5a'){
-    //         $('._16kl056s').attr("class","_1pulvtcv");
-    //         $('._k568g25').attr("class","_1y61moct");
-    //         $('._xzfqmcp').attr("class","_1fnnpuw6");
-    //         $('._hjxf4mi').attr("class","_lbaapj");
-    //         $('._fad0ioi').attr("class","_1l0iogx");
-    //         $('._18c48cum').attr("class","_171jtg");
-    //         $('._1p5zqcr').attr("class","_1p5zqcr1");;
-    //         showsearch = false;
-    //     }
-    // });
+// let showsearch = false;
+// $('._rcxi5a').click(function(e){
+//     if(!showsearch){
+//         $('#testtest').toggleClass('_16kl056s _1pulvtcv');
+//         $('#testtest1').toggleClass('_k568g25 _1y61moct');
+//         $('#testtest2').toggleClass('_xzfqmcp _1fnnpuw6');
+//         $('#testtest3').toggleClass('_hjxf4mi _lbaapj');
+//         $('#testtest4').toggleClass('_fad0ioi _1l0iogx');
+//         $('#testtest5').toggleClass('_18c48cum _171jtg');
+//         $('#autocomplete-results').toggleClass('_1p5zqcr _1p5zqcr1');
+//         showsearch = true;
+//     }
+// });
+
+// $('body').click(function(e){
+//     console.log(e.target.className)
+//     if(showsearch === true && e.target.className === '_rcxi5a'){
+//         $('._16kl056s').attr("class","_1pulvtcv");
+//         $('._k568g25').attr("class","_1y61moct");
+//         $('._xzfqmcp').attr("class","_1fnnpuw6");
+//         $('._hjxf4mi').attr("class","_lbaapj");
+//         $('._fad0ioi').attr("class","_1l0iogx");
+//         $('._18c48cum').attr("class","_171jtg");
+//         $('._1p5zqcr').attr("class","_1p5zqcr1");;
+//         showsearch = false;
+//     }
+// });
 // $('선택자').closest("찾을 선택자") //조상요소중에 일치하는 요소를 객체로 반환한다
 // $('선택자').find("찾을 선택자")  //자손요소중에 일치하는 요소를 객체로 반환한다
 // $('html').click(function(e){
@@ -119,8 +119,8 @@
 //         $('#autocomplete-results').toggleClass('_1p5zqcr1 _1p5zqcr');
 //     }
 // });
-$('._1fnnpuw6').click(function(e){
-    if ($('._qgv474').find("._1p5zqcr")){
+$('._1fnnpuw6').click(function (e) {
+    if ($('._qgv474').find("._1p5zqcr")) {
 
         $('#searchbar1').addClass('_16kl056s').removeClass('_1pulvtcv');
         $('#searchbar2').addClass('_k568g25').removeClass('_1y61moct');
@@ -132,7 +132,7 @@ $('._1fnnpuw6').click(function(e){
     }
 });
 $(document).on("click", function (e) {
-    if ($(e.target).closest("._xzfqmcp").length < 1 && !$(e.target).hasClass("_xzfqmcp")){
+    if ($(e.target).closest("._xzfqmcp").length < 1 && !$(e.target).hasClass("_xzfqmcp")) {
         $('#searchbar1').removeClass('_16kl056s').addClass('_1pulvtcv');
         $('#searchbar2').removeClass('_k568g25').addClass('_1y61moct');
         $('#searchbar3').removeClass('_xzfqmcp').addClass('_1fnnpuw6');
@@ -142,6 +142,7 @@ $(document).on("click", function (e) {
         $('#autocomplete-results').removeClass('_1p5zqcr').addClass('_1p5zqcr1');
     }
 });
+
 
 $('._12uiun8').on("click", function (e) {
     if($('._12uiun8').closest('_cawx7l0')){
