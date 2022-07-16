@@ -6898,16 +6898,6 @@
     padding: 8px;
   }
 
-  .dir-ltr.fuhmdl6[class][class] {
-    left: 0;
-    right: 0;
-  }
-
-  .dir-rtl.fuhmdl6[class][class] {
-    right: 0;
-    left: 0;
-  }
-
   .czg175l[class][class] {
     position: absolute;
     top: 100%;
@@ -6916,14 +6906,6 @@
 
   .h1wiz25q[class][class] {
     visibility: hidden;
-  }
-
-  .dir-ltr.l16t0m55[class][class] {
-    left: 0;
-  }
-
-  .dir-rtl.l16t0m55[class][class] {
-    right: 0;
   }
 
   .dir-ltr.rxmx7fe[class][class] {
@@ -10599,30 +10581,6 @@
   ._c2acbp {
     margin-right: 20px !important;
   }
-
-  ._1e5q4qoz {
-    cursor: pointer !important;
-    display: inline-block !important;
-    margin: 0px -8px !important;
-    position: relative !important;
-    text-align: center !important;
-    width: auto !important;
-    touch-action: manipulation !important;
-    font-family: var(--e-ls-qkw) !important;
-    font-size: var(--c-zdwk-p) !important;
-    line-height: var(--j-p-z-kco) !important;
-    font-weight: var(--jx-zk-pv) !important;
-    border-radius: var(--go-h-jh-l) !important;
-    outline: none !important;
-    padding: 8px !important;
-    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
-    -webkit-tap-highlight-color: transparent !important;
-    border: none !important;
-    background: transparent !important;
-    color: var(--f-k-smk-x) !important;
-    text-decoration: underline !important;
-  }
-
   ._5kaapu {
     -webkit-box-align: center !important;
     display: flex !important;
@@ -10948,10 +10906,6 @@
 
   ._zdxht7 {
     width: 100% !important;
-  }
-
-  ._e296pg {
-    position: relative !important;
   }
 
   ._sbmagf {
@@ -12500,12 +12454,6 @@
     --gp-section-standard-padding: 48px !important;
     --gp-section-standard-padding-condensed: 24px !important;
   }
-
-  ._16grqhk {
-    position: relative !important;
-    min-height: 100vh !important;
-  }
-
   ._1d8im2uw {
     height: 80px !important;
     left: 0 !important;
@@ -23546,7 +23494,7 @@
   height: 32px !important;
 }
 ._kasbqg {
-  display: flex !important;
+  display: flex;
   flex: 2 0 0% !important;
   min-width: 0px !important;
 }
@@ -24993,3 +24941,285 @@
 }
 /*알아두어야할 사항(환불 정책) modal*/
 /*sub main*/
+
+
+/* sub title bar*/
+._16grqhk {
+  position: relative !important;
+  min-height: 100vh !important;
+}
+@media (min-width: 744px){
+._siy8gh {
+    display: block !important;
+}}
+._1hpx3rih {
+  height: 80px !important;
+  left: 0px !important;
+  width: 100% !important;
+  z-index: 100 !important;
+  --header_brand-color: #FF385C !important;
+  position: absolute !important;
+}
+/* sub title bar 끝*/
+._1hpx3rih::after {
+  box-shadow: rgb(0 0 0 / 8%) 0px 1px 1px !important;
+  transform-origin: 50% 0% !important;
+  background: var(--f-mkcy-f) !important;
+  content: "" !important;
+  left: 0px !important;
+  position: absolute !important;
+  top: 0px !important;
+  width: 100% !important;
+  z-index: 0 !important;
+  opacity: 1 !important;
+  transform: scaleY(2) !important;
+  height: 100% !important;
+  transition: -ms-transform 250ms ease 0s, -webkit-transform 250ms ease 0s, transform 250ms ease 0s !important;
+}
+@media (min-width: 950px){
+._1hpx3rih::after {
+    transform: scaleY(2.25) !important;
+}}
+/* sub nav js */
+._1kxfihfz {
+  cursor: pointer !important;
+  display: block !important;
+  background-clip: padding-box !important;
+  border: 1px solid transparent !important;
+  border-radius: 32px !important;
+  flex: 1 0 0% !important;
+  min-width: 0px !important;
+  padding: 14px 32px !important;
+  z-index: 3 !important;
+}
+._1nlexnu {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  inset: 0px !important;
+  position: fixed !important;
+  z-index: 99 !important;
+  height: 100vh !important;
+}
+._12i6oakv {
+  cursor: pointer !important;
+  text-align: center !important;
+  border: 1px solid rgb(34, 34, 34) !important;
+  outline: none !important;
+  margin: 0px !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  position: relative !important;
+  transition-property: -ms-transform, -webkit-transform, transform, background-color, border-color !important;
+  transition-duration: 0.15s !important;
+  transition-timing-function: ease-in-out !important;
+  padding: 4px 12px !important;
+  min-height: 32px !important;
+  border-radius: 16px !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  background-color: rgb(247, 247, 247) !important;
+  color: rgb(34, 34, 34) !important;
+}
+.sizebtn{
+  margin-top: 500px !important  ;
+}
+._13ah4vr {
+  background: rgb(255, 255, 255) !important;
+  border-radius: 16px !important;
+  box-shadow: rgb(0 0 0 / 20%) 0px 6px 20px !important;
+  display: inline-block;
+  padding: 24px 32px 16px !important;
+  position: absolute !important;
+  top: -24px !important;
+  right: -32px !important;
+  width: 661px !important;
+  z-index: 1 !important;
+  min-height: 460px !important;
+}
+._1aa8ytq {
+  -webkit-box-align: start !important;
+  -webkit-box-pack: justify !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  padding-bottom: 16px !important;
+}
+._enjuap {
+  -webkit-box-flex: 0 !important;
+  order: 2 !important;
+  flex: 0 0 calc(((100vw - 256px) / 12) * 5 + 16px) !important;
+  margin-left: 24px !important;
+  min-width: 270px !important;
+  display: block !important;
+}
+@media (min-width: 1128px){
+._enjuap {
+    flex-basis: calc(((100vw - 336px) / 12) * 4 + 0px) !important;
+}}
+._6e5x1y {
+  display: flex !important;
+  border-radius: 8px !important;
+  box-shadow: rgb(176 176 176) 0px 0px 0px 1px inset !important;
+}
+._q3k8d9z {
+  position: relative !important;
+  cursor: text !important;
+  display: flex !important;
+  min-height: 56px !important;
+  width: 100% !important;
+  margin: 0px !important;
+  border: none transparent !important;
+  color: rgb(34, 34, 34) !important;
+  border-radius: 8px !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+  flex: 1 1 0% !important;
+  outline: none !important;
+  box-shadow: rgb(34 34 34) 0px 0px 0px 2px inset !important;
+  background-color: rgb(255, 255, 255) !important;
+}
+._1yw7hpv {
+  position: relative !important;
+  flex: 1 1 0% !important;
+  padding: 0px !important;
+}
+._etxtlin {
+  display: flex !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: rgb(34, 34, 34) !important;
+  opacity: 1 !important;
+}
+._yrzsibu {
+  width: 100% !important;
+  border: none !important;
+  outline: none !important;
+  padding: 0px !important;
+  margin: 26px 12px 6px !important;
+  min-height: 1px !important;
+  color: inherit !important;
+  background-color: transparent !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  appearance: none !important;
+}
+._129y4gf {
+  -webkit-box-pack: center !important;
+  -webkit-box-align: center !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  max-width: 50% !important;
+  min-width: 36px !important;
+  overflow: visible !important;
+  white-space: nowrap !important;
+  padding-left: 0px !important;
+  padding-right: 12px !important;
+}
+._11mrn1u {
+    position: relative !important;
+    cursor: text !important;
+    display: flex !important;
+    min-height: 56px !important;
+    width: 100% !important;
+    margin: 0px !important;
+    border: none transparent !important;
+    color: rgb(34, 34, 34) !important;
+    background-color: transparent !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 400 !important;
+    flex: 1 1 0% !important;
+}
+._rut4we {
+    -webkit-box-align: center !important;
+    -webkit-box-pack: justify !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding-left: 26px !important;
+}
+@media (min-width: 744px){
+._rut4we {
+    padding-left: 34px !important;
+    padding-right: 34px !important;
+}}
+._1qi0sj8::before {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+}
+._sbaj1v {
+  margin-top: 100px !important;
+  margin-left: 16px !important;
+}
+._1lerwp6l {
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin: 0px !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  width: auto !important;
+  touch-action: manipulation !important;
+  font-family: var(--e-ls-qkw) !important;
+  font-size: var(--c-zdwk-p) !important;
+  line-height: var(--j-p-z-kco) !important;
+  font-weight: var(--jx-zk-pv) !important;
+  border-radius: var(--go-h-jh-l) !important;
+  outline: none !important;
+  padding: 8px 16px !important;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  -webkit-tap-highlight-color: transparent !important;
+  border: none !important;
+  background: var(--f-k-smk-x) !important;
+  color: var(--f-mkcy-f) !important;
+}
+#datepicker4{
+  margin-bottom: 16px;
+}
+._4l12l8 {
+  margin-top: 8px !important;
+}
+._1aoj0ap {
+  box-shadow: rgb(176 176 176) 0px 0px 0px 1px inset !important;
+  box-sizing: border-box !important;
+  color: rgb(34, 34, 34) !important;
+  padding: 4px !important;
+  border-radius: 8px !important;
+}
+._159914b {
+  color: inherit !important;
+  display: block !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  outline: none !important;
+  border: none !important;
+  margin: 0px !important;
+  box-sizing: border-box !important;
+  background-color: transparent !important;
+  appearance: none !important;
+  padding: 8px !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+}
+._1ku51f04:disabled {
+  cursor: not-allowed !important;
+  opacity: 1 !important;
+  border: none !important;
+  background: var(--j-qkgmf) !important;
+  color: var(--f-mkcy-f) !important;
+}
