@@ -200,6 +200,8 @@ as="script" crossorigin="anonymous" />
 <link rel="prefetch"
 href="https://a0.muscache.com/airbnb/static/packages/web/ko/frontend/simple-footer/variants/base/FooterBorderless.a5db7577ac.js"
 as="script" crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <meta property="fb:app_id" content="138566025676" />
 <meta property="og:site_name" content="Airbnb" />
 <meta property="og:locale" content="ko_KR" />
@@ -321,7 +323,7 @@ href="https://www.airbnb.com.mt/manage-your-space/653225492607634010/details" />
 <link rel="alternate" hrefLang="ar" href="https://ar.airbnb.com/manage-your-space/653225492607634010/details" />
 <link rel="alternate" hrefLang="th" href="https://th.airbnb.com/manage-your-space/653225492607634010/details" />
 <link rel="alternate" hrefLang="ka" href="https://ka.airbnb.com/manage-your-space/653225492607634010/details" />
-<link rel="stylesheet" href="./style.css"></link>
+<link rel="stylesheet" href="/style.css"></link>
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="&#x27;곽민성&#x27; 숙소 수정하기 - Airbnb" />
 <meta name="twitter:site" content="@airbnb" />
@@ -1017,8 +1019,9 @@ href="https://www.airbnb.com.mt/manage-your-space/653225492607634010/details" />
                                             elementtiming="LCP-target">숙소 기본 정보</h2>
                                         </div>
                                     </div>
+
                                     <div>
-                                        <div class="_11rnjg7z" id="form666"><form class="_qmeim5 _kkkkkkk" id="myp.listingTitle.row-form" data-testid="myp.listingTitle.row-form"><div class="_dhu7j3"><button aria-label="닫기" type="button" class="_oda838"><span class="_e296pg"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: rgb(113, 113, 113); stroke-width: 3; overflow: visible;"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></span></button></div><header class="_opm75z"></header><section class="_hvqlhy"><div><div role="group" aria-label="숙소 제목" class="_1881dwmg"><div class="_bc4egv"><div><h3 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target"><div class="_1bxrluot">숙소 제목</div></h3></div><div class="_fg7n09y" id="myp.listingTitle.fieldGroup-description-host-interaction-field-group-description">숙소 제목에서는 숙소를 차별화할 수 있는 특징을 강조해야 합니다.</div><div class="_b0398r"><div class="_1cvivhm"><div><div class="_1881dwmg"><div class="_bc4egv"><div class="_b0398r"><div class="_klarpw"><div><div class="_1jj61m9"><label class="_1yw7hpv" for="myp.listingTitle.form_ko-listing-title_ko"><div dir="ltr"><div class="_194ojos7"><input name="myp.listingTitle.form_ko-listing-title_ko" spellcheck="true" class="_zknsx2n" id="myp.listingTitle.form_ko-listing-title_ko" autocomplete="off" type="text" aria-describedby="myp.listingTitle.form_ko-listing-title_ko-characterCount" value="곽민성"></div></div> </label></div></div></div></div><div id="myp.listingTitle.form_ko-listing-title_ko-characterCount" class="_p4mf8g"><span class="a8jt5op dir dir-ltr">최대 50자 중 3자</span><span aria-hidden="true">3/50</span></div></div></div></div></div></div></div></div></div></section><footer class="_14rbw84"><div class="_ahi7sc"><button aria-label="취소 숙소 제목" type="button" class="_1e5q4qoz">취소</button></div><button data-form-id="myp.listingTitle.row-form" aria-label="저장하기 숙소 제목" disabled="" type="submit" class="_1lerwp6l">저장하기</button></footer></form></div>
+                                        <div class="susu1" id="susu1">
                                         <div class="_xydfhn" id="listing-title" role="group"
                                         aria-labelledby="listing-title-title"
                                         aria-describedby="listing-title-subtitle" tabindex="-1"
@@ -1041,12 +1044,86 @@ href="https://www.airbnb.com.mt/manage-your-space/653225492607634010/details" />
                                             </div>
                                             <div class="_1hkiuvh"><button tabindex="0" aria-label="숙소 제목 수정"
                                                 data-testid="qa-edit-listing-title" type="button"
-                                                class="_1e5q4qoz" id="qa-edit-listing-title">수정</button></div>
+                                                class="_1e5q4qoz" id="su1">수정</button></div>
                                         </div>
                                         <div class="_18tzo9b"></div>
                                         </div>
                                     </div>
+                                    </div>
+
                                     <div>
+                                        <div class="first_1 _kkkkkkk" id="first_1">
+                                        <div class="_xydfhn" id="listing-title" role="group" tabindex="-1" data-testid="qa-baserow-listing-title">
+                                            <div class="_11rnjg7z">
+                                                <form class="_qmeim5" id="myp.listingTitle.row-form" data-testid="myp.listingTitle.row-form">
+                                                    <div class="_dhu7j3"><button aria-label="닫기" type="button" class="_oda838" id="ekerl1"><span class="_e296pg"><svg
+                                                                    viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                                    role="presentation" focusable="false"
+                                                                    style="display: block; fill: none; height: 16px; width: 16px; stroke: rgb(113, 113, 113); stroke-width: 3; overflow: visible;">
+                                                                    <path d="m6 6 20 20"></path>
+                                                                    <path d="m26 6-20 20"></path>
+                                                                </svg></span></button></div>
+                                                    <header class="_opm75z"></header>
+                                                    <section class="_hvqlhy">
+                                                        <div>
+                                                            <div role="group" aria-label="숙소 제목" class="_1881dwmg">
+                                                                <div class="_bc4egv">
+                                                                    <div>
+                                                                        <h3 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                                                            <div class="_1bxrluot">숙소 제목</div>
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div class="_fg7n09y"
+                                                                        id="myp.listingTitle.fieldGroup-description-host-interaction-field-group-description">
+                                                                        숙소 제목에서는 숙소를 차별화할 수 있는 특징을 강조해야 합니다.</div>
+                                                                    <div class="_b0398r">
+                                                                        <div class="_1cvivhm">
+                                                                            <div>
+                                                                                <div class="_1881dwmg">
+                                                                                    <div class="_bc4egv">
+                                                                                        <div class="_b0398r">
+                                                                                            <div class="_klarpw">
+                                                                                                <div>
+                                                                                                    <div class="_1jj61m9"><label class="_1yw7hpv"
+                                                                                                            for="myp.listingTitle.form_ko-listing-title_ko">
+                                                                                                            <div dir="ltr">
+                                                                                                                <div class="_194ojos7"><input
+                                                                                                                        name="myp.listingTitle.form_ko-listing-title_ko"
+                                                                                                                        spellcheck="true" class="_zknsx2n"
+                                                                                                                        id="dlsvnt1"
+                                                                                                                        autocomplete="off" type="text"
+                                                                                                                        aria-describedby="myp.listingTitle.form_ko-listing-title_ko-characterCount"
+                                                                                                                        value="곽민성"></div>
+                                                                                                            </div>
+                                                                                                        </label></div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div id="myp.listingTitle.form_ko-listing-title_ko-characterCount"
+                                                                                            class="_p4mf8g"><span class="a8jt5op dir dir-ltr">최대 50자 중
+                                                                                                3자</span><span aria-hidden="true">3/50</span></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <footer class="_14rbw84">
+                                                        <div class="_ahi7sc"><button aria-label="취소 숙소 제목" type="button" class="_1e5q4qoz" id="cnlth1">취소</button></div>
+                                                        <button data-form-id="myp.listingTitle.row-form" aria-label="저장하기 숙소 제목" disabled="" type="submit"
+                                                            class="_1lerwp6l" id="wjwkd1">저장하기</button>
+                                                    </footer>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="susu2" id="susu2">
                                         <div class="_xydfhn" id="listing-description" role="group"
                                         aria-labelledby="listing-description-title"
                                         aria-describedby="listing-description-subtitle" tabindex="-1"
@@ -1067,12 +1144,200 @@ href="https://www.airbnb.com.mt/manage-your-space/653225492607634010/details" />
                                             </div>
                                             <div class="_1hkiuvh"><button tabindex="0" aria-label="숙소 설명 수정"
                                                 data-testid="qa-edit-listing-description" type="button"
-                                                class="_1e5q4qoz">수정</button></div>
+                                                class="_1e5q4qoz" id="su2">수정</button></div>
                                         </div>
                                         <div class="_18tzo9b"></div>
                                         </div>
                                     </div>
+                                    </div>
+
                                     <div>
+                                        <div class="first_2 _kkkkkkk" id="first_2">
+                                        <div class="_xydfhn" id="listing-description" role="group" tabindex="-1"
+                                            data-testid="qa-baserow-listing-description">
+                                            <div class="_11rnjg7z">
+                                                <form class="_qmeim5" id="myp.listingDescription.row-form" data-testid="myp.listingDescription.row-form">
+                                                    <div class="_dhu7j3"><button aria-label="닫기" type="button" class="_oda838" id="ekerl2"><span class="_e296pg"><svg
+                                                                    viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                                    role="presentation" focusable="false"
+                                                                    style="display: block; fill: none; height: 16px; width: 16px; stroke: rgb(113, 113, 113); stroke-width: 3; overflow: visible;">
+                                                                    <path d="m6 6 20 20"></path>
+                                                                    <path d="m26 6-20 20"></path>
+                                                                </svg></span></button></div>
+                                                    <header class="_opm75z"></header>
+                                                    <section class="_hvqlhy">
+                                                        <div>
+                                                            <div role="group" aria-label="숙소 설명" class="_146mdrjh">
+                                                                <div class="_bc4egv">
+                                                                    <div>
+                                                                        <h3 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                                                            <div class="_1bxrluot">숙소 설명</div>
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div class="_fg7n09y"
+                                                                        id="myp.listingDescription.fieldGroup-description-host-interaction-field-group-description">
+                                                                        게스트가 숙박에 대해 상상해 볼 수 있도록 숙소의 장점을 포함한 숙소 정보를 제공해 주세요.</div>
+                                                                    <div class="_b0398r">
+                                                                        <div class="_1cvivhm">
+                                                                            <div>
+                                                                                <div class="_1881dwmg">
+                                                                                    <div class="_bc4egv">
+                                                                                        <div class="_b0398r">
+                                                                                            <div class="_klarpw">
+                                                                                                <div>
+                                                                                                    <div class="_1aoj0ap">
+                                                                                                        <div dir="ltr"><textarea
+                                                                                                                aria-describedby="myp.listingDescription.form_ko-description-summary_ko-characterCount"
+                                                                                                                name="myp.listingDescription.form_ko-description-summary_ko"
+                                                                                                                rows="4" spellcheck="true" class="_159914b"
+                                                                                                                autocomplete="off"
+                                                                                                                id="myp.listingDescription.form_ko-description-summary_ko"
+                                                                                                                style="height: 96px;">평화로운 오아시스와 같은 공간에서 휴식과 힐링의 시간을 가지세요.ㅋㅋ</textarea>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div id="myp.listingDescription.form_ko-description-summary_ko-characterCount"
+                                                                                            class="_p4mf8g"><span class="a8jt5op dir dir-ltr">최대 500자 중
+                                                                                                38자</span><span aria-hidden="true">38/500</span></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div role="group" aria-label="공간" class="_146mdrjh">
+                                                                <div class="_bc4egv">
+                                                                    <div>
+                                                                        <h3 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                                                            <div class="_1bxrluot">공간</div>
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div class="_fg7n09y"
+                                                                        id="myp.theSpace.fieldGroup-description-host-interaction-field-group-description">
+                                                                        게스트가 참고할 수 있도록 숙소와 각 공간에 대한 대략적인 설명을 입력해 주세요.</div>
+                                                                    <div class="_b0398r">
+                                                                        <div class="_1cvivhm">
+                                                                            <div>
+                                                                                <div class="_1881dwmg">
+                                                                                    <div class="_bc4egv">
+                                                                                        <div class="_b0398r">
+                                                                                            <div class="_klarpw">
+                                                                                                <div>
+                                                                                                    <div class="_1aoj0ap">
+                                                                                                        <div dir="ltr"><textarea
+                                                                                                                name="myp.theSpaceDescription.form_ko-description-space_ko"
+                                                                                                                rows="4" spellcheck="true" class="_159914b"
+                                                                                                                autocomplete="off"
+                                                                                                                id="myp.theSpaceDescription.form_ko-description-space_ko"
+                                                                                                                style="height: 96px;"></textarea></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div role="group" aria-label="사용 가능 공간/시설" class="_146mdrjh">
+                                                                <div class="_bc4egv">
+                                                                    <div>
+                                                                        <h3 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                                                            <div class="_1bxrluot">사용 가능 공간/시설</div>
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div class="_fg7n09y"
+                                                                        id="myp.guestAccess.fieldGroup-description-host-interaction-field-group-description">
+                                                                        게스트가 사용할 수 있는 숙소 공간에 대해 알려주세요.</div>
+                                                                    <div class="_b0398r">
+                                                                        <div class="_1cvivhm">
+                                                                            <div>
+                                                                                <div class="_1881dwmg">
+                                                                                    <div class="_bc4egv">
+                                                                                        <div class="_b0398r">
+                                                                                            <div class="_klarpw">
+                                                                                                <div>
+                                                                                                    <div class="_1aoj0ap">
+                                                                                                        <div dir="ltr"><textarea
+                                                                                                                name="myp.guestAccessDescription.form_ko-description-access_ko"
+                                                                                                                rows="4" spellcheck="true" class="_159914b"
+                                                                                                                autocomplete="off"
+                                                                                                                id="myp.guestAccessDescription.form_ko-description-access_ko"
+                                                                                                                style="height: 96px;"></textarea></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div role="group" aria-label="기타 알아두어야 할 사항" class="_1881dwmg">
+                                                                <div class="_bc4egv">
+                                                                    <div>
+                                                                        <h3 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                                                            <div class="_1bxrluot">기타 알아두어야 할 사항</div>
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div class="_fg7n09y"
+                                                                        id="myp.otherDetailsToNote.fieldGroup-description-host-interaction-field-group-description">
+                                                                        다른 섹션에 포함되지 않았지만 예약 전 게스트에게 알리고 싶은 특별한 정보가 있다면 여기에 작성해 주세요.</div>
+                                                                    <div class="_b0398r">
+                                                                        <div class="_1cvivhm">
+                                                                            <div>
+                                                                                <div class="_1881dwmg">
+                                                                                    <div class="_bc4egv">
+                                                                                        <div class="_b0398r">
+                                                                                            <div class="_klarpw">
+                                                                                                <div>
+                                                                                                    <div class="_1aoj0ap">
+                                                                                                        <div dir="ltr"><textarea
+                                                                                                                name="myp.otherDetailsDescription.form_ko-description-notes_ko"
+                                                                                                                rows="4" spellcheck="true" class="_159914b"
+                                                                                                                autocomplete="off"
+                                                                                                                id="myp.otherDetailsDescription.form_ko-description-notes_ko"
+                                                                                                                style="height: 96px;"></textarea></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <footer class="_14rbw84">
+                                                        <div class="_ahi7sc"><button aria-label="취소 숙소 설명" type="button" class="_1e5q4qoz" id="cnlth2">취소</button></div>
+                                                        <button data-form-id="myp.listingDescription.row-form" aria-label="저장하기 숙소 설명" disabled=""
+                                                            type="submit" class="_1lerwp6l" id="wjwkd2">저장하기</button>
+                                                    </footer>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+
+
+                                    <div>
+                                        <div class="susu2" id="susu2">
                                         <div class="_xydfhn"
                                         id="myp.listingDetails.propertyAndGuests.personCapacity.row" role="group"
                                         aria-labelledby="myp.listingDetails.propertyAndGuests.personCapacity.row-title"
@@ -1089,7 +1354,7 @@ href="https://www.airbnb.com.mt/manage-your-space/653225492607634010/details" />
                                             <div class="_1mqc21n">
                                             <div class="_3zlfom"
                                                 id="myp.listingDetails.propertyAndGuests.personCapacity.row-stepper"
-                                                aria-disabled="false"><button class="_ul9u8c" type="button"
+                                                aria-disabled="false"><button class="_ul9u8c" type="button" id="discount1" onclick="mCount1()"
                                                 aria-label="차감"
                                                 aria-describedby="myp.listingDetails.propertyAndGuests.personCapacity.row-subtitle"
                                                 data-testid="myp.listingDetails.propertyAndGuests.personCapacity.row-stepper-decrease-button"><span
@@ -1102,14 +1367,14 @@ href="https://www.airbnb.com.mt/manage-your-space/653225492607634010/details" />
                                                 <div class="_1665lvv">
                                                     <!-- 게스트 수 출력-->
                                                     <span aria-hidden="true"
-                                                    data-testid="myp.listingDetails.propertyAndGuests.personCapacity.row-stepper-value">4</span>
+                                                    data-testid="myp.listingDetails.propertyAndGuests.personCapacity.row-stepper-value" id="c1">4</span>
                                                     <!-- 게스트 수 출력-->
                                                     <!-- 게스트 수 출력-->
                                                     <span
                                                     class="_25sktq"
-                                                    data-testid="myp.listingDetails.propertyAndGuests.personCapacity.row-stepper-a11y-value-label">4</span>
+                                                    data-testid="myp.listingDetails.propertyAndGuests.personCapacity.row-stepper-a11y-value-label"  id="c1">4</span>
                                                     <!-- 게스트 수 출력-->
-                                                </div><button class="_ul9u8c" type="button" aria-label="추가"
+                                                </div><button class="_ul9u8c" type="button" aria-label="추가" onclick="pCount1()"
                                                 aria-describedby="myp.listingDetails.propertyAndGuests.personCapacity.row-subtitle"
                                                 data-testid="myp.listingDetails.propertyAndGuests.personCapacity.row-stepper-increase-button"><span
                                                     class="_8ovatg"><svg viewBox="0 0 32 32"
@@ -1124,6 +1389,8 @@ href="https://www.airbnb.com.mt/manage-your-space/653225492607634010/details" />
                                         </div>
                                     </div>
                                     <div>
+
+                                        <div class="susu3" id="susu3">
                                         <div class="_xydfhn" id="myp.customLink.row" role="group"
                                         aria-labelledby="myp.customLink.row-title"
                                         aria-describedby="myp.customLink.row-subtitle" tabindex="-1"
@@ -1142,12 +1409,77 @@ href="https://www.airbnb.com.mt/manage-your-space/653225492607634010/details" />
                                             </div>
                                             <div class="_1hkiuvh"><button tabindex="0" aria-label="맞춤 링크 수정"
                                                 data-testid="qa-edit-myp.customLink.row" type="button"
-                                                class="_1e5q4qoz">수정</button></div>
+                                                class="_1e5q4qoz" id="su3">수정</button></div>
                                         </div>
                                         <div class="_18tzo9b"></div>
                                         </div>
                                     </div>
+                                </div>
+
                                     <div>
+                                        <div class="first_3 _kkkkkkk" id="first_3">
+                                        <div class="_xydfhn" id="myp.customLink.row" role="group" tabindex="-1" data-testid="qa-baserow-myp.customLink.row">
+                                            <div class="_11rnjg7z">
+                                                <form class="_qmeim5" id="myp.customLink.row-form" data-testid="myp.customLink.row-form">
+                                                    <div class="_dhu7j3"><button aria-label="닫기" type="button" class="_oda838" id="ekerl3"><span class="_e296pg"><svg
+                                                                    viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                                    role="presentation" focusable="false"
+                                                                    style="display: block; fill: none; height: 16px; width: 16px; stroke: rgb(113, 113, 113); stroke-width: 3; overflow: visible;">
+                                                                    <path d="m6 6 20 20"></path>
+                                                                    <path d="m26 6-20 20"></path>
+                                                                </svg></span></button></div>
+                                                    <header class="_opm75z"></header>
+                                                    <section class="_hvqlhy">
+                                                        <div>
+                                                            <div class="_1881dwmg">
+                                                                <div class="_bc4egv">
+                                                                    <div>
+                                                                        <h3 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target"><label
+                                                                                class="_1bxrluot" for="myp.listingDetails.customLink.edit-custom-link">맞춤
+                                                                                링크</label></h3>
+                                                                    </div>
+                                                                    <div class="_b0398r">
+                                                                        <div class="_klarpw">
+                                                                            <div>
+                                                                                <div class="_1jj61m9"><label class="_1yw7hpv"
+                                                                                        for="myp.listingDetails.customLink.edit-custom-link">
+                                                                                        <div dir="ltr">
+                                                                                            <div class="_slsckq">
+                                                                                                <div class="_8w7j1vc">airbnb.com/h/</div><input
+                                                                                                    name="myp.listingDetails.customLink.edit-custom-link"
+                                                                                                    spellcheck="true" class="_uij9x7"
+                                                                                                    id="dlsvnt33"
+                                                                                                    autocomplete="off" type="text"
+                                                                                                    aria-describedby="myp.listingDetails.customLink.edit-custom-link-characterCount"
+                                                                                                    value="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </label></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="_fg7n09y" id="myp.listingDetails.customLink.edit-custom-link-description">기억에 남는 독특한 링크가 있으면 명함, 웹사이트, 또는 소셜 미디어에 숙소를 쉽게 공유할 수 있습니다. 예: airbnb.com/h/private-room-near-seoul-station(서울역 근처의 개인실)&nbsp;<a target="_blank"
+                                                                            href="/help/article/2575" class="_1sikdxcl">맞춤 링크에 대한 정책 확인하기</a></div>
+                                                                    <div id="myp.listingDetails.customLink.edit-custom-link-characterCount" class="_p4mf8g">
+                                                                        <span class="a8jt5op dir dir-ltr">최대 100자 중 0자</span><span
+                                                                            aria-hidden="true">0/100</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <footer class="_14rbw84">
+                                                        <div class="_ahi7sc"><button aria-label="취소 맞춤 링크" type="button" class="_1e5q4qoz" id="cnlth3">취소</button></div>
+                                                        <button data-form-id="myp.customLink.row-form" aria-label="저장하기 맞춤 링크" disabled="" type="submit"
+                                                            class="_1lerwp6l" id="wjwkd3">저장하기</button>
+                                                    </footer>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                    <div>
+                                        <div class="susu4" id="susu4">
                                         <div class="_xydfhn" id="myp.languages.row" role="group"
                                         aria-labelledby="myp.languages.row-title"
                                         aria-describedby="myp.languages.row-subtitle" tabindex="-1"
@@ -1155,24 +1487,142 @@ href="https://www.airbnb.com.mt/manage-your-space/653225492607634010/details" />
                                         <div class="_6oifvb" data-testid="myp.languages.row">
                                             <div class="_qgyzgn">
                                             <div class="_tlhslb" id="myp.languages.row-title">언어</div>
-                                            <div class="_13h2n5h" id="myp.languages.row-subtitle"
-                                                data-testid="qa-baserow-subtitle-myp.languages.row">
-                                                <div>
-                                                <div class="_1v5yn3v"
-                                                    style="line-height:18px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;@supports (overflow: clip):[object Object]">
-                                                    <div>한국어 (기본값)</div>
-                                                </div>
-                                                </div>
+                                            <div class="_13h2n5h" id="myp.languages.row-subtitle" data-testid="qa-baserow-subtitle-myp.languages.row">
+                                                <div><div class="_1v5yn3v" style="line-height:18px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;@supports (overflow: clip):[object Object]"><div>한국어 (기본값)</div></div></div>
                                             </div>
                                             </div>
-                                            <div class="_1hkiuvh"><button tabindex="0" aria-label="언어 수정"
-                                                data-testid="qa-edit-myp.languages.row" type="button"
-                                                class="_1e5q4qoz">수정</button></div>
+                                            <div class="_1hkiuvh"><button tabindex="0" aria-label="언어 수정" data-testid="qa-edit-myp.languages.row" type="button" class="_1e5q4qoz" id="su4">수정</button></div>
                                         </div>
                                         <div class="_18tzo9b"></div>
                                         </div>
                                     </div>
+                                    </div>
+
                                     <div>
+                                        <div class="first_4 _kkkkkkk" id="first_4">
+                                        <div class="_xydfhn" id="myp.languages.row" role="group" tabindex="-1" data-testid="qa-baserow-myp.languages.row">
+                                            <div class="_11rnjg7z">
+                                                <form class="_qmeim5" id="myp.languages.row-form" data-testid="myp.languages.row-form">
+                                                    <div class="_dhu7j3"><button aria-label="닫기" type="button" class="_oda838" id="ekerl4"><span class="_e296pg"><svg
+                                                                    viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                                    role="presentation" focusable="false"
+                                                                    style="display: block; fill: none; height: 16px; width: 16px; stroke: rgb(113, 113, 113); stroke-width: 3; overflow: visible;">
+                                                                    <path d="m6 6 20 20"></path>
+                                                                    <path d="m26 6-20 20"></path>
+                                                                </svg></span></button></div>
+                                                    <header class="_opm75z"></header>
+                                                    <section class="_hvqlhy">
+                                                        <div>
+                                                            <div role="group" aria-label="언어" class="_1881dwmg">
+                                                                <div class="_bc4egv">
+                                                                    <div>
+                                                                        <h3 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                                                            <div class="_1bxrluot">언어</div>
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div class="_fg7n09y" id="undefined-description">일부 설정에 대한 설명을 기본 언어가 아닌 다른 언어로 작성하세요.
+                                                                        여기에 추가되지 않는 언어는 자동 번역되어 게스트에게 표시됩니다.</div>
+                                                                    <div class="_b0398r">
+                                                                        <ul class="_1ptll7u">
+                                                                            <li class="_4n2thni">한국어 (기본값)</li>
+                                                                        </ul>
+                                                                        <div class="_ttgom0"><label class="_19nw8j1"
+                                                                                for="myp.languages.form-languages-select-locale">
+                                                                                <div class="_1wud6lj">
+                                                                                    <div class="_11hx67x">언어 추가</div>
+                                                                                </div>
+                                                                                <div class="_3hmsj"><select class="_1iwku6d"
+                                                                                        id="myp.languages.form-languages-select-locale">
+                                                                                        <option disabled="" value=""></option>
+                                                                                        <option value="az">Azərbaycan dili</option>
+                                                                                        <option value="id">Bahasa Indonesia</option>
+                                                                                        <option value="ms">Bahasa Melayu</option>
+                                                                                        <option value="bs">Bosanski</option>
+                                                                                        <option value="ca">Català</option>
+                                                                                        <option value="sr-ME">Crnogorski</option>
+                                                                                        <option value="da">Dansk</option>
+                                                                                        <option value="de">Deutsch</option>
+                                                                                        <option value="et">Eesti</option>
+                                                                                        <option value="en">English</option>
+                                                                                        <option value="en-AU">English (Australia)</option>
+                                                                                        <option value="en-CA">English (Canada)</option>
+                                                                                        <option value="en-GB">English (UK)</option>
+                                                                                        <option value="es">Español</option>
+                                                                                        <option value="es-AR">Español (Argentina)</option>
+                                                                                        <option value="es-XL">Español (Latinoamérica)</option>
+                                                                                        <option value="es-419">Español (México)</option>
+                                                                                        <option value="el">Eλληνικά</option>
+                                                                                        <option value="fr">Français</option>
+                                                                                        <option value="fr-CA">Français (canadien)</option>
+                                                                                        <option value="ga">Gaeilge</option>
+                                                                                        <option value="hr">Hrvatski</option>
+                                                                                        <option value="it">Italiano</option>
+                                                                                        <option value="sw">Kiswahili</option>
+                                                                                        <option value="lv">Latviešu Valoda</option>
+                                                                                        <option value="lt">Lietuvių kalba</option>
+                                                                                        <option value="hu">Magyar</option>
+                                                                                        <option value="mt">Malti</option>
+                                                                                        <option value="nl">Nederlands</option>
+                                                                                        <option value="no">Norsk</option>
+                                                                                        <option value="pl">Polski</option>
+                                                                                        <option value="pt">Português</option>
+                                                                                        <option value="ro">Română</option>
+                                                                                        <option value="sq">Shqip</option>
+                                                                                        <option value="sk">Slovenčina</option>
+                                                                                        <option value="sl">Slovenščina</option>
+                                                                                        <option value="sr">Srpski</option>
+                                                                                        <option value="fi">Suomi</option>
+                                                                                        <option value="sv">Svenska</option>
+                                                                                        <option value="tl">Tagalog</option>
+                                                                                        <option value="vi">Tiếng Việt</option>
+                                                                                        <option value="tr">Türkçe</option>
+                                                                                        <option value="xh">isiXhosa</option>
+                                                                                        <option value="zu">isiZulu</option>
+                                                                                        <option value="is">Íslenska</option>
+                                                                                        <option value="cs">Čeština</option>
+                                                                                        <option value="bg">Български</option>
+                                                                                        <option value="mk">Македонски</option>
+                                                                                        <option value="ru">Русский</option>
+                                                                                        <option value="uk">Українська</option>
+                                                                                        <option value="hy">Հայերեն</option>
+                                                                                        <option value="he">עברית</option>
+                                                                                        <option value="ar">العربية</option>
+                                                                                        <option value="hi">हिन्दी</option>
+                                                                                        <option value="th">ภาษาไทย</option>
+                                                                                        <option value="ka">ქართული</option>
+                                                                                        <option value="zh">中文 (简体)</option>
+                                                                                        <option value="zh-TW">中文 (繁體)</option>
+                                                                                        <option value="ja">日本語</option>
+                                                                                    </select></div>
+                                                                            </label>
+                                                                            <div class="_lmil0"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                                                                    aria-hidden="true" role="presentation" focusable="false"
+                                                                                    style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                                                                    <g fill="none">
+                                                                                        <path
+                                                                                            d="m28 12-11.2928932 11.2928932c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-11.2928932-11.2928932">
+                                                                                        </path>
+                                                                                    </g>
+                                                                                </svg></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <footer class="_14rbw84">
+                                                        <div class="_ahi7sc"><button aria-label="취소 언어" type="button" class="_1e5q4qoz" id="cnlth4">취소</button></div>
+                                                        <button data-form-id="myp.languages.row-form" aria-label="저장하기 언어" disabled="" type="submit"
+                                                            class="_1lerwp6l" id="wjwkd4">저장하기</button>
+                                                    </footer>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="susu5" id="susu5">
                                         <div class="_xydfhn" id="availability-status" role="group"
                                         aria-labelledby="availability-status-title"
                                         aria-describedby="availability-status-subtitle" tabindex="-1"
@@ -1205,11 +1655,147 @@ href="https://www.airbnb.com.mt/manage-your-space/653225492607634010/details" />
                                             </div>
                                             <div class="_1hkiuvh"><button tabindex="0" aria-label="숙소 상태 수정"
                                                 data-testid="qa-edit-availability-status" type="button"
-                                                class="_1e5q4qoz">수정</button></div>
+                                                class="_1e5q4qoz" id="su5">수정</button></div>
                                         </div>
                                         <div class="_18tzo9b"></div>
                                         </div>
                                     </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="first_5 _kkkkkkk" id="first_5">
+                                        <div class="_xydfhn" id="availability-status" role="group" tabindex="-1"
+                                            data-testid="qa-baserow-availability-status">
+                                            <div class="_11rnjg7z">
+                                                <form class="_qmeim5" id="myp.listingStatus.row-form" data-testid="myp.listingStatus.row-form">
+                                                    <div class="_dhu7j3"><button aria-label="닫기" type="button" class="_oda838" id="ekerl5"><span class="_e296pg"><svg
+                                                                    viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                                    role="presentation" focusable="false"
+                                                                    style="display: block; fill: none; height: 16px; width: 16px; stroke: rgb(113, 113, 113); stroke-width: 3; overflow: visible;">
+                                                                    <path d="m6 6 20 20"></path>
+                                                                    <path d="m26 6-20 20"></path>
+                                                                </svg></span></button></div>
+                                                    <header class="_opm75z"></header>
+                                                    <section class="_hvqlhy">
+                                                        <div>
+                                                            <div class="_1881dwmg">
+                                                                <div class="_bc4egv">
+                                                                    <div>
+                                                                        <h3 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target"><label
+                                                                                class="_1bxrluot"
+                                                                                for="myp.listingDetails.listingStatus.edit-listing-status-listed">숙소
+                                                                                상태</label></h3>
+                                                                    </div>
+                                                                    <div class="_b0398r">
+                                                                        <div class="_1fl7u1a">
+                                                                            <div id="myp.listingDetails.listingStatus.edit-listing-status-listed"
+                                                                                aria-disabled="false" class="rcem0st cngiwj8 dir dir-ltr"><label
+                                                                                    for="myp.listingDetails.listingStatus.edit-listing-status-listed-row-radio-button"
+                                                                                    class="_13xlah4">
+                                                                                    <div class="_jro6t0">
+                                                                                        <div class="_7ytxmo"><input
+                                                                                                aria-labelledby="myp.listingDetails.listingStatus.edit-listing-status-listed-row-title"
+                                                                                                aria-describedby="myp.listingDetails.listingStatus.edit-listing-status-listed-row-subtitle"
+                                                                                                id="myp.listingDetails.listingStatus.edit-listing-status-listed-row-radio-button"
+                                                                                                class="_83s1a2" type="radio" value="active" name="tpffpr11"></div>
+                                                                                        <div class="_gfomxi">
+                                                                                            <div id="myp.listingDetails.listingStatus.edit-listing-status-listed-row-title"
+                                                                                                class="_gw4xx4">
+                                                                                                <div class="_5kaapu">
+                                                                                                    <div class="_nvr5q"><svg viewBox="0 0 16 16"
+                                                                                                            role="presentation" aria-hidden="true"
+                                                                                                            focusable="false"
+                                                                                                            style="height: 10px; width: 10px; fill: rgb(0, 138, 5);">
+                                                                                                            <ellipse cx="8" cy="8" fill-rule="evenodd"
+                                                                                                                rx="8" ry="8"></ellipse>
+                                                                                                        </svg></div>운영 중
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div id="myp.listingDetails.listingStatus.edit-listing-status-listed-row-subtitle"
+                                                                                                class="_hi9sy">게스트가 숙소를 검색하고 예약 요청을 보내거나 예약 가능 날짜를 예약할 수
+                                                                                                있습니다.</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </label></div>
+                                                                            <div id="myp.listingDetails.listingStatus.edit-listing-status-unlisted"
+                                                                                aria-disabled="false" class="rcem0st cngiwj8 dir dir-ltr"><label
+                                                                                    for="myp.listingDetails.listingStatus.edit-listing-status-unlisted-row-radio-button"
+                                                                                    class="_13xlah4">
+                                                                                    <div class="_jro6t0">
+                                                                                        <div class="_7ytxmo"><input
+                                                                                                aria-labelledby="myp.listingDetails.listingStatus.edit-listing-status-unlisted-row-title"
+                                                                                                aria-describedby="myp.listingDetails.listingStatus.edit-listing-status-unlisted-row-subtitle"
+                                                                                                id="myp.listingDetails.listingStatus.edit-listing-status-unlisted-row-radio-button"
+                                                                                                class="_g4rlqtx" type="radio" value="unlisted" checked="" name="tpffpr11">
+                                                                                        </div>
+                                                                                        <div class="_gfomxi">
+                                                                                            <div id="myp.listingDetails.listingStatus.edit-listing-status-unlisted-row-title"
+                                                                                                class="_gw4xx4">
+                                                                                                <div class="_5kaapu">
+                                                                                                    <div class="_nvr5q"><svg viewBox="0 0 16 16"
+                                                                                                            role="presentation" aria-hidden="true"
+                                                                                                            focusable="false"
+                                                                                                            style="height: 10px; width: 10px; fill: rgb(193, 53, 21);">
+                                                                                                            <ellipse cx="8" cy="8" fill-rule="evenodd"
+                                                                                                                rx="8" ry="8"></ellipse>
+                                                                                                        </svg></div>운영 중지
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div id="myp.listingDetails.listingStatus.edit-listing-status-unlisted-row-subtitle"
+                                                                                                class="_hi9sy">게스트가 숙소를 예약하거나 검색 결과에서 찾을 수 없습니다.</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </label></div>
+                                                                            <div id="myp.listingDetails.listingStatus.edit-listing-status-deleted"
+                                                                                aria-disabled="false" class="rcem0st cngiwj8 dir dir-ltr"><label
+                                                                                    for="myp.listingDetails.listingStatus.edit-listing-status-deleted-row-radio-button"
+                                                                                    class="_13xlah4">
+                                                                                    <div class="_jro6t0">
+                                                                                        <div class="_7ytxmo"><input
+                                                                                                aria-labelledby="myp.listingDetails.listingStatus.edit-listing-status-deleted-row-title"
+                                                                                                aria-describedby="myp.listingDetails.listingStatus.edit-listing-status-deleted-row-subtitle"
+                                                                                                id="qlghkftjd"
+                                                                                                class="_83s1a2" type="radio" value="deleted" name="tpffpr11"></div>
+                                                                                        <div class="_gfomxi">
+                                                                                            <div id="myp.listingDetails.listingStatus.edit-listing-status-deleted-row-title"
+                                                                                                class="_gw4xx4">
+                                                                                                <div class="_5kaapu">
+                                                                                                    <div class="_nvr5q"><svg viewBox="0 0 32 32"
+                                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                                            aria-hidden="true" role="presentation"
+                                                                                                            focusable="false"
+                                                                                                            style="display: block; height: 14px; width: 14px; fill: rgb(193, 53, 21);">
+                                                                                                            <path
+                                                                                                                d="M16 1c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C1 7.716 7.716 1 16 1zm8.122 11.12L12.12 24.122l.136.065c1.055.483 2.2.76 3.387.806L16 25a9 9 0 0 0 9-9c0-1.32-.284-2.598-.818-3.757zM16 7a9 9 0 0 0-9 9c0 1.32.284 2.598.818 3.757l.059.122L19.879 7.877l-.135-.064a8.953 8.953 0 0 0-3.387-.806z">
+                                                                                                            </path>
+                                                                                                        </svg></div>비활성화
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div id="myp.listingDetails.listingStatus.edit-listing-status-deleted-row-subtitle"
+                                                                                                class="_hi9sy">에어비앤비에서 영구적으로 숙소 비활성화</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </label></div>
+                                                                        </div>
+                                                                        <div class="_1p1v7ck"><a rel="noopener noreferrer" target="_blank"
+                                                                                href="https://www.airbnb.com/help/article/476/how-do-i-snooze-unlist-or-deactivate-my-listing"
+                                                                                class="_1sikdxcl">각 상태가 의미하는 바는 무엇인가요?</a></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <footer class="_14rbw84">
+                                                        <div class="_ahi7sc"><button aria-label="취소 숙소 상태" type="button" class="_1e5q4qoz" id="cnlth5">취소</button></div>
+                                                        <button data-form-id="myp.listingStatus.row-form" aria-label="저장하기 숙소 상태" disabled="" type="submit"
+                                                            class="_1lerwp6l" id="wjwkd5">저장하기</button>
+                                                    </footer>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+
                                     </section>
                                 </section>
                                 </div>
@@ -1985,339 +2571,7 @@ href="https://www.airbnb.com.mt/manage-your-space/653225492607634010/details" />
                 </div>
             </div>
             </main>
-            <div class="c1yo0219 dir dir-ltr">
-            <footer role="contentinfo" class="_1646hxl">
-                <div class="_1s94zl78">
-                <div class="_fyxf74">
-                    <section class="_1l3ys1i">
-                    <div class="_x6q4xl">
-                        <h3 class="_otc65q">에어비앤비 지원</h3>
-                    </div>
-                    <ul class="_yuolfv">
-                        <li class="_wmuyow"><a href="/help/home?from=footer" class="_1e6wtwm5">도움말 센터</a></li>
-                        <li class="_wmuyow"><a href="/aircover" class="_1e6wtwm5">에어커버</a></li>
-                        <li class="_wmuyow"><a href="/trust" class="_1e6wtwm5">안전 정보</a></li>
-                        <li class="_wmuyow"><a href="/accessibility" class="_1e6wtwm5">장애인 지원</a></li>
-                        <li class="_wmuyow"><a
-                            href="/help/article/2701/extenuating-circumstances-policy-and-the-coronavirus-covid19"
-                            class="_1e6wtwm5">예약 취소 옵션</a></li>
-                        <li class="_wmuyow"><a href="/d/covidsafety" class="_1e6wtwm5">에어비앤비의 코로나19 대응 방안</a></li>
-                        <li class="_wmuyow"><a href="/neighbors" class="_1e6wtwm5">이웃 민원 신고</a></li>
-                    </ul>
-                    </section>
-                    <section class="_1l3ys1i">
-                    <div class="_x6q4xl">
-                        <h3 class="_otc65q">커뮤니티</h3>
-                    </div>
-                    <ul class="_yuolfv">
-                        <li class="_wmuyow"><a href="https://www.airbnb.org?locale=ko" class="_1e6wtwm5">Airbnb.org:
-                            재난 구호 숙소</a></li>
-                        <li class="_wmuyow"><a rel="noopener noreferrer" target="_blank"
-                            href="https://www.airbnb.org/refugees" class="_1e6wtwm5">아프간 난민 지원</a></li>
-                        <li class="_wmuyow"><a href="/against-discrimination" class="_1e6wtwm5">차별 철폐를 위한 노력</a></li>
-                    </ul>
-                    </section>
-                    <section class="_1l3ys1i">
-                    <div class="_x6q4xl">
-                        <h3 class="_otc65q">호스팅</h3>
-                    </div>
-                    <ul class="_yuolfv">
-                        <li class="_wmuyow"><a href="/host/homes?from_footer=1" class="_1e6wtwm5">호스팅 시작하기</a></li>
-                        <li class="_wmuyow"><a href="/aircover-for-hosts" class="_1e6wtwm5">호스트를 위한 에어커버</a></li>
-                        <li class="_wmuyow"><a href="/resources" class="_1e6wtwm5">호스팅 자료 둘러보기</a></li>
-                        <li class="_wmuyow"><a href="/help/community?s=footer" class="_1e6wtwm5">커뮤니티 포럼 방문하기</a></li>
-                        <li class="_wmuyow"><a href="/help/responsible-hosting" class="_1e6wtwm5">책임감 있는 호스팅</a></li>
-                    </ul>
-                    </section>
-                    <section class="_1l3ys1i">
-                    <div class="_x6q4xl">
-                        <h3 class="_otc65q">소개</h3>
-                    </div>
-                    <ul class="_yuolfv">
-                        <li class="_wmuyow"><a href="/press/news" class="_1e6wtwm5">뉴스룸</a></li>
-                        <li class="_wmuyow"><a href="/2022-summer" class="_1e6wtwm5">새로운 기능에 대해 알아보기</a></li>
-                        <li class="_wmuyow"><a href="https://news.airbnb.com/what-makes-airbnb-airbnb"
-                            class="_1e6wtwm5">에어비앤비 공동창업자의 메시지</a></li>
-                        <li class="_wmuyow"><a href="/careers" class="_1e6wtwm5">채용정보</a></li>
-                        <li class="_wmuyow"><a href="https://investors.airbnb.com" class="_1e6wtwm5">투자자 정보</a></li>
-                    </ul>
-                    </section>
-                    <div class="cnatlfb dir dir-ltr">
-                    <h3 class="t10tfkhs dir dir-ltr">회사 상세정보</h3>
-                    <div class="ccmc24d dir dir-ltr">웹사이트 제공자: Airbnb Ireland UC, private unlimited company, 8
-                        Hanover Quay Dublin 2,
-                        D02 DP23 Ireland | 이사: Dermot Clarke, Killian Pattwell, Andrea Finnegan | VAT 번호:
-                        IE9827384L | 사업자 등록 번호: IE 511825 | 연락처: terms@airbnb.com, 웹사이트,
-                        080-822-0230 | 호스팅 서비스 제공업체: 아마존 웹서비스 | 에어비앤비는 통신판매 중개자로
-                        에어비앤비 플랫폼을 통하여 게스트와 호스트 사이에 이루어지는 통신판매의 당사자가 아닙니다.
-                        에어비앤비 플랫폼을 통하여 예약된 숙소, 체험, 호스트 서비스에 관한 의무와 책임은 해당
-                        서비스를 제공하는 호스트에게 있습니다.</div>
-                    </div>
-                </div>
-                <div class="_1wsqynx"><span class="a8jt5op dir dir-ltr">바닥글 섹션</span>
-                    <section>
-                    <div class="_1udzt2s">
-                        <div class="_p03egf">
-                        <div class="_jro6t0"><span class="_19c5bku"><button type="button" class="_f2hxk3s"><span
-                                class="a8jt5op dir dir-ltr">언어 선택</span><span class="_14tkmhr"><svg
-                                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
-                                    style="display:block;height:16px;width:16px;fill:currentColor" aria-hidden="true"
-                                    role="presentation" focusable="false">
-                                    <path
-                                    d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z" />
-                                </svg></span><span class="_144l3kj">한국어 (KR)</span></button></span><span
-                            class="_19c5bku"><button type="button" class="_f2hxk3s"><span
-                                class="a8jt5op dir dir-ltr">통화 선택</span><span class="_14tkmhr"><span
-                                    class="_pgfqnw">₩</span></span><span class="_144l3kj">KRW</span></button></span>
-                        </div>
-                        </div>
-                        <div class="_pd8gea">
-                        <div class="_wjo0ey">
-                            <div class="_1br4kkl" dir="ltr">© 2022 Airbnb, Inc.</div>
-                            <div class="_opoa3c"><span class="_j8ldew"><span class="_15vc6yg"
-                                aria-hidden="true">·</span></span><a href="/terms/privacy_policy"
-                                class="_1e6wtwm5">개인정보 처리방침</a><span class="_15vc6yg" aria-hidden="true">·</span><a
-                                href="/terms" class="_1e6wtwm5">이용약관</a><span class="_15vc6yg"
-                                aria-hidden="true">·</span><a href="/sitemaps/v2" class="_1e6wtwm5">사이트맵</a><span
-                                class="_15vc6yg" aria-hidden="true">·</span><a target="_blank"
-                                href="/home/updated_cancellation_policies?korean_strict_policy=true#strict"
-                                class="_1e6wtwm5">한국의 변경된 환불 정책</a><span class="_15vc6yg"
-                                aria-hidden="true">·</span><a target="_blank" href="/about/company-details"
-                                class="_1e6wtwm5">회사 세부정보</a></div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="_15m7xnk">
-                        <div class="_1juxowe">
-                        <div class="_jro6t0"><span class="_19c5bku"><button type="button" class="_f2hxk3s"><span
-                                class="a8jt5op dir dir-ltr">언어 선택</span><span class="_14tkmhr"><svg
-                                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
-                                    style="display:block;height:16px;width:16px;fill:currentColor" aria-hidden="true"
-                                    role="presentation" focusable="false">
-                                    <path
-                                    d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z" />
-                                </svg></span><span class="_144l3kj">한국어 (KR)</span></button></span><span
-                            class="_19c5bku"><button type="button" class="_f2hxk3s"><span
-                                class="a8jt5op dir dir-ltr">통화 선택</span><span class="_14tkmhr"><span
-                                    class="_pgfqnw">₩</span></span><span class="_144l3kj">KRW</span></button></span>
-                        </div>
-                        <div class="_xh0r19">
-                            <ul class="_115qwnm">
-                            <li class="_kdkpwk"><a rel="noopener noreferrer" target="_blank"
-                                href="https://www.facebook.com/AirbnbKorea" class="_1vwyakty"><svg
-                                    viewBox="0 0 32 32" role="img" aria-hidden="false" aria-label="페이스북으로 이동하기"
-                                    focusable="false" style="height:18px;width:18px;display:block;fill:currentColor">
-                                    <path
-                                    d="m8 14.41v-4.17c0-.42.35-.81.77-.81h2.52v-2.08c0-4.84 2.48-7.31 7.42-7.35 1.65 0 3.22.21 4.69.64.46.14.63.42.6.88l-.56 4.06c-.04.18-.14.35-.32.53-.21.11-.42.18-.63.14-.88-.25-1.78-.35-2.8-.35-1.4 0-1.61.28-1.61 1.73v1.8h4.52c.42 0 .81.42.81.88l-.35 4.17c0 .42-.35.71-.77.71h-4.21v16c0 .42-.35.81-.77.81h-5.21c-.42 0-.8-.39-.8-.81v-16h-2.52a.78.78 0 0 1 -.78-.78"
-                                    fill-rule="evenodd" />
-                                </svg></a></li>
-                            <li class="_kdkpwk"><a rel="noopener noreferrer" target="_blank"
-                                href="https://twitter.com/airbnb" class="_1vwyakty"><svg viewBox="0 0 32 32"
-                                    role="img" aria-hidden="false" aria-label="트위터로 이동하기" focusable="false"
-                                    style="height:18px;width:18px;display:block;fill:currentColor">
-                                    <path
-                                    d="m31 6.36c-1.16.49-2.32.82-3.55.95 1.29-.76 2.22-1.87 2.72-3.38a13.05 13.05 0 0 1 -3.91 1.51c-1.23-1.28-2.75-1.94-4.51-1.94-3.41 0-6.17 2.73-6.17 6.12 0 .49.07.95.17 1.38-4.94-.23-9.51-2.6-12.66-6.38-.56.95-.86 1.97-.86 3.09 0 2.07 1.03 3.91 2.75 5.06-1-.03-1.92-.3-2.82-.76v.07c0 2.89 2.12 5.42 4.94 5.98-.63.17-1.16.23-1.62.23-.3 0-.7-.03-1.13-.13a6.07 6.07 0 0 0 5.74 4.24c-2.22 1.74-4.78 2.63-7.66 2.63-.56 0-1.06-.03-1.43-.1 2.85 1.84 6 2.76 9.41 2.76 7.29 0 12.83-4.01 15.51-9.3 1.36-2.66 2.02-5.36 2.02-8.09v-.46c-.03-.17-.03-.3-.03-.33a12.66 12.66 0 0 0 3.09-3.16"
-                                    fill-rule="evenodd" />
-                                </svg></a></li>
-                            <li class="_kdkpwk"><a rel="noopener noreferrer" target="_blank"
-                                href="https://instagram.com/airbnb" class="_1vwyakty"><svg viewBox="0 0 24 24"
-                                    role="img" aria-hidden="false" aria-label="인스타그램으로 이동하기" focusable="false"
-                                    style="height:18px;width:18px;display:block;fill:currentColor">
-                                    <path
-                                    d="m23.09.91c-.61-.61-1.33-.91-2.17-.91h-17.84c-.85 0-1.57.3-2.17.91s-.91 1.33-.91 2.17v17.84c0 .85.3 1.57.91 2.17s1.33.91 2.17.91h17.84c.85 0 1.57-.3 2.17-.91s.91-1.33.91-2.17v-17.84c0-.85-.3-1.57-.91-2.17zm-14.48 7.74c.94-.91 2.08-1.37 3.4-1.37 1.33 0 2.47.46 3.41 1.37s1.41 2.01 1.41 3.3-.47 2.39-1.41 3.3-2.08 1.37-3.41 1.37c-1.32 0-2.46-.46-3.4-1.37s-1.41-2.01-1.41-3.3.47-2.39 1.41-3.3zm12.66 11.63c0 .27-.09.5-.28.68a.92.92 0 0 1 -.67.28h-16.7a.93.93 0 0 1 -.68-.28.92.92 0 0 1 -.27-.68v-10.13h2.2a6.74 6.74 0 0 0 -.31 2.05c0 2 .73 3.71 2.19 5.12s3.21 2.12 5.27 2.12a7.5 7.5 0 0 0 3.75-.97 7.29 7.29 0 0 0 2.72-2.63 6.93 6.93 0 0 0 1-3.63c0-.71-.11-1.39-.31-2.05h2.11v10.12zm0-13.95c0 .3-.11.56-.31.77a1.05 1.05 0 0 1 -.77.31h-2.72c-.3 0-.56-.11-.77-.31a1.05 1.05 0 0 1 -.31-.77v-2.58c0-.29.11-.54.31-.76s.47-.32.77-.32h2.72c.3 0 .56.11.77.32s.31.47.31.76z"
-                                    fill-rule="evenodd" />
-                                </svg></a></li>
-                            <li class="_kdkpwk"><a rel="noopener noreferrer" target="_blank"
-                                href="https://blog.naver.com/airbnbkr" class="_1vwyakty"><svg
-                                    viewBox="0 0 1024 1024" role="img" aria-hidden="false" aria-label="네이버 블로그로 이동하기"
-                                    focusable="false" style="height:18px;width:18px;display:block;fill:currentColor">
-                                    <path
-                                    d="m984 1024h-944c-22.1 0-40-17.9-40-40v-944c0-22.1 17.9-40 40-40h944c22.1 0 40 17.9 40 40v944c0 22.1-17.9 40-40 40z"
-                                    fill="#00c73c" />
-                                    <path
-                                    d="m757 203.2h-490.4c-70.4 0-127.5 57.1-127.5 127.5v303.5c0 70.7 57.3 127.9 127.9 127.9h173.8l58.7 101.6c5.4 9.3 18.9 9.3 24.2 0l58.7-101.6h174.2c70.6 0 128.5-57.8 128.5-128.5v-302.4c0-70.7-57.3-128-128.1-128z"
-                                    fill="#fff" />
-                                    <g fill="#ff812c">
-                                    <path
-                                        d="m390.7 495.6c0 38.7-28 68.5-62.1 68.5-17.4 0-30.1-6-38.7-15.8v12.2h-38.9v-173.1h38.9v55.5c8.6-9.9 21.3-15.8 38.7-15.8 34 0 62.1 29.8 62.1 68.5zm-36.4 0c0-21.1-14-34.3-33.4-34.3s-33.4 13.2-33.4 34.3 14 34.3 33.4 34.3c19.3 0 33.4-13.2 33.4-34.3z" />
-                                    <path
-                                        d="m477.6 495.6c0-38.7 30.6-68.5 68.8-68.5s68.8 29.9 68.8 68.5c0 38.7-30.6 68.5-68.8 68.5s-68.8-29.8-68.8-68.5zm101.1 0c0-19.9-14-33.2-32.3-33.2s-32.3 13.2-32.3 33.2c0 19.9 14 33.2 32.3 33.2 18.2 0 32.3-13.2 32.3-33.2z" />
-                                    <path
-                                        d="m704.6 616.1c34.5 0 68.5-18.4 68.5-62.1v-123.3h-37.9v13.2c-8.6-10.6-21-16.9-37.9-16.9-36.9 0-63.9 30.1-63.9 66 0 35.8 27 65.9 63.9 65.9 16.9 0 29.3-6.2 37.9-16.9v12c0 18.4-11.2 27.8-29.3 27.8h-1.3zm-.7-90.5c-19.9 0-34-13.2-34-32.6s14-32.6 34-32.6c19.9 0 34 13.2 34 32.6s-14.1 32.6-34 32.6z" />
-                                    <path
-                                        d="m394.3 382.7v35.1c13.4 2.6 21.3 11.8 21.3 27.4v115.3h38.9v-115.3c0-40.3-28.6-59.4-60.2-62.5z" />
-                                    </g>
-                                </svg></a></li>
-                            <li class="_kdkpwk"><a rel="noopener noreferrer" target="_blank"
-                                href="https://post.naver.com/airbnb_kr" class="_1vwyakty"><svg
-                                    enable-background="new 0 0 1024 1024" viewBox="0 0 1024 1024" role="img"
-                                    aria-hidden="false" aria-label="네이버 포스트로 이동하기" focusable="false"
-                                    style="height:18px;width:18px;display:block;fill:currentColor">
-                                    <path
-                                    d="m984 1024h-944c-22.1 0-40-17.9-40-40v-944c0-22.1 17.9-40 40-40h944c22.1 0 40 17.9 40 40v944c0 22.1-17.9 40-40 40z"
-                                    fill="#fff" />
-                                    <g fill="#00c73c">
-                                    <path d="m0 198h1024v7h-1024z" />
-                                    <path d="m0 405h1024v7h-1024z" />
-                                    <path d="m0 612h1024v7h-1024z" />
-                                    <path d="m0 819h1024v7h-1024z" />
-                                    </g>
-                                    <path d="m307 537 188.2 324.1c7.5 12.9 26.1 12.9 33.6 0l188.2-324.1z"
-                                    fill="#f4e49d" />
-                                    <path d="m307 0h410v537h-410z" fill="#00e831" />
-                                    <path d="m392 0h240v537h-240z" fill="#00c73c" />
-                                    <path
-                                    d="m392 148.5v240h240v-240zm188 182h-47.8l-41.2-62.8v62.8h-47v-124h45.8l42.2 62.4v-62.4h48z"
-                                    fill="#fff" />
-                                    <path d="m632 0h85v537h-85z" fill="#00a32a" />
-                                    <path d="m528.8 861.1 188.2-324.1h-85l-119.5 333.7c6.3-.1 12.6-3.3 16.3-9.6z"
-                                    fill="#e0c141" />
-                                    <path d="m448.8 781.2 46.4 79.9c7.5 12.9 26.1 12.9 33.6 0l46.4-79.9z"
-                                    fill="#2d2d2d" />
-                                </svg></a></li>
-                            </ul>
-                        </div>
-                        </div>
-                        <div class="_1sv27e6">
-                        <div class="_pd8gea">
-                            <div class="_wjo0ey">
-                            <div class="_1br4kkl" dir="ltr">© 2022 Airbnb, Inc.</div>
-                            <div class="_opoa3c"><span class="_j8ldew"><span class="_15vc6yg"
-                                    aria-hidden="true">·</span></span><a href="/terms/privacy_policy"
-                                class="_1e6wtwm5">개인정보 처리방침</a><span class="_15vc6yg" aria-hidden="true">·</span><a
-                                href="/terms" class="_1e6wtwm5">이용약관</a><span class="_15vc6yg"
-                                aria-hidden="true">·</span><a href="/sitemaps/v2" class="_1e6wtwm5">사이트맵</a><span
-                                class="_15vc6yg" aria-hidden="true">·</span><a target="_blank"
-                                href="/home/updated_cancellation_policies?korean_strict_policy=true#strict"
-                                class="_1e6wtwm5">한국의 변경된 환불 정책</a><span class="_15vc6yg"
-                                aria-hidden="true">·</span><a target="_blank" href="/about/company-details"
-                                class="_1e6wtwm5">회사 세부정보</a></div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="_ar9stc">
-                        <div class="_pd8gea">
-                        <div class="_wjo0ey">
-                            <div class="_1br4kkl" dir="ltr">© 2022 Airbnb, Inc.</div>
-                            <div class="_opoa3c"><span class="_j8ldew"><span class="_15vc6yg"
-                                aria-hidden="true">·</span></span><a href="/terms/privacy_policy"
-                                class="_1e6wtwm5">개인정보 처리방침</a><span class="_15vc6yg" aria-hidden="true">·</span><a
-                                href="/terms" class="_1e6wtwm5">이용약관</a><span class="_15vc6yg"
-                                aria-hidden="true">·</span><a href="/sitemaps/v2" class="_1e6wtwm5">사이트맵</a><span
-                                class="_15vc6yg" aria-hidden="true">·</span><a target="_blank"
-                                href="/home/updated_cancellation_policies?korean_strict_policy=true#strict"
-                                class="_1e6wtwm5">한국의 변경된 환불 정책</a><span class="_15vc6yg"
-                                aria-hidden="true">·</span><a target="_blank" href="/about/company-details"
-                                class="_1e6wtwm5">회사 세부정보</a></div>
-                        </div>
-                        </div>
-                        <div class="_jro6t0">
-                        <div class="_jro6t0"><span class="_19c5bku"><button type="button" class="_f2hxk3s"><span
-                                class="a8jt5op dir dir-ltr">언어 선택</span><span class="_14tkmhr"><svg
-                                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
-                                    style="display:block;height:16px;width:16px;fill:currentColor" aria-hidden="true"
-                                    role="presentation" focusable="false">
-                                    <path
-                                    d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z" />
-                                </svg></span><span class="_144l3kj">한국어 (KR)</span></button></span><span
-                            class="_19c5bku"><button type="button" class="_f2hxk3s"><span
-                                class="a8jt5op dir dir-ltr">통화 선택</span><span class="_14tkmhr"><span
-                                    class="_pgfqnw">₩</span></span><span class="_144l3kj">KRW</span></button></span>
-                        </div>
-                        <div class="_xh0r19">
-                            <ul class="_115qwnm">
-                            <li class="_kdkpwk"><a rel="noopener noreferrer" target="_blank"
-                                href="https://www.facebook.com/AirbnbKorea" class="_1vwyakty"><svg
-                                    viewBox="0 0 32 32" role="img" aria-hidden="false" aria-label="페이스북으로 이동하기"
-                                    focusable="false" style="height:18px;width:18px;display:block;fill:currentColor">
-                                    <path
-                                    d="m8 14.41v-4.17c0-.42.35-.81.77-.81h2.52v-2.08c0-4.84 2.48-7.31 7.42-7.35 1.65 0 3.22.21 4.69.64.46.14.63.42.6.88l-.56 4.06c-.04.18-.14.35-.32.53-.21.11-.42.18-.63.14-.88-.25-1.78-.35-2.8-.35-1.4 0-1.61.28-1.61 1.73v1.8h4.52c.42 0 .81.42.81.88l-.35 4.17c0 .42-.35.71-.77.71h-4.21v16c0 .42-.35.81-.77.81h-5.21c-.42 0-.8-.39-.8-.81v-16h-2.52a.78.78 0 0 1 -.78-.78"
-                                    fill-rule="evenodd" />
-                                </svg></a></li>
-                            <li class="_kdkpwk"><a rel="noopener noreferrer" target="_blank"
-                                href="https://twitter.com/airbnb" class="_1vwyakty"><svg viewBox="0 0 32 32"
-                                    role="img" aria-hidden="false" aria-label="트위터로 이동하기" focusable="false"
-                                    style="height:18px;width:18px;display:block;fill:currentColor">
-                                    <path
-                                    d="m31 6.36c-1.16.49-2.32.82-3.55.95 1.29-.76 2.22-1.87 2.72-3.38a13.05 13.05 0 0 1 -3.91 1.51c-1.23-1.28-2.75-1.94-4.51-1.94-3.41 0-6.17 2.73-6.17 6.12 0 .49.07.95.17 1.38-4.94-.23-9.51-2.6-12.66-6.38-.56.95-.86 1.97-.86 3.09 0 2.07 1.03 3.91 2.75 5.06-1-.03-1.92-.3-2.82-.76v.07c0 2.89 2.12 5.42 4.94 5.98-.63.17-1.16.23-1.62.23-.3 0-.7-.03-1.13-.13a6.07 6.07 0 0 0 5.74 4.24c-2.22 1.74-4.78 2.63-7.66 2.63-.56 0-1.06-.03-1.43-.1 2.85 1.84 6 2.76 9.41 2.76 7.29 0 12.83-4.01 15.51-9.3 1.36-2.66 2.02-5.36 2.02-8.09v-.46c-.03-.17-.03-.3-.03-.33a12.66 12.66 0 0 0 3.09-3.16"
-                                    fill-rule="evenodd" />
-                                </svg></a></li>
-                            <li class="_kdkpwk"><a rel="noopener noreferrer" target="_blank"
-                                href="https://instagram.com/airbnb" class="_1vwyakty"><svg viewBox="0 0 24 24"
-                                    role="img" aria-hidden="false" aria-label="인스타그램으로 이동하기" focusable="false"
-                                    style="height:18px;width:18px;display:block;fill:currentColor">
-                                    <path
-                                    d="m23.09.91c-.61-.61-1.33-.91-2.17-.91h-17.84c-.85 0-1.57.3-2.17.91s-.91 1.33-.91 2.17v17.84c0 .85.3 1.57.91 2.17s1.33.91 2.17.91h17.84c.85 0 1.57-.3 2.17-.91s.91-1.33.91-2.17v-17.84c0-.85-.3-1.57-.91-2.17zm-14.48 7.74c.94-.91 2.08-1.37 3.4-1.37 1.33 0 2.47.46 3.41 1.37s1.41 2.01 1.41 3.3-.47 2.39-1.41 3.3-2.08 1.37-3.41 1.37c-1.32 0-2.46-.46-3.4-1.37s-1.41-2.01-1.41-3.3.47-2.39 1.41-3.3zm12.66 11.63c0 .27-.09.5-.28.68a.92.92 0 0 1 -.67.28h-16.7a.93.93 0 0 1 -.68-.28.92.92 0 0 1 -.27-.68v-10.13h2.2a6.74 6.74 0 0 0 -.31 2.05c0 2 .73 3.71 2.19 5.12s3.21 2.12 5.27 2.12a7.5 7.5 0 0 0 3.75-.97 7.29 7.29 0 0 0 2.72-2.63 6.93 6.93 0 0 0 1-3.63c0-.71-.11-1.39-.31-2.05h2.11v10.12zm0-13.95c0 .3-.11.56-.31.77a1.05 1.05 0 0 1 -.77.31h-2.72c-.3 0-.56-.11-.77-.31a1.05 1.05 0 0 1 -.31-.77v-2.58c0-.29.11-.54.31-.76s.47-.32.77-.32h2.72c.3 0 .56.11.77.32s.31.47.31.76z"
-                                    fill-rule="evenodd" />
-                                </svg></a></li>
-                            <li class="_kdkpwk"><a rel="noopener noreferrer" target="_blank"
-                                href="https://blog.naver.com/airbnbkr" class="_1vwyakty"><svg
-                                    viewBox="0 0 1024 1024" role="img" aria-hidden="false" aria-label="네이버 블로그로 이동하기"
-                                    focusable="false" style="height:18px;width:18px;display:block;fill:currentColor">
-                                    <path
-                                    d="m984 1024h-944c-22.1 0-40-17.9-40-40v-944c0-22.1 17.9-40 40-40h944c22.1 0 40 17.9 40 40v944c0 22.1-17.9 40-40 40z"
-                                    fill="#00c73c" />
-                                    <path
-                                    d="m757 203.2h-490.4c-70.4 0-127.5 57.1-127.5 127.5v303.5c0 70.7 57.3 127.9 127.9 127.9h173.8l58.7 101.6c5.4 9.3 18.9 9.3 24.2 0l58.7-101.6h174.2c70.6 0 128.5-57.8 128.5-128.5v-302.4c0-70.7-57.3-128-128.1-128z"
-                                    fill="#fff" />
-                                    <g fill="#ff812c">
-                                    <path
-                                        d="m390.7 495.6c0 38.7-28 68.5-62.1 68.5-17.4 0-30.1-6-38.7-15.8v12.2h-38.9v-173.1h38.9v55.5c8.6-9.9 21.3-15.8 38.7-15.8 34 0 62.1 29.8 62.1 68.5zm-36.4 0c0-21.1-14-34.3-33.4-34.3s-33.4 13.2-33.4 34.3 14 34.3 33.4 34.3c19.3 0 33.4-13.2 33.4-34.3z" />
-                                    <path
-                                        d="m477.6 495.6c0-38.7 30.6-68.5 68.8-68.5s68.8 29.9 68.8 68.5c0 38.7-30.6 68.5-68.8 68.5s-68.8-29.8-68.8-68.5zm101.1 0c0-19.9-14-33.2-32.3-33.2s-32.3 13.2-32.3 33.2c0 19.9 14 33.2 32.3 33.2 18.2 0 32.3-13.2 32.3-33.2z" />
-                                    <path
-                                        d="m704.6 616.1c34.5 0 68.5-18.4 68.5-62.1v-123.3h-37.9v13.2c-8.6-10.6-21-16.9-37.9-16.9-36.9 0-63.9 30.1-63.9 66 0 35.8 27 65.9 63.9 65.9 16.9 0 29.3-6.2 37.9-16.9v12c0 18.4-11.2 27.8-29.3 27.8h-1.3zm-.7-90.5c-19.9 0-34-13.2-34-32.6s14-32.6 34-32.6c19.9 0 34 13.2 34 32.6s-14.1 32.6-34 32.6z" />
-                                    <path
-                                        d="m394.3 382.7v35.1c13.4 2.6 21.3 11.8 21.3 27.4v115.3h38.9v-115.3c0-40.3-28.6-59.4-60.2-62.5z" />
-                                    </g>
-                                </svg></a></li>
-                            <li class="_kdkpwk"><a rel="noopener noreferrer" target="_blank"
-                                href="https://post.naver.com/airbnb_kr" class="_1vwyakty"><svg
-                                    enable-background="new 0 0 1024 1024" viewBox="0 0 1024 1024" role="img"
-                                    aria-hidden="false" aria-label="네이버 포스트로 이동하기" focusable="false"
-                                    style="height:18px;width:18px;display:block;fill:currentColor">
-                                    <path
-                                    d="m984 1024h-944c-22.1 0-40-17.9-40-40v-944c0-22.1 17.9-40 40-40h944c22.1 0 40 17.9 40 40v944c0 22.1-17.9 40-40 40z"
-                                    fill="#fff" />
-                                    <g fill="#00c73c">
-                                    <path d="m0 198h1024v7h-1024z" />
-                                    <path d="m0 405h1024v7h-1024z" />
-                                    <path d="m0 612h1024v7h-1024z" />
-                                    <path d="m0 819h1024v7h-1024z" />
-                                    </g>
-                                    <path d="m307 537 188.2 324.1c7.5 12.9 26.1 12.9 33.6 0l188.2-324.1z"
-                                    fill="#f4e49d" />
-                                    <path d="m307 0h410v537h-410z" fill="#00e831" />
-                                    <path d="m392 0h240v537h-240z" fill="#00c73c" />
-                                    <path
-                                    d="m392 148.5v240h240v-240zm188 182h-47.8l-41.2-62.8v62.8h-47v-124h45.8l42.2 62.4v-62.4h48z"
-                                    fill="#fff" />
-                                    <path d="m632 0h85v537h-85z" fill="#00a32a" />
-                                    <path d="m528.8 861.1 188.2-324.1h-85l-119.5 333.7c6.3-.1 12.6-3.3 16.3-9.6z"
-                                    fill="#e0c141" />
-                                    <path d="m448.8 781.2 46.4 79.9c7.5 12.9 26.1 12.9 33.6 0l46.4-79.9z"
-                                    fill="#2d2d2d" />
-                                </svg></a></li>
-                            </ul>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="_1c93xhi">
-                        <div class="_ylbnme"></div>웹사이트 제공자: Airbnb Ireland UC, private unlimited company, 8 Hanover
-                        Quay Dublin 2,
-                        D02 DP23 Ireland | 이사: Dermot Clarke, Killian Pattwell, Andrea Finnegan | VAT 번호:
-                        IE9827384L | 사업자 등록 번호: IE 511825 | 연락처: terms@airbnb.com, 웹사이트,
-                        080-822-0230 | 호스팅 서비스 제공업체: 아마존 웹서비스 | 에어비앤비는 통신판매 중개자로
-                        에어비앤비 플랫폼을 통하여 게스트와 호스트 사이에 이루어지는 통신판매의 당사자가 아닙니다.
-                        에어비앤비 플랫폼을 통하여 예약된 숙소, 체험, 호스트 서비스에 관한 의무와 책임은 해당
-                        서비스를 제공하는 호스트에게 있습니다.
-                    </div>
-                    </section>
-                </div>
-                </div>
-            </footer>
-            </div>
+            
         </div>
         </div>
     </div>
@@ -2333,6 +2587,269 @@ href="https://www.airbnb.com.mt/manage-your-space/653225492607634010/details" />
 <div id="fb-root"></div>
 <div id="authModals"></div>
 
+
+<!-- 비활성화 팝업-->
+<div class="_kkkkkkk" id="first_6">
+<div class="_1t0jy5tw"></div>
+<section>
+    <div class="_virdaj" data-testid="modal-container">
+        <div class="_z4lmgp">
+            <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+            <div class="_z4lmgp">
+                <div role="dialog" aria-label="비활성화" aria-modal="true" class="_wheg71v" style="position: relative;">
+                    <div class="_pa35zs"><button aria-label="닫기" type="button" class="_oda838" id="ekerl6"><span
+                                class="_e296pg"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true" role="presentation" focusable="false"
+                                    style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                                    <path d="m6 6 20 20"></path>
+                                    <path d="m26 6-20 20"></path>
+                                </svg></span></button></div>
+                    <header class="_1youxq0">
+                        <div class="_1tng6ym"></div>
+                        <div class="_9t7ktw"></div>
+                        <div class="_rrmdgl"></div>
+                    </header>
+                    <div class="_12kfhdn">
+                        <section>
+                            <div class="_17cdq2zb">
+                                <div class="_1byskwn">
+                                    <div class="_1i7b2h28">
+                                        <div class="_ihd0yx">
+                                            <div class="_fkfey3">
+                                                <section>
+                                                    <h1 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                                        <div class="_5nym0h">숙소를 비활성화하려는 이유를 알려주세요.</div>
+                                                    </h1>
+                                                    <div class="_4egw05">중단 사유에 따라 호스팅을 계속하시는 데 도움이 되는 팁을 드릴 수 있습니다.
+                                                    </div>
+                                                </section>
+                                            </div>
+                                            <div><span class="a8jt5op dir dir-ltr"></span>
+                                                <div class="_1xykmvt">
+                                                    <div class="_h69t7tv">
+                                                        <div id="11:" aria-disabled="false" class="rcem0st dir dir-ltr">
+                                                            <label for="11:-row-radio-button" class="_13xlah4">
+                                                                <div class="_jro6t0">
+                                                                    <div class="_7ytxmo"><input name="20:"
+                                                                            aria-labelledby="11:-row-title"
+                                                                            aria-describedby="11:-row-subtitle"
+                                                                            id="11:-row-radio-button" class="_83s1a2"
+                                                                            type="radio" value="GuestBehavior"></div>
+                                                                    <div class="_gfomxi">
+                                                                        <div class="_jro6t0">
+                                                                            <div class="_7ytxmo"></div>
+                                                                            <div>
+                                                                                <div id="11:-row-title" class="_gw4xx4">
+                                                                                    게스트의 행동에 대한 우려사항이 있습니다.</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </label></div>
+                                                    </div>
+                                                </div>
+                                                <div class="_1xykmvt">
+                                                    <div class="_h69t7tv">
+                                                        <div id="7:" aria-disabled="false" class="rcem0st dir dir-ltr">
+                                                            <label for="7:-row-radio-button" class="_13xlah4">
+                                                                <div class="_jro6t0">
+                                                                    <div class="_7ytxmo"><input name="20:"
+                                                                            aria-labelledby="7:-row-title"
+                                                                            aria-describedby="7:-row-subtitle"
+                                                                            id="7:-row-radio-button" class="_83s1a2"
+                                                                            type="radio" value="BugConcern"></div>
+                                                                    <div class="_gfomxi">
+                                                                        <div class="_jro6t0">
+                                                                            <div class="_7ytxmo"></div>
+                                                                            <div>
+                                                                                <div id="7:-row-title" class="_gw4xx4">
+                                                                                    에어비앤비의 앱이나 웹사이트가 사용하기 어렵습니다.</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </label></div>
+                                                    </div>
+                                                </div>
+                                                <div class="_1xykmvt">
+                                                    <div class="_h69t7tv">
+                                                        <div id="9:" aria-disabled="false" class="rcem0st dir dir-ltr">
+                                                            <label for="9:-row-radio-button" class="_13xlah4">
+                                                                <div class="_jro6t0">
+                                                                    <div class="_7ytxmo"><input name="20:"
+                                                                            aria-labelledby="9:-row-title"
+                                                                            aria-describedby="9:-row-subtitle"
+                                                                            id="9:-row-radio-button" class="_83s1a2"
+                                                                            type="radio" value="HostCertainTimes"></div>
+                                                                    <div class="_gfomxi">
+                                                                        <div class="_jro6t0">
+                                                                            <div class="_7ytxmo"></div>
+                                                                            <div>
+                                                                                <div id="9:-row-title" class="_gw4xx4">
+                                                                                    게스트를 특정 시기에만 받고 싶습니다.</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </label></div>
+                                                    </div>
+                                                </div>
+                                                <div class="_1xykmvt">
+                                                    <div class="_h69t7tv">
+                                                        <div id="13:" aria-disabled="false" class="rcem0st dir dir-ltr">
+                                                            <label for="13:-row-radio-button" class="_13xlah4">
+                                                                <div class="_jro6t0">
+                                                                    <div class="_7ytxmo"><input name="20:"
+                                                                            aria-labelledby="13:-row-title"
+                                                                            aria-describedby="13:-row-subtitle"
+                                                                            id="13:-row-radio-button" class="_83s1a2"
+                                                                            type="radio" value="ExternalFactor"></div>
+                                                                    <div class="_gfomxi">
+                                                                        <div class="_jro6t0">
+                                                                            <div class="_7ytxmo"></div>
+                                                                            <div>
+                                                                                <div id="13:-row-title" class="_gw4xx4">
+                                                                                    외부 요인(예: 코로나19)으로 인해 호스팅할 수 없습니다.
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </label></div>
+                                                    </div>
+                                                </div>
+                                                <div class="_1xykmvt">
+                                                    <div class="_h69t7tv">
+                                                        <div id="1:" aria-disabled="false" class="rcem0st dir dir-ltr">
+                                                            <label for="1:-row-radio-button" class="_13xlah4">
+                                                                <div class="_jro6t0">
+                                                                    <div class="_7ytxmo"><input name="20:"
+                                                                            aria-labelledby="1:-row-title"
+                                                                            aria-describedby="1:-row-subtitle"
+                                                                            id="1:-row-radio-button" class="_83s1a2"
+                                                                            type="radio" value="NotAvailable"></div>
+                                                                    <div class="_gfomxi">
+                                                                        <div class="_jro6t0">
+                                                                            <div class="_7ytxmo"></div>
+                                                                            <div>
+                                                                                <div id="1:-row-title" class="_gw4xx4">
+                                                                                    지금은 숙소에 게스트를 받을 수 없습니다.</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </label></div>
+                                                    </div>
+                                                </div>
+                                                <div class="_1xykmvt">
+                                                    <div class="_h69t7tv">
+                                                        <div id="3:" aria-disabled="false" class="rcem0st dir dir-ltr">
+                                                            <label for="3:-row-radio-button" class="_13xlah4">
+                                                                <div class="_jro6t0">
+                                                                    <div class="_7ytxmo"><input name="20:"
+                                                                            aria-labelledby="3:-row-title"
+                                                                            aria-describedby="3:-row-subtitle"
+                                                                            id="3:-row-radio-button" class="_83s1a2"
+                                                                            type="radio" value="NotWorth"></div>
+                                                                    <div class="_gfomxi">
+                                                                        <div class="_jro6t0">
+                                                                            <div class="_7ytxmo"></div>
+                                                                            <div>
+                                                                                <div id="3:-row-title" class="_gw4xx4">
+                                                                                    들이는 시간이나 돈에 비해 호스팅이 그만큼 가치가 없습니다.
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </label></div>
+                                                    </div>
+                                                </div>
+                                                <div class="_1xykmvt">
+                                                    <div class="_h69t7tv">
+                                                        <div id="5:" aria-disabled="false" class="rcem0st dir dir-ltr">
+                                                            <label for="5:-row-radio-button" class="_13xlah4">
+                                                                <div class="_jro6t0">
+                                                                    <div class="_7ytxmo"><input name="20:"
+                                                                            aria-labelledby="5:-row-title"
+                                                                            aria-describedby="5:-row-subtitle"
+                                                                            id="5:-row-radio-button" class="_83s1a2"
+                                                                            type="radio" value="LegalTaxConcern"></div>
+                                                                    <div class="_gfomxi">
+                                                                        <div class="_jro6t0">
+                                                                            <div class="_7ytxmo"></div>
+                                                                            <div>
+                                                                                <div id="5:-row-title" class="_gw4xx4">
+                                                                                    호스팅에 적용되는 법률이나 세금이 걱정됩니다.</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </label></div>
+                                                    </div>
+                                                </div>
+                                                <div class="_1xykmvt">
+                                                    <div class="_h69t7tv">
+                                                        <div id="15:" aria-disabled="false" class="rcem0st dir dir-ltr">
+                                                            <label for="15:-row-radio-button" class="_13xlah4">
+                                                                <div class="_jro6t0">
+                                                                    <div class="_7ytxmo"><input name="20:"
+                                                                            aria-labelledby="15:-row-title"
+                                                                            aria-describedby="15:-row-subtitle"
+                                                                            id="15:-row-radio-button" class="_83s1a2"
+                                                                            type="radio" value="OtherReasons"></div>
+                                                                    <div class="_gfomxi">
+                                                                        <div class="_jro6t0">
+                                                                            <div class="_7ytxmo"></div>
+                                                                            <div>
+                                                                                <div id="15:-row-title" class="_gw4xx4">
+                                                                                    기타</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </label></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="_sw1s0eg">
+                            <div class="_1byskwn">
+                                <div class="_1i7b2h28">
+                                    <div class="_fgc192">
+                                        <div class="_dj903s">
+                                            <div class="_zmebr8n">
+                                                <div class="_1g0w9mx"></div>
+                                            </div>
+                                            <div class="_1vgb6olm">
+                                                <div class="_17w32ve">
+                                                    <div class="_1q235d6"><button type="button" class="_1dj2p4gk">비활성화</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+        </div>
+    </div>
+</div>
+</section>
+<div class="_b21f4g">
+    <div aria-live="polite" aria-atomic="true"></div>
+    <div aria-live="assertive" aria-atomic="true"></div>
+</div>
+
+
 </body>
+<script src="./script.js"></script>
 
 </html>

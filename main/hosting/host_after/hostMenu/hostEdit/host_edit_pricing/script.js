@@ -171,20 +171,6 @@ $('._1yf4i4f').on("change",function(){
     $("#wjwkd7").attr("disabled", false)
 })
 
-/*------------------------------------------------------------------------------------*/
-/* 피드백 팝업 on*/
-$('#popup44').on('click',function(){
-    $('#popupgg').show()
-})
-/* 피드백 팝업 off*/
-$('#button4321').on('click',function(){
-    $('#popupgg').hide()
-    $('#button642').attr("disabled", true);
-})
-
-$('.pop0').on('click',function(){
-    $('#button642').attr("disabled", false);
-})
 
 /*------------------------------------------------------------------------------------*/
 
@@ -305,4 +291,130 @@ $('#cnlth12').on('click',function(){
 $('._1jg0g92a').on("change",function(){
     $("#wjwkd12").attr("disabled", false)
 })
+
+
+//여행자 게스트 숫자
+function pCount1(){    
+    const val = Number(document.querySelector("#c1").innerText);
+    document.querySelector("#c1").innerText=val+1;
+    if(val+1 > 0){
+        $('#discount1').removeAttr("disabled")
+    }  
+}
+function mCount1(){
+    const val = Number(document.querySelector("#c1").innerText);
+    document.querySelector("#c1").innerText=val-1;
+    if((document.querySelector("#c1").innerText)==0){
+        $('#discount1').attr("disabled","")
+    }
+}
+
+/*------------------------------------------------------------------------------------*/
+/* 반려 동물 수수료 팝업 */
+/*반려 동물 수수료 수정하기 버튼 눌렀을 때*/ 
+$('#pop22').on('click',function(){
+    $('#first_13').attr('class', 'first_13');
+})
+/*반려 동물 수수료 닫기 버튼 눌렀을 때*/ 
+$('#ekerl13').on('click',function(){
+    $('#first_13').attr('class', 'first_13 _kkkkkkk');
+    $("#wjwkd13").attr("disabled", true)
+})
+/*반려 동물 수수료 셀렉트 저장버튼 활성 눌렀을 때*/ 
+$('#ghkftjd').on("change",function(){
+    $("#wjwkd13").attr("disabled", false)
+})
+
+/*------------------------------------------------------------------------------------*/
+/* 청소비 팝업 */
+/*청소비 수정하기 버튼 눌렀을 때*/ 
+$('#pop33').on('click',function(){
+    $('#first_14').attr('class', 'first_14');
+})
+/*청소비 닫기 버튼 눌렀을 때*/ 
+$('#ekerl14').on('click',function(){
+    $('#first_14').attr('class', 'first_14 _kkkkkkk');
+    $("#wjwkd14").attr("disabled", true)
+})
+
+/*청소비 단기숙박 버튼 활성 눌렀을 때*/ 
+$('.first_17').on('click',function(){
+    $('.first_17').attr('class', 'first_17 _kkkkkkk')
+    $('.first_16').attr('class', 'first_16');
+    $('.first_15').attr('class', 'first_15');
+
+})
+/*청소비 단기숙박 버튼 활성 눌렀을 때*/ 
+$('.first_16').on('click',function(){
+    $('.first_16').attr('class', 'first_16 _kkkkkkk')
+    $('.first_17').attr('class', 'first_17');
+    $('.first_15').attr('class', 'first_15 _kkkkkkk');
+
+})
+
+
+/*------------------------------------------------------------------------------------*/
+/* 피드백 팝업 */
+/*피드백 버튼 눌렀을 때*/ 
+$('#popup44').on('click',function(){
+    $('#first_18').attr('class', 'first_18');
+})
+/*피드백 닫기 버튼 눌렀을 때*/ 
+$('#ekerl18').on('click',function(){
+    $('.first_18').attr('class', 'first_18 _kkkkkkk');
+    $("#button642").attr("disabled", true)
+})
+/*피드백셀렉트 버튼 활성 눌렀을 때*/ 
+$('._1fnnolo').on("change",function(){
+    $("#button642").attr("disabled", false)
+})
+
+
+/*------------------------------------------------------------------------------------*/
+
+/*스마트요금 수정하기 버튼 눌렀을 때*/ 
+$('#su19').on('click',function(){
+    $('#first_19').attr('class', 'first_19');
+    $('#susu19').attr('class', 'susu19 _kkkkkkk');
+})
+/*스마트요금 닫기 버튼 눌렀을 때*/ 
+$('#ekerl19').on('click',function(){
+    $('#first_19').attr('class', 'first_19 _kkkkkkk');
+    $('#susu19').attr('class', 'susu19');
+    $("#wjwkd19").attr("disabled", true)
+})
+/*스마트요금 취소 버튼 눌렀을 때*/ 
+$('#cnlth19').on('click',function(){
+    $('#first_19').attr('class', 'first_19 _kkkkkkk');
+    $('#susu19').attr('class', 'susu19');
+    $("#wjwkd12").attr("disabled", true)
+})
+
+/*스마트요금 수정하기 버튼 눌렀을 때*/ 
+$('#bu_20').on('click',function(){
+    $('#first_19').attr('class', 'first_19 _kkkkkkk');
+    $('#susu19').attr('class', 'susu19 _kkkkkkk');
+    $('#first_20').attr('class', 'first_20');
+})
+/*스마트요금 수정하기 버튼 눌렀을 때*/ 
+$('#bu_21').on('click',function(){
+    $('#first_20').attr('class', 'first_20 _kkkkkkk');
+    $('#susu19').attr('class', 'susu19 _kkkkkkk');
+    $('#first_19').attr('class', 'first_19');
+})
+
+
+/*스마트요금 닫기 버튼 눌렀을 때*/ 
+$('#ekerl20').on('click',function(){
+    $('#first_20').attr('class', 'first_20 _kkkkkkk');
+    $('#susu19').attr('class', 'susu19');
+    $("#wjwkd20").attr("disabled", true)
+})
+/*스마트요금 취소 버튼 눌렀을 때*/ 
+$('#cnlth20').on('click',function(){
+    $('#first_20').attr('class', 'first_20 _kkkkkkk');
+    $('#susu19').attr('class', 'susu19');
+    $("#wjwkd12").attr("disabled", true)
+})
+
 
