@@ -378,7 +378,7 @@
                                                                                                                 data-testid="checkout_platform.DATE_PICKER.edit"
                                                                                                                 aria-label="날짜 수정하기"
                                                                                                                 type="button"
-                                                                                                                class="_15rpys7s">수정</button>
+                                                                                                                class="_15rpys7s" id="reform">수정</button>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                     <div class="_88xxct"></div>
@@ -586,23 +586,7 @@
                                                                                                         </div>
                                                                                                         <div class="_4l12l8">
                                                                                                             <div
-                                                                                                                class="_88xxct">
-                                                                                                                <div
-                                                                                                                    class="_64pbdv">
-                                                                                                                    <div
-                                                                                                                        class="_clw8y6">
-                                                                                                                        <iframe
-                                                                                                                            class="_e296pg"
-                                                                                                                            name="payment-iframe"
-                                                                                                                            width="100%"
-                                                                                                                            height="114"
-                                                                                                                            frameborder="0"
-                                                                                                                            scrolling="no"
-                                                                                                                            seamless=""
-                                                                                                                            src="https://iframes.airbnbpayments.com/3b2d37b3518f41ce3d98618e2e7cd9f0cfda1452/iframe_v2.html?country=KR&amp;origin=https%3A%2F%2Fwww.airbnb.co.kr&amp;is_cvv_only=false&amp;is_select=false&amp;cvv_friction=undefined"
-                                                                                                                            title="결제 카드 입력 양식"></iframe>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                                class="_88xxct">    
                                                                                                                 <div
                                                                                                                     class="_v0ipn8">
                                                                                                                     <div
@@ -611,7 +595,7 @@
                                                                                                                             class="_1yw7hpv"
                                                                                                                             for="zipCode">
                                                                                                                             <div
-                                                                                                                                class="_1jn0ze9">
+                                                                                                                                class="_1m2ich98">
                                                                                                                                 <div class="_11hx67x">우편번호</div>
                                                                                                                             </div>
                                                                                                                             <div
@@ -621,7 +605,7 @@
                                                                                                                                     <input
                                                                                                                                         name="zipCode"
                                                                                                                                         errormessage=""
-                                                                                                                                        class="_c5rhl5"
+                                                                                                                                        class="_c5rhl5 focus-visible"
                                                                                                                                         id="zipCode"
                                                                                                                                         autocomplete="off"
                                                                                                                                         type="text"
@@ -790,7 +774,7 @@
                                                                                                             부분 환불을 받으실 수
                                                                                                             있습니다.</span>
                                                                                                     </span><button type="button"
-                                                                                                        class="_15rpys7s">자세히
+                                                                                                        class="_15rpys7s" id="jasahi">자세히
                                                                                                         알아보기</button>
                                                                                                 </div>
                                                                                             </div>
@@ -1408,7 +1392,7 @@
     <div id="fb-root"></div>
     <div id="authModals"></div>
     <!-- 날짜 변경 팝업-->
-    <div dir="ltr">
+    <div dir="ltr" style="display:none;" id="ltrdiv1">
         <div class="_1t0jy5tw"></div>
         <section>
             <div class="_vxvq8x" data-testid="modal-container">
@@ -1416,7 +1400,7 @@
                     <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
                     <div class="_z4lmgp">
                         <div role="dialog" aria-label="날짜" aria-modal="true" class="_1ucy1zjv" style="position: relative;">
-                            <div class="_pa35zs"><button aria-label="닫기" type="button" class="_oda838"><span
+                            <div class="_pa35zs"><button aria-label="닫기" type="button" class="_oda838" id="close1"><span
                                         class="_e296pg"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
                                             aria-hidden="true" role="presentation" focusable="false"
                                             style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
@@ -1490,7 +1474,13 @@
                                     </div>
                                     <div>
                                         <span>체크인</span>         
-                                        <input id="datepicker" width="276" height="500"/>
+                                        <input class="hasDatepicker" id="datepicker" width="276" height="500">
+                                        <span style="z-index:9999999999; position:absolute;"></span>
+                                    </div>
+                                    <div>
+                                        <span>체크아웃</span>         
+                                        <input class="hasDatepicker" id="datepicker2" width="276" height="500">
+                                        <span style="z-index:9999999999; position:absolute;"></span>
                                     </div>
                                     <div class="_rut4we">
                                         <div class="_1sl8tba"><span class="_sbaj1v"><button
@@ -1498,6 +1488,98 @@
                                     </div>
                                 </div>
                             </section>
+                        </div>
+                    </div>
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                </div>
+            </div>
+        </section>
+        <div class="_b21f4g">
+            <div aria-live="polite" aria-atomic="true"></div>
+            <div aria-live="assertive" aria-atomic="true"></div>
+        </div>
+    </div>
+    <div dir="ltr" id="ltrdiv2" style="display:none;">
+        <div class="_ybk1kl0"></div>
+        <section>
+            <div class="_g2ext" data-testid="modal-container">
+                <div class="_z4lmgp">
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                    <div class="_z4lmgp">
+                        <div role="dialog" aria-label="요금 내역" aria-modal="true" class="_18s57l6i"style="position: absolute; top: 445px; right: 525.656px; transform-origin: right top;">
+                            <div class="_12kfhdn">
+                                <div class="_11vbjbm">
+                                    <div class="_1875dx"><div class="_l6x7wk">수수료는 에어비앤비 플랫폼을 운영하고 연중무휴 고객 지원과 같은 다양한 서비스를 제공하는데 사용됩니다.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                </div>
+            </div>
+        </section>
+        <div class="_b21f4g">
+            <div aria-live="polite" aria-atomic="true"></div>
+            <div aria-live="assertive" aria-atomic="true"></div>
+        </div>
+    </div>
+    <div dir="ltr" id="ltrdiv3" style="display:none;">
+        <div class="_1t0jy5tw"></div>
+        <section>
+            <div class="_vxvq8x" data-testid="modal-container">
+                <div class="_z4lmgp">
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                    <div class="_z4lmgp">
+                        <div role="dialog" aria-label="환불 정책" aria-modal="true" class="_1ucy1zjv" tabindex="-1"
+                            style="position: relative;">
+                            <div class="_d2kdnf"><button aria-label="닫기" type="button" class="_oda838"><span
+                                        class="_e296pg"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true" role="presentation" focusable="false"
+                                            style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                            <path d="m6 6 20 20"></path>
+                                            <path d="m26 6-20 20"></path>
+                                        </svg></span></button></div>
+                            <div class="_w9t5hn">
+                                <section>
+                                    <div class="_v1m4jk">
+                                        <div class="_rjfnlo">
+                                            <h2 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">환불 정책</h2>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="_o26o64">
+                                            <h3 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">취소:</h3>
+                                        </div>
+                                    </div>
+                                    <div class="_1cnosla">
+                                        <div class="_dj903s">
+                                            <div class="_v0q64e7">
+                                                <div class="_1lmb2fq">8월 1일</div>
+                                                <div class="_1r0bq6e">오후 12:00</div>
+                                            </div>
+                                            <div class="_96puxn7">
+                                                <div class="_4gelgl">전액 환불: 결제하신 금액이 100% 환불됩니다.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_1cnosla">
+                                        <div class="_dj903s">
+                                            <div class="_v0q64e7">
+                                                <div class="_1lmb2fq">8월 31일</div>
+                                                <div class="_1r0bq6e">오후 12:00</div>
+                                                <div class="_1r0bq6e">(체크인)</div>
+                                            </div>
+                                            <div class="_96puxn7">
+                                                <div class="_4gelgl">부분 환불: 전체 숙박 요금의 50%를 환불받으실 수 있습니다. 서비스 수수료는 전액 환불됩니다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_16mozde"><a target="_blank" href="/help/article/2637" class="_1sikdxcl">환불
+                                            정책 자세히 알아보기</a></div>
+                                </section>
+                            </div>
                         </div>
                     </div>
                     <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
