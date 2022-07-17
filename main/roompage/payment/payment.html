@@ -15,7 +15,7 @@
 <meta name="msapplication-navbutton-color" content="#ffffff" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="msapplication-starturl" content="/?utm_source=homescreen" />
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Airbnb" />
 <link rel="apple-touch-icon"
     href="https://a0.muscache.com/airbnb/static/icons/apple-touch-icon-76x76-3b313d93b1b5823293524b9764352ac9.png" />
@@ -244,6 +244,8 @@
 <meta name="twitter:app:id:ipad" content="401626263" />
 <meta name="twitter:app:id:googleplay" content="com.airbnb.android" />
 <meta name="twitter:url" content="https://www.airbnb.co.kr/book/stays/33032352" />
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
 </head>
 <body class="with-new-header">
     <div id="site-skip-links"><a class="screen-reader-only screen-reader-only-focusable skip-to-content"
@@ -544,7 +546,7 @@
                                                                                                                                         <div
                                                                                                                                             class="_10ejfg4u">
                                                                                                                                             <div>
-                                                                                                                                                <span dir="ltr">신용카드 또는 체크카드</span>
+                                                                                                                                                <span dir="ltr">카카오 페이</span>
                                                                                                                                             </div>
                                                                                                                                         </div>
                                                                                                                                     </div>
@@ -680,8 +682,7 @@
                                                                                             <div>
                                                                                                 <div class="_4gelgl"><button
                                                                                                         type="button"
-                                                                                                        class="_15rpys7s">쿠폰
-                                                                                                        입력하기</button></div>
+                                                                                                        class="_15rpys7s">무료 결제</button></div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -1406,7 +1407,109 @@
         </div>
     <div id="fb-root"></div>
     <div id="authModals"></div>
-
+    <!-- 날짜 변경 팝업-->
+    <div dir="ltr">
+        <div class="_1t0jy5tw"></div>
+        <section>
+            <div class="_vxvq8x" data-testid="modal-container">
+                <div class="_z4lmgp">
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                    <div class="_z4lmgp">
+                        <div role="dialog" aria-label="날짜" aria-modal="true" class="_1ucy1zjv" style="position: relative;">
+                            <div class="_pa35zs"><button aria-label="닫기" type="button" class="_oda838"><span
+                                        class="_e296pg"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true" role="presentation" focusable="false"
+                                            style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                                            <path d="m6 6 20 20"></path>
+                                            <path d="m26 6-20 20"></path>
+                                        </svg></span></button></div>
+                            <section>
+                                <div class="_r0674k">
+                                    <div class="_1aa8ytq">
+                                        <div class="_f9r169">
+                                            <div class="_6e5x1y">
+                                                <div class="_q3k8d9z"><label class="_1yw7hpv" for="checkIn-book_it">
+                                                        <div class="_7eq2v2">체크인</div>
+                                                        <div dir="ltr">
+                                                            <div class="_etxtlin"><input class="_yrzsibu"
+                                                                    id="checkIn-book_it" placeholder="날짜 추가" type="text"
+                                                                    value="2022. 8. 30."></div>
+                                                        </div>
+                                                    </label>
+                                                    <div class="_129y4gf"><button aria-label="날짜 지우기" type="button"
+                                                            class="_oda838"><span class="_e296pg"><svg viewBox="0 0 32 32"
+                                                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                                    role="presentation" focusable="false"
+                                                                    style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                                                    <path d="m6 6 20 20"></path>
+                                                                    <path d="m26 6-20 20"></path>
+                                                                </svg></span></button></div>
+                                                </div>
+                                                <div></div>
+                                                <div class="_11mrn1u"><label class="_1yw7hpv" for="checkOut-book_it">
+                                                        <div class="_7eq2v2">체크아웃</div>
+                                                        <div dir="ltr">
+                                                            <div class="_etxtlin"><input class="_yrzsibu"
+                                                                    id="checkOut-book_it" placeholder="날짜 추가" type="text"
+                                                                    value="2022. 9. 4."></div>
+                                                        </div>
+                                                    </label>
+                                                    <div class="_129y4gf"><button aria-label="체크아웃 날짜 지우기" type="button"
+                                                            class="_oda838"><span class="_e296pg"><svg viewBox="0 0 32 32"
+                                                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                                    role="presentation" focusable="false"
+                                                                    style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                                                    <path d="m6 6 20 20"></path>
+                                                                    <path d="m26 6-20 20"></path>
+                                                                </svg></span></button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="_17fj0ye">
+                                            <div>
+                                                <div class="sewcpu6 dir dir-ltr" style="--spacingBottom:0;">
+                                                    <div class="t5p7tdn dir dir-ltr">
+                                                        <section>
+                                                            <h2 tabindex="-1" class="hnwb2pb dir dir-ltr"
+                                                                elementtiming="LCP-target">5박</h2>
+                                                        </section>
+                                                    </div>
+                                                    <div class="s1bh1tge dir dir-ltr">
+                                                        <div class="_uxnsba" data-testid="availability-calendar-date-range">
+                                                            <ol class="l7n4lsf dir dir-ltr">
+                                                                <li class="len26si dir dir-ltr"><span>침대 1개</span></li>
+                                                                <li class="len26si dir dir-ltr"><span
+                                                                        class="sxjq0r dir dir-ltr" aria-hidden="true"> ·
+                                                                    </span><span>욕실 1개</span></li>
+                                                            </ol>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>체크인</span>         
+                                        <input id="datepicker" width="276" height="500"/>
+                                    </div>
+                                    <div class="_rut4we">
+                                        <div class="_1sl8tba"><span class="_sbaj1v"><button
+                                                    data-testid="availability-calendar-save" type="button" class="_1lerwp6l">저장하기</button></span></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                </div>
+            </div>
+        </section>
+        <div class="_b21f4g">
+            <div aria-live="polite" aria-atomic="true"></div>
+            <div aria-live="assertive" aria-atomic="true"></div>
+        </div>
+    </div>
+    <!-- 날짜 변경 팝업-->
 </body>
-
+<script src="./js/payment.js"></script>
 </html>
