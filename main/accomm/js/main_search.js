@@ -1,20 +1,3 @@
-let slide_cnt = 0;
-let index = $('.c4mnd7m');
-
-//카테고리 스크롤 다음
-$('.nzjlmas').on('click',function(){
-    $('.p1rbh6uo').addClass('b1ntzptz');
-    slide_cnt++;
-    $('.category_slide').animate({right:+300*slide_cnt + 'px'},500);
-});
-//카테고리 스크롤 이전
-$('.p1rbh6uo').on('click',function(){
-    if(index < index.length-1){  
-    slide_cnt--;
-    $('.category_slide').animate({left:-100*slide_cnt + 'px'},500);
-    }
-});
-
 //숙소 리스트 하트(위시리스트)
 $('.ckqgked').on('click',function(){
     let heart = $(this);  
@@ -50,17 +33,15 @@ $('.ckqgked').on('click',function(){
         $(this).find("path, polygon, circle").attr('fill', 'rgba(0, 0, 0, 0.5)');
     }
 });
-
 //필터 팝업 on/off
 //필터 팝업 닫기
 $('._e296pg > svg').on('click',function(){
     $('.popup2').hide();
     $('.popup3').hide();
     $('.popup4').hide();
-});
-
+}); 
 //필터 팝업 열기
-$('.v1tureqs').on('click',function(){
+$('.v4b1g6f').on('click',function(){
     $('.popup2').show();
     //체크형
     $('._1yf4i4f').on('click',function(){
@@ -126,4 +107,5 @@ $('.v1tureqs').on('click',function(){
         $('.host_lan').hide();
         $('.host_lan2').show();
     });
+    
 });
