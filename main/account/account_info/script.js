@@ -52,17 +52,25 @@ $('#email-row-action2').on('click',function(){
 })
 
 /*전화번호 수정 버튼 눌렀을 때*/ 
-$('#phoneNumbers-row-action').on('click',function(){
-    $('#phoneNumbers-row-action').attr('class', '_en4nskq _kkkkkkk');
-    $('#phoneNumbers-row-action2').attr('class', '_en4nskq');
-    $('#phoneNumbers-row-action').attr('class', '_gw4xx4 _kkkkkkk');
-    $('#321337886-row-title').attr('class', '_gw4xx4 _kkkkkkk');
-    $('#321337886-row-subtitle').attr('class', '_1imhiqqh _kkkkkkk');
-    $('#formid4').attr('class', 'formid4');
-    $('#321337886-row-title2').attr('class', '_gw4xx4');
-    $('#321337886-row-subtitle2').attr('class', '_1imhiqqh');
-    $('#321337886-row-action').attr('class', '_en4nskq');
+$('#phoneNumbers-row-action1').on('click',function(){
+    $('#form3').show();
+    $('#phoneNumbers-row-action1').hide();
+    $('#phoneNumbers-row-action2').show();
 })
+
+$('#phoneNumbers-row-action2').on('click',function(){
+    $('#form3').hide();
+    $('#phoneNumbers-row-action2').hide();
+    $('#phoneNumbers-row-action1').show();
+})
+
+    // $('#phoneNumbers-row-action').attr('class', '_gw4xx4 _kkkkkkk');
+    // $('#321337886-row-title').attr('class', '_gw4xx4 _kkkkkkk');
+    // $('#321337886-row-subtitle').attr('class', '_1imhiqqh _kkkkkkk');
+    // $('#formid4').attr('class', 'formid4');
+    // $('#321337886-row-title2').attr('class', '_gw4xx4');
+    // $('#321337886-row-subtitle2').attr('class', '_1imhiqqh');
+    // $('#321337886-row-action').attr('class', '_en4nskq');
 
 /*전화번호 닫기 버튼 눌렀을 때*/ 
 $('#phoneNumbers-row-action2').on('click',function(){    
@@ -144,10 +152,10 @@ $('#guestIdentification-row-action1').on('click',function(){
 
 // 전화번호 인풋 클릭 시
 $('#phoneInputVerification1').on('click',function(){
-    $('#phoneInputVerification1').attr('class', '_1dnryfrb _1m2ich98');
-    $('#slslslsl').attr('class', '_1jn0ze9 _fywymp7');
-    $('#phone222').attr('class', '_c5rhl5 _c5rh15 focus-visible');
-    $('#asldjqw').attr('class', 'cx1v2qp dir dir-ltr c10me34 dir dir-ltr');
+    // $('#phoneInputVerification1').attr('class', '_1dnryfrb _1m2ich98');
+    // $('#slslslsl').attr('class', '_1jn0ze9 _fywymp7');
+    // $('#phone222').attr('class', '_c5rhl5 _c5rh15 focus-visible');
+    // $('#asldjqw').attr('class', 'cx1v2qp dir dir-ltr c10me34 dir dir-ltr');
 
 })
 

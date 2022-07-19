@@ -128,3 +128,39 @@ $('._b0ybw8s').on('click', function(){
     $('.content3').hide();
     $('.content4').show();
 })
+
+// 완료 세부사항 팝업
+$('#btn9').click(function(){
+    $('#popup6').show();
+})
+
+$('#btn11').click(function(){
+    $('#popup6').show();
+})
+
+$('#btn_close6').click(function(){
+    $('#popup6').hide();
+})
+
+// 취소됨 세부사항 팝업
+$('#btn10').click(function(){
+    $('#popup7').show();
+})
+
+$('#btn12').click(function(){
+    $('#popup7').show();
+})
+
+$('#btn_close7').click(function(){
+    $('#popup7').hide();
+})
+
+// 취소됨 특별가 제안 팝업
+
+$('#btn13').click(function(){
+    $('#popup6').show();
+})
+
+$('#btn_close8').click(function(){
+    $('#popup8').hide();
+})

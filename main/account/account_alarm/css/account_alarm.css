@@ -7035,3 +7035,93 @@ html.scrollbar-gutter[class][class] {
     margin-left: 3px !important;
     color: rgb(255, 255, 255) !important;
 }
+
+._1hzx1vsg {
+    border-radius: 32px !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    cursor: pointer !important;
+    height: 32px !important;
+    position: relative !important;
+    min-width: 48px !important;
+    width: 48px !important;
+    outline: none !important;
+    background-color: rgb(176, 176, 176) !important;
+    border-color: rgb(176, 176, 176) !important;
+}
+
+._1hzx1vsg:disabled {
+    cursor: not-allowed !important;
+    background-color: rgb(235, 235, 235) !important;
+    border-color: rgb(235, 235, 235) !important;
+}
+
+._1gzhi0nz {
+    -webkit-box-pack: center !important;
+    -webkit-box-align: center !important;
+    background-color: rgb(255, 255, 255) !important;
+    border-radius: 50% !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    height: 32px !important;
+    left: -1px !important;
+    position: absolute !important;
+    top: -1px !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+    width: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: -ms-transform 250ms ease-in-out 0s, -webkit-transform 250ms ease-in-out 0s, transform 250ms ease-in-out 0s !important;
+    border-color: lightgrey !important;
+    color: lightgrey !important;
+}
+
+._1hzx1vsg:disabled > div {
+    border-color: rgb(235, 235, 235) !important;
+}
+
+._1x8lx0do {
+    border-radius: 32px !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    cursor: pointer !important;
+    height: 32px !important;
+    position: relative !important;
+    min-width: 48px !important;
+    width: 48px !important;
+    outline: none !important;
+    background-color: rgb(34, 34, 34) !important;
+    border-color: rgb(34, 34, 34) !important;
+}
+
+._1x8lx0do:disabled {
+    cursor: not-allowed !important;
+    background-color: rgb(221, 221, 221) !important;
+    border-color: rgb(221, 221, 221) !important;
+}
+
+._1x8lx0do:disabled > div {
+    border-color: rgb(221, 221, 221) !important;
+}
+
+._1993dp9j {
+    -webkit-box-pack: center !important;
+    -webkit-box-align: center !important;
+    background-color: rgb(255, 255, 255) !important;
+    border-radius: 50% !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    height: 32px !important;
+    left: -1px !important;
+    position: absolute !important;
+    top: -1px !important;
+    width: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: -ms-transform 250ms ease-in-out 0s, -webkit-transform 250ms ease-in-out 0s, transform 250ms ease-in-out 0s !important;
+    transform: translate3d(16px, 0px, 0px) !important;
+    border-color: lightgrey !important;
+    color: lightgrey !important;
+}
