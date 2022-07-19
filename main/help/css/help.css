@@ -1,3 +1,6 @@
+#fb_xdm_frame_https {
+  visibility: hidden
+}
 input:focus-visible {
   outline-offset: 0px !important;
 }
