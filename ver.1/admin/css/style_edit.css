@@ -1,0 +1,220 @@
+/* 주소 수정 */
+.adr_container { width: 400px; height: 500px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.title { width: 200px; height: 40px; font-size: 30px; float: left; margin-top: 40px; margin-left: 30px; }
+.btn_close { width: 30px; height: 30px; float: right; margin-top: 40px; margin-right: 30px; }
+.adr_state { clear: both; width: 150px; height: 60px; position: fixed; float: left; margin-top: 120px; margin-left: 30px; }
+.adr_city { width: 178px; height: 60px; position: fixed; margin-top: 120px; margin-left: 190px; }
+.adr_road { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 200px; margin-left: 30px; }
+.adr_detail { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 280px; margin-left: 30px; }
+.adr_zipcode { clear: both; width: 120px; height: 60px; position: fixed; margin-top: 360px; margin-left: 30px; }
+.btn_cancel { clear: both; float: left; width: 100px; height: 40px; margin-top: 360px; margin-left: 30px; border-radius: 15px; color: black; background-color: whitesmoke; font-size: 18px; border: 1px solid #FF5C61 ;}
+.btn_save { float: right; width: 100px; height: 40px; margin-top: 360px; margin-right: 30px; border-radius: 15px; color: whitesmoke; background-color: #FF5C61 ; font-size: 18px; border: 1px solid #FF5C61 ;}
+.adr_box { height: 30px; margin-top: -10px; color: black; background-color: white; border-radius: 5px; }
+/* 주소 수정 끝 */
+
+/* 계좌번호 수정 */
+.bank_container { width: 400px; height: 230px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.bank_box { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 90px; margin-left: 30px; }
+.num_box { height: 30px; margin-top: -10px; color: black; text-align: center; background-color: white; border-radius: 5px; }
+.btn_bank_cancel { clear: both; float: left; width: 100px; height: 40px; margin-top: 90px; margin-left: 30px; border-radius: 15px; color: black; background-color: whitesmoke; font-size: 18px; border: 1px solid #FF5C61 ;}
+.btn_bank_save { float: right; width: 100px; height: 40px; margin-top: 90px; margin-right: 30px; border-radius: 15px; color: whitesmoke; background-color: #FF5C61 ; font-size: 18px; border: 1px solid #FF5C61 ;}
+/* 계좌번호 수정 끝 */
+
+/* 공유 */
+.share_container { width: 400px; height: 500px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.share_item1 { width: 150px; margin-top: 40px; font-size: 20px; }
+.share_item2 { width: 150px; margin-top: 40px; font-size: 20px; }
+.share_box { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 90px; margin-left: 30px; }
+.btn_share_cancel { clear: both; float: left; width: 100px; height: 40px; margin-top: 350px; margin-left: 30px; border-radius: 15px; color: black; background-color: whitesmoke; font-size: 18px; border: 1px solid #FF5C61 ;}
+.btn_share_save { float: right; width: 100px; height: 40px; margin-top: 350px; margin-right: 30px; border-radius: 15px; color: whitesmoke; background-color: #FF5C61 ; font-size: 18px; border: 1px solid #FF5C61 ;}
+/* 공유 끝 */
+
+/* 공유 토글 */
+.share_toggleSwitch { width: 6rem; margin: 2rem; height: 3rem; display: block; position: relative; border-radius: 2rem; background-color: #fff; box-shadow: 0 0 1rem 3px rgba(0 0 0 / 15%); cursor: pointer; }
+.share_toggleSwitch .toggleButton { width: 2.6rem; height: 2.6rem; position: absolute; top: 50%; left: .2rem; transform: translateY(-50%); border-radius: 50%; background: #FF5C61; }
+/* 체크박스가 체크되면 변경 이벤트 */
+#share_toggle1:checked ~ .share_toggleSwitch { background: #FF5C61; }
+#share_toggle1:checked ~ .share_toggleSwitch .toggleButton { left: calc(100% - 2.8rem); background: #fff; }
+#share_toggle2:checked ~ .share_toggleSwitch { background: #FF5C61; }
+#share_toggle2:checked ~ .share_toggleSwitch .toggleButton { left: calc(100% - 2.8rem); background: #fff; }
+.share_toggleSwitch, .toggleButton { transition: all 0.2s ease-in; }
+/* 공유 토글 끝 */
+
+/* 글로벌 환경설정 */
+.opt_container { width: 400px; height: 450px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.opt_lang { width: 338px; height: 60px; position: fixed; margin-top: 130px; margin-left: 30px; }
+.opt_cur { width: 338px; height: 60px; position: fixed; margin-top: 200px; margin-left: 30px; }
+.opt_time { width: 338px; height: 60px; position: fixed; margin-top: 270px; margin-left: 30px; }
+.opt_box { height: 30px; margin-top: -10px; color: black; background-color: white; border-radius: 5px; }
+.btn_opt_cancel { clear: both; float: left; width: 100px; height: 40px; margin-top: 300px; margin-left: 30px; border-radius: 15px; color: black; background-color: whitesmoke; font-size: 18px; border: 1px solid #FF5C61 ;}
+.btn_opt_save { float: right; width: 100px; height: 40px; margin-top: 300px; margin-right: 30px; border-radius: 15px; color: whitesmoke; background-color: #FF5C61 ; font-size: 18px; border: 1px solid #FF5C61 ;}
+/* 글로벌 환경설정 끝 */
+
+/* 계정 비활성화 */
+.accoff_container { width: 400px; height: 400px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.accoff_item1 { width: 150px; margin-top: 40px; font-size: 20px; }
+.accoff_box { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 90px; margin-left: 30px; }
+.btn_accoff_cancel { clear: both; float: left; width: 100px; height: 40px; margin-top: 240px; margin-left: 30px; border-radius: 15px; color: black; background-color: whitesmoke; font-size: 18px; border: 1px solid #FF5C61 ;}
+.btn_accoff_save { float: right; width: 100px; height: 40px; margin-top: 240px; margin-right: 30px; border-radius: 15px; color: whitesmoke; background-color: #FF5C61 ; font-size: 18px; border: 1px solid #FF5C61 ;}
+/* 계정 비활성화 끝 */
+
+/* 계정 비활성화 토글 */
+.accoff_toggleSwitch { width: 6rem; margin: 2rem; height: 3rem; display: block; position: relative; border-radius: 2rem; background-color: #fff; box-shadow: 0 0 1rem 3px rgba(0 0 0 / 15%); cursor: pointer; }
+.accoff_toggleSwitch .toggleButton { width: 2.6rem; height: 2.6rem; position: absolute; top: 50%; left: .2rem; transform: translateY(-50%); border-radius: 50%; background: #FF5C61; }
+/* 체크박스가 체크되면 변경 이벤트 */
+#accoff_toggle1:checked ~ .accoff_toggleSwitch { background: #FF5C61; }
+#accoff_toggle1:checked ~ .accoff_toggleSwitch .toggleButton { left: calc(100% - 2.8rem); background: #fff; }
+#accoff_toggle2:checked ~ .accoff_toggleSwitch { background: #FF5C61; }
+#accoff_toggle2:checked ~ .accoff_toggleSwitch .toggleButton { left: calc(100% - 2.8rem); background: #fff; }
+.accoff_toggleSwitch, .toggleButton { transition: all 0.2s ease-in; }
+/* 계정 비활성화 토글 끝 */
+
+/* 전문 호스팅 도구 */
+.hostingtool_container { width: 400px; height: 230px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.hostingtool_box { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 90px; margin-left: 30px; }
+.hostingtooluse_box { height: 30px; margin-top: -10px; color: black; text-align: center; background-color: white; border-radius: 5px; }
+.btn_hostingtool_cancel { clear: both; float: left; width: 100px; height: 40px; margin-top: 90px; margin-left: 30px; border-radius: 15px; color: black; background-color: whitesmoke; font-size: 18px; border: 1px solid #FF5C61 ;}
+.btn_hostingtool_save { float: right; width: 100px; height: 40px; margin-top: 90px; margin-right: 30px; border-radius: 15px; color: whitesmoke; background-color: #FF5C61 ; font-size: 18px; border: 1px solid #FF5C61 ;}
+/* 전문 호스팅 도구 끝 */
+
+/* 이름 수정 */
+.name_container { width: 400px; height: 230px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.name_box { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 90px; margin-left: 30px; }
+.inputname_box { height: 30px; margin-top: -10px; color: black; text-align: center; background-color: white; border-radius: 5px; }
+.btn_name_cancel { clear: both; float: left; width: 100px; height: 40px; margin-top: 90px; margin-left: 30px; border-radius: 15px; color: black; background-color: whitesmoke; font-size: 18px; border: 1px solid #FF5C61 ;}
+.btn_name_save { float: right; width: 100px; height: 40px; margin-top: 90px; margin-right: 30px; border-radius: 15px; color: whitesmoke; background-color: #FF5C61 ; font-size: 18px; border: 1px solid #FF5C61 ;}
+/* 이름 수정 끝 */
+
+/* 성별 수정 */
+.gender_container { width: 400px; height: 400px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.gender_item1 { width: 150px; margin-top: 40px; font-size: 20px; }
+.gender_box { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 90px; margin-left: 30px; }
+.btn_gender_cancel { clear: both; float: left; width: 100px; height: 40px; margin-top: 240px; margin-left: 30px; border-radius: 15px; color: black; background-color: whitesmoke; font-size: 18px; border: 1px solid #FF5C61 ;}
+.btn_gender_save { float: right; width: 100px; height: 40px; margin-top: 240px; margin-right: 30px; border-radius: 15px; color: whitesmoke; background-color: #FF5C61 ; font-size: 18px; border: 1px solid #FF5C61 ;}
+/* 성별 수정 끝 */
+
+/* 성별 수정 토글 */
+.gender_toggleSwitch { width: 6rem; margin: 2rem; height: 3rem; display: block; position: relative; border-radius: 2rem; background-color: #fff; box-shadow: 0 0 1rem 3px rgba(0 0 0 / 15%); cursor: pointer; }
+.gender_toggleSwitch .toggleButton { width: 2.6rem; height: 2.6rem; position: absolute; top: 50%; left: .2rem; transform: translateY(-50%); border-radius: 50%; background: #FF5C61; }
+/* 체크박스가 체크되면 변경 이벤트 */
+#gender_toggle1:checked ~ .gender_toggleSwitch { background: #FF5C61; }
+#gender_toggle1:checked ~ .gender_toggleSwitch .toggleButton { left: calc(100% - 2.8rem); background: #fff; }
+#gender_toggle2:checked ~ .gender_toggleSwitch { background: #FF5C61; }
+#gender_toggle2:checked ~ .gender_toggleSwitch .toggleButton { left: calc(100% - 2.8rem); background: #fff; }
+.gender_toggleSwitch, .toggleButton { transition: all 0.2s ease-in; }
+/* 성별 수정 토글 끝 */
+
+/* 이메일 수정 */
+.email_container { width: 400px; height: 230px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.email_box { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 90px; margin-left: 30px; }
+.inputemail_box { height: 30px; margin-top: -10px; color: black; text-align: center; background-color: white; border-radius: 5px; }
+.btn_email_cancel { clear: both; float: left; width: 100px; height: 40px; margin-top: 90px; margin-left: 30px; border-radius: 15px; color: black; background-color: whitesmoke; font-size: 18px; border: 1px solid #FF5C61 ;}
+.btn_email_save { float: right; width: 100px; height: 40px; margin-top: 90px; margin-right: 30px; border-radius: 15px; color: whitesmoke; background-color: #FF5C61 ; font-size: 18px; border: 1px solid #FF5C61 ;}
+/* 이메일 수정 끝 */
+
+/* 생년월일 수정 */
+.birth_container { width: 400px; height: 230px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.birth_box { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 90px; margin-left: 30px; }
+.inputbirth_box { height: 30px; margin-top: -10px; color: black; text-align: center; background-color: white; border-radius: 5px; }
+.btn_birth_cancel { clear: both; float: left; width: 100px; height: 40px; margin-top: 90px; margin-left: 30px; border-radius: 15px; color: black; background-color: whitesmoke; font-size: 18px; border: 1px solid #FF5C61 ;}
+.btn_birth_save { float: right; width: 100px; height: 40px; margin-top: 90px; margin-right: 30px; border-radius: 15px; color: whitesmoke; background-color: #FF5C61 ; font-size: 18px; border: 1px solid #FF5C61 ;}
+/* 생년월일 수정 끝 */
+
+/* 전화번호 수정 */
+.tel_container { width: 400px; height: 230px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.tel_box { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 90px; margin-left: 30px; }
+.inputtel_box { height: 30px; margin-top: -10px; color: black; text-align: center; background-color: white; border-radius: 5px; }
+.btn_tel_cancel { clear: both; float: left; width: 100px; height: 40px; margin-top: 90px; margin-left: 30px; border-radius: 15px; color: black; background-color: whitesmoke; font-size: 18px; border: 1px solid #FF5C61 ;}
+.btn_tel_save { float: right; width: 100px; height: 40px; margin-top: 90px; margin-right: 30px; border-radius: 15px; color: whitesmoke; background-color: #FF5C61 ; font-size: 18px; border: 1px solid #FF5C61 ;}
+/* 전화번호 수정 끝 */
+
+/* 비상연락망 */
+.telsub_container { width: 400px; height: 230px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.telsub_box { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 90px; margin-left: 30px; }
+.inputtelsub_box { height: 30px; margin-top: -10px; color: black; text-align: center; background-color: white; border-radius: 5px; }
+.btn_telsub_cancel { clear: both; float: left; width: 100px; height: 40px; margin-top: 90px; margin-left: 30px; border-radius: 15px; color: black; background-color: whitesmoke; font-size: 18px; border: 1px solid #FF5C61 ;}
+.btn_telsub_save { float: right; width: 100px; height: 40px; margin-top: 90px; margin-right: 30px; border-radius: 15px; color: whitesmoke; background-color: #FF5C61 ; font-size: 18px; border: 1px solid #FF5C61 ;}
+/* 비상연락망 끝 */
+
+
+/* 체험명 수정 */
+.expname_container { width: 400px; height: 230px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.expname_box { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 90px; margin-left: 30px; }
+.inputname_box { height: 30px; margin-top: -10px; color: black; text-align: center; background-color: white; border-radius: 5px; }
+.btn_name_cancel { clear: both; float: left; width: 100px; height: 40px; margin-top: 90px; margin-left: 30px; border-radius: 15px; color: black; background-color: whitesmoke; font-size: 18px; border: 1px solid #FF5C61 ;}
+.btn_name_save { float: right; width: 100px; height: 40px; margin-top: 90px; margin-right: 30px; border-radius: 15px; color: whitesmoke; background-color: #FF5C61 ; font-size: 18px; border: 1px solid #FF5C61 ;}
+/* 체험명 수정 끝 */
+
+
+
+/*테마박스*/
+
+
+.theme_container { width: 500px; height: 600px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.twrap { clear: both; width: 338px; height: 60px; position: relative; margin-top: 90px; margin-left: 30px; }
+
+.btn_theme_cancel { clear: both; float: left; width: 100px; height: 40px; margin-top: 350px; margin-left: 30px; border-radius: 15px; color: black; background-color: whitesmoke; font-size: 18px; border: 1px solid #FF5C61 ;}
+.btn_theme_save { float: right; width: 100px; height: 40px; margin-top: 350px; margin-right: 30px; border-radius: 15px; color: whitesmoke; background-color: #FF5C61 ; font-size: 18px; border: 1px solid #FF5C61 ;}
+
+
+.toggle-switch input[type=checkbox]{
+    display: none;
+}
+
+.toggle-track{
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 25px;
+    border-radius:60px;
+    background: #8b8b8b;
+}
+.toggle-track:before{
+    content:'';
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: -15px;
+    width: 30px;
+    height: 30px; 
+    margin: 5px;
+    background: #fff;
+    border-radius:100%;
+    border:1px solid #8b8b8b;
+    transition:left 0.3s;
+}
+.toggle-switch input[type=checkbox] + label .toggle-track:after{
+    content:'OFF';
+    display: inline-block;
+    position: absolute;
+    right: 8px;
+    color: #fff;
+}
+
+.toggle-switch input[type=checkbox]:checked + label .toggle-track{
+    background: #e51836;
+}
+.toggle-switch input[type=checkbox]:checked + label .toggle-track:before{
+    left: 30px;
+    border:1px solid #e51737;
+}
+.toggle-switch input[type=checkbox]:checked + label .toggle-track:after{
+    content:'ON';
+    left: 5px;
+}
+
+
+/*언어,시간선택*/
+
+.lang_container,.time_container { width: 400px; height: 230px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.lang_box,.time_box { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 90px; margin-left: 30px; text-align: center;}
+
+/*프로그램소개, 준비물*/
+.program_container,.prep_container { width: 400px; height: 230px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.program_box,.prep_box { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 90px; margin-left: 30px; }
+
+/*방문주소*/
+.bm_container { width: 400px; height: 500px; margin: 0 auto; color: black; background-color: whitesmoke; }
+.bm_box { clear: both; width: 338px; height: 60px; position: fixed; margin-top: 90px; margin-left: 30px; }
+
+
