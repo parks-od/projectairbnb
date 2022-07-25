@@ -18,7 +18,6 @@ $('._yv33y4').keyup(function (e) {
     if (content.length > 50) {
     	// 200자 부터는 타이핑 되지 않도록
         $(this).val($(this).val().substring(0,50));
-
     };
 
     if (content.length != 0 || content != ''){

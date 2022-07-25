@@ -1,16 +1,31 @@
-package com.example.airbnb.Controller.page;
+package com.example.airbnb.controller.page;
 
+import com.example.airbnb.service.member.MemberApiLogicService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 @Controller
-@RequestMapping("/pages") // http://localhost:8080/pages
+@RequestMapping("/pages") // http://localhost:9090/pages
 public class PageController {
+    @Autowired
+    private MemberApiLogicService memberApiLogicService;
 
     @RequestMapping(path = {""})
-    public ModelAndView main(){
-        return new ModelAndView("/pages/main");
+    public ModelAndView main(HttpServletRequest request){
+            HttpSession session = request.getSession(false);
+            Long id = 0L;
+            if(session == null){
+
+            }else{
+                id = (Long) session.getAttribute("id");
+            }
+        return new ModelAndView("/pages/main").addObject("id", id);
     }
 
     @RequestMapping(path = {"/wish"})
@@ -279,5 +294,28 @@ public class PageController {
     @RequestMapping("/sub")    // http://localhost:9090/pages/sub
     public ModelAndView sub(){
         return new ModelAndView("/pages/hosting/host_before/sub");
+    }
+
+    // 로그인 확인
+    @PostMapping("/loginok")
+    public String loginOk(HttpServletRequest request, String email, String memPw){
+        System.out.println(email);
+        System.out.println(memPw);
+        if(memberApiLogicService.read(email, memPw).getData() != null){
+            HttpSession session = request.getSession();
+            Long id = memberApiLogicService.read(email, memPw).getData().getMemId();
+            session.setAttribute("id", id);
+
+            return "redirect:/pages/";
+        }else{
+            return "redirect:/pages/sub";
+        }
+    }
+
+    @RequestMapping("/logout")
+    public String logout(HttpServletRequest request){
+        HttpSession session = request.getSession();
+        session.invalidate();
+        return "redirect:/pages/login";
     }
 }

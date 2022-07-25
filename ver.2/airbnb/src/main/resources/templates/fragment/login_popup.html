@@ -16,7 +16,11 @@
                                 style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
                     <path d="m6 6 20 20"></path>
                     <path d="m26 6-20 20"></path>
-                  </svg></span></button></div>
+
+                        </svg>
+                        </span>
+                        </button>
+                        </div>
                         <header class="_1youxq0">
                             <div class="_1tng6ym"></div>
                             <div class="_9t7ktw">
@@ -31,46 +35,55 @@
                                 <div class="_je2ned">
                                     <h3 class="_u72b34">에어비앤비에 오신 것을 환영합니다.</h3>
                                 </div>
-                                <form action="" method="POST" novalidate="" data-testid="auth-form" onsubmit="return emailCheck()"><input type="hidden"
-                                                                                                                                          name="authenticity_token"
-                                                                                                                                          value="V4$.airbnb.co.kr$ndx2vue9KCA$AJtyxQzCRb4te9TxjvKv6q0rWSfSAjtNJkR8NyReLZ0="><input
-                                        type="hidden" name="from" value="email_login"><input type="hidden" name="airlock_id" value="">
+                                <form action="/pages/loginok" method="POST" novalidate="" data-testid="auth-form">
+                                    <input type="hidden" name="authenticity_token" value="V4$.airbnb.co.kr$ndx2vue9KCA$AJtyxQzCRb4te9TxjvKv6q0rWSfSAjtNJkR8NyReLZ0=">
+                                    <input type="hidden" name="from" value="email_login"><input type="hidden" name="airlock_id" value="">
                                     <div>
                                         <div class="_1jj61m9"><label class="_1yw7hpv" for="email-login-email">
                                             <div class="_1m2ich98">
                                                 <div class="_11hx67x">이메일</div>
                                             </div>
                                             <div dir="ltr">
-                                                <div class="_js9i23"><input placeholder="이메일" name="user[email]"
+                                                <div class="_js9i23">
+                                                    <input placeholder="이메일" name="email"
                                                                             data-testid="email-login-email" aria-required="true" class="_yrzsibu"
                                                                             id="email-login-email" autocomplete="off" inputmode="email" type="email"
-                                                                            aria-describedby="email-login-email-InputField-help" value=""></div>
+                                                                            aria-describedby="email-login-email-InputField-help" value="" required>
+                                                </div>
                                             </div>
-                                        </label></div>
+                                        </label>
+                                        </div>
                                         <div class="_klarpw"></div>
                                     </div>
-
                                     <div>
                                         <div class="_1jj61m9"><label class="_1yw7hpv" for="email-login-email-pw">
                                             <div class="_1m2ich98">
                                                 <div class="_11hx67x">비밀번호</div>
                                             </div>
                                             <div dir="ltr">
-                                                <div class="_js9i23"><input type="password" name="user[pw]"
+                                                <div class="_js9i23">
+                                                    <input type="password" name="memPw"
                                                                             data-testid="email-login-email-pw" placeholder="비밀번호" aria-required="true" class="_yrzsibu"
                                                                             id="email-login-email-pw" autocomplete="off" inputmode="email"
-                                                                            aria-describedby="email-login-email-InputField-help" value=""></div>
+                                                                            aria-describedby="email-login-email-InputField-help" value="" required>
+                                                </div>
                                             </div>
-                                        </label></div>
+                                        </label>
+                                        </div>
                                         <div class="_klarpw"></div>
                                     </div>
-
                                     <div id="airlock-inline-container1" aria-live="polite"></div>
-                                    <div class="_wfo3ii"><button data-testid="signup-login-submit-btn" type="submit" class="_6hkhatt"
-                                                                 data-veloute="submit-btn-cypress"><span class="_jxxpcd"><span class="_kaq6tx"
-                                                                                                                               style="background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%); --mouse-x:51.3462; --mouse-y:30.2083;"></span></span><span
-                                            class="_tcp689">계속 </span></button></div>
+                                    <div class="_wfo3ii">
+                                        <button data-testid="signup-login-submit-btn" type="submit" class="_6hkhatt"
+                                                                 data-veloute="submit-btn-cypress">
+                                            <span class="_jxxpcd">
+                                                <span class="_kaq6tx" style="background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%); --mouse-x:51.3462; --mouse-y:30.2083;"></span>
+                                            </span>
+                                            <span class="_tcp689">계속 </span>
+                                        </button>
+                                    </div>
                                 </form>
+
                                 <div class="_1x0diny1">
                                     <div class="_16fq9mb">또는</div>
                                 </div>
@@ -216,7 +229,7 @@
                         <div class="_12kfhdn">
                             <div data-testid="login-pane">
                                 <div>
-                                    <form action="/create" method="POST" onsubmit="return member()" novalidate="" data-testid="auth-form"><input type="hidden"
+                                    <form method="POST" onsubmit="return member()" novalidate="" data-testid="auth-form"><input type="hidden"
                                                                                                                                                  name="authenticity_token"
                                                                                                                                                  value="V4$.airbnb.co.kr$He0XzpCOSiE$N9J8_b77PpfGbPOry39T4YKaPXPg5iD3g0Hiy5Qhvf8="><input
                                             type="hidden" name="from" value="email_signup">
@@ -299,7 +312,7 @@
                                                         <div class="_11hx67x">이메일</div>
                                                     </div>
                                                     <div dir="ltr">
-                                                        <div class="_fywymp7"><input placeholder="이메일" name="user[email]"
+                                                        <div class="_fywymp7"><input placeholder="이메일" name="email"
                                                                                      data-testid="email-signup-email" class="_yrzsibu" id="email-signup-email"
                                                                                      autocomplete="off" inputmode="email" type="email"
                                                                                      aria-describedby="email-signup-email-InputField-help" value=""></div>
@@ -318,7 +331,7 @@
                                                         <div class="_11hx67x">비밀번호</div>
                                                     </div>
                                                     <div dir="ltr">
-                                                        <div class="_js9i23"><input name="user[password]" placeholder="비밀번호" autocapitalize="none"
+                                                        <div class="_js9i23"><input name="memPw" placeholder="비밀번호" autocapitalize="none"
                                                                                     spellcheck="false" data-testid="email-signup-password" class="_yrzsibu"
                                                                                     id="email-signup-password" autocomplete="off" type="password"
                                                                                     aria-describedby="email-signup-password-InputField-help" value=""></div>
@@ -371,7 +384,7 @@
                                                      aria-labelledby="email-signupuser_profile_info[collection_of_personal_information]-row-title"
                                                      class="r1pyaok7 u6t9k07 dir dir-ltr"><label
                                                         for="email-signupuser_profile_info-row-checkbox"
-                                                        class="_13xlah4">
+                                                        class="_13xlah4" >
                                                     <div class="_jro6t0">
                                                         <div class="_gfomxi">
                                                             <div id="email-signupuser_profile_info[collection_of_personal_information]-row-title"
@@ -386,14 +399,14 @@
                                                         <div class="_1mqc21n"><span class="_10ndlvp"><input
                                                                 name="email-signupuser_profile_info-row-checkbox"
                                                                 aria-labelledby="email-signupuser_profile_info-row-checkbox"
-                                                                id="email-signupuser_profile_info-row-checkbox"
+                                                                id="email-signupuser_profile_info-row-checkbox" value="N"
                                                                 class="_1yf4i4f" type="checkbox"><span class="_41yoza"
                                                                                                        data-checkbox="true"></span></span></div>
                                                     </div>
                                                 </label></div>
                                             </div><button type="button" class="_za4ekfm"><span class="_1jiyo28">더 보기</span></button>
                                         </div>
-                                        <div><input type="hidden" name="email-signupuser_profile_info[receive_promotional_email]" value="0">
+                                        <div><input type="hidden" name="email-signupuser_profile_info[receive_promotional_email]" id="email-signupuser_profile_info[receive_promotional_email]hidden" value="0">
                                             <div class="_ovcpis">
                                                 <div id="email-signupuser_profile_info[receive_promotional_email]" aria-disabled="false"
                                                      role="group"
@@ -415,7 +428,7 @@
                                                                 name="email-signupuser_sub-row-checkbox"
                                                                 aria-labelledby="email-signupuser_sub-row-title"
                                                                 id="email-signupuser_sub-row-checkbox"
-                                                                class="_1yf4i4f" type="checkbox"><span class="_41yoza"
+                                                                class="_1yf4i4f" value="N" type="checkbox"><span class="_41yoza"
                                                                                                        data-checkbox="true"></span></span></div>
                                                     </div>
                                                 </label></div>

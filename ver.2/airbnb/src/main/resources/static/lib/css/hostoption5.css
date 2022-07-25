@@ -1,8 +1,27 @@
 
 
 
-
-
+._fywymp7 {
+  display: flex !important;
+  opacity: 1 !important;
+}
+._1m2ich98 {
+  position: absolute !important;
+  top: 18px !important;
+  left: 12px !important;
+  right: 12px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  color: rgb(113, 113, 113) !important;
+  pointer-events: none !important;
+  transform-origin: 0% 0% !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  transition: -ms-transform 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s, -webkit-transform 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s, transform 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s !important;
+  transform: translateY(-8px) scale(0.75) !important;
+  font-weight: 400 !important;
+}
 ._1eaes69 {
   flex: 0 0 auto !important;
 }

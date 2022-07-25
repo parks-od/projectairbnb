@@ -6,23 +6,38 @@ $('.forlog').on('click',function(){
 $('._pa35zs').on('click',function(){
     $('.login_main').hide();
 });
-
+// $('#email-login-email').attr('name', 'email');
+// $('#email-login-email-pw').attr('name', 'memPw');
 $('#social-member').on('click',function(){
     $('.login_main').hide();
     $('.login_member').show();
     //체크박스1 클릭
+    $('#email-signupuser_profile_info-row-checkbox').attr('value', 'N');
     $('#email-signupuser_profile_info-row-checkbox').on('click',function(){
         $(this).next().empty();
+        $(this).toggleClass('checkbox1');
         $(this).toggleClass('_1yf4i4f _smt4n2a');
         $(this).next().toggleClass('_41yoza _1v5cvwv4');
         $(this).next().append('<span class="_1oj8hra"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"  focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></span>');
+        if($('#email-signupuser_profile_info-row-checkbox').is('.checkbox1')){
+            $('#email-signupuser_profile_info-row-checkbox').attr('value', 'Y');
+        }else{
+            $('#email-signupuser_profile_info-row-checkbox').attr('value', 'N');
+        }
     });
     //체크박스2 클릭
+    $('#email-signupuser_sub-row-checkbox').attr('value', 'N');
     $('#email-signupuser_sub-row-checkbox').on('click',function(){
         $(this).next().empty();
         $(this).toggleClass('_1yf4i4f _smt4n2a');
+        $(this).toggleClass('checkbox2');
         $(this).next().toggleClass('_41yoza _1v5cvwv4');
         $(this).next().append('<span class="_1oj8hra"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"  focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></span>');
+        if($('#email-signupuser_sub-row-checkbox').is('.checkbox2')){
+            $('#email-signupuser_sub-row-checkbox').attr('value', 'Y');
+        }else{
+            $('#email-signupuser_sub-row-checkbox').attr('value', 'N');
+        }
     });
 
     //뒤로가기
@@ -79,27 +94,50 @@ function member(){
         return false;
     }
 
-    if(!(checkbox.is(':checked'))){
+    if(!(checkbox.val('Y'))){
         alert('개인정보 수집 및 이용에 동의해야합니다.');
         return false;
     }
 
-    return true;
-}
-
-function emailCheck(){
-    const email = $('#email-login-email');
-    const emailcheck = /^[a-zA-Z0-9\-\.]+@[a-zA-Z0-9\-\.]+\.[a-zA-Z0-9]/;
-
-    if (!(emailcheck.test(email.val()))){
-        $(email).val('');
-        $(email).focus();
-        alert('이메일 형식에 맞게 입력 하세요');
-        return false;
+    let jsonData = {
+        transaction_time: new Date(),
+        resultCode:"ok",
+        description:"ok",
+        data:{
+            memFirstname: $('#email-signup-userfirst').val(),
+            memName: $('#email-signup-userlast').val(),
+            birth: $('#email-signup-date').val(),
+            email: $('#email-signup-email').val(),
+            memPw: $('#email-signup-password').val(),
+            isLogshare: ($('#email-signupuser_profile_info-row-checkbox').val() + "\u00A0" + $('#email-signupuser_sub-row-checkbox').val())
+        }
     }
-    return true;
+    $.post({
+        url: '/api/user',
+        data: JSON.stringify(jsonData),
+        dataType: 'json',
+        contentType: 'application/json',
+        success: function(){
+            alert('등록성공!');
+            location.href='/pages';
+        },
+        error: function(){
+            alert('등록실패!');
+            location.reload();
+        }
+    });
 }
 
-
-
-
+// function emailCheck(){
+//     const email = $('#email-login-email');
+//     const emailcheck = /^[a-zA-Z0-9\-\.]+@[a-zA-Z0-9\-\.]+\.[a-zA-Z0-9]/;
+//
+//     if (!(emailcheck.test(email.val()))){
+//         $(email).val('');
+//         $(email).focus();
+//         alert('이메일 형식에 맞게 입력 하세요');
+//         return false;
+//     }
+//     return true;
+// }
+//
