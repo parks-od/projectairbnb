@@ -7,7 +7,7 @@ $('._pa35zs').on('click',function(){
     $('.login_main').hide();
 });
 // $('#email-login-email').attr('name', 'email');
-// $('#email-login-email-pw').attr('name', 'memPw');
+// $('#email-login-email-pw').attr('name', 'memPw');zz
 $('#social-member').on('click',function(){
     $('.login_main').hide();
     $('.login_member').show();
@@ -55,7 +55,7 @@ function member(){
     let year = birth.val().substring(0,4);
     const password = $('#email-signup-password');
     const checkbox = $('#email-signupuser_profile_info-row-checkbox');
-    
+
     const nameCheck = /^[가-힣|a-z|A-Z|]+$/;
     const emailcheck = /^[a-zA-Z0-9\-\.]+@[a-zA-Z0-9\-\.]+\.[a-zA-Z0-9]/;
     const pwExp = /(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[#?!@$ %^&*-]).{6,20}$/;
@@ -118,11 +118,9 @@ function member(){
         dataType: 'json',
         contentType: 'application/json',
         success: function(){
-            alert('등록성공!');
             location.href='/pages';
         },
         error: function(){
-            alert('등록실패!');
             location.reload();
         }
     });

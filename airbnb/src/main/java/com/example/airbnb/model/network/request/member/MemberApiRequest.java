@@ -20,11 +20,13 @@ public class MemberApiRequest {
     private String memPw;
     private String email;
     private String birth;
+    private String memHpContr;
     private String memHp;
-    private String memContent;
     private String confirmStatus;
     private String isLogshare;
     private LocalDateTime confirmAt;
     private LocalDateTime updateAt;
     private LocalDateTime outAt;
+    private String memPic;
+    private String memPicurl;
 }

@@ -1,14 +1,15 @@
-<!doctype html>
-<html data-is-hyperloop="true" data-hyperloop-version="1" lang="ko" dir="ltr">
+<html lang="ko"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org/">
 <head>
     <meta charSet="utf-8" />
     <link href="https://a0.muscache.com/airbnb/static/packages/dls/dls-lite_cereal-32f4a55b7a0ed9ca55714ba7265a6c84.css"
         rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/lib/css/loginpop.css">
+    <link rel="stylesheet" href="/lib/css/acc_header.css.css">
     <link rel="stylesheet" href="/lib/css/account_main.css">
 </head>
-<body class="with-new-header">
+<body class="with-new-header" >
     <div id="site-skip-links"><a class="screen-reader-only screen-reader-only-focusable skip-to-content"
             data-hook="skip-to-content" href="#site-content">콘텐츠로 바로가기</a><span id="popups-everywhere-skip-link"></span>
     </div>
@@ -39,14 +40,16 @@
                                                         <div
                                                             style="margin-top:64px;margin-bottom:56px;margin-left:16px">
                                                             <div class="_mf1jwf">계정</div>
-                                                            <div style="margin-top:8px;margin-bottom:16px">
+                                                            <div style="margin-top:8px;margin-bottom:16px" th:fragment="account_main(memFirstname, memName, email)">
                                                                 <div class="_y3y4ly">
                                                                     <!-- 사용자 성명 출력 -->
-                                                                    <span class="_pgfqnw">종복 최
+                                                                    <span class="_pgfqnw" th:text="${memName}">
                                                                     <!-- 사용자 성명 출력 -->
                                                                     <!-- -->,
                                                                     <!-- 사용자 이메일 출력 -->
-                                                                    </span><span>jongbok8089@gmail.com
+                                                                    </span>
+                                                                    <span class="_pgfqnw" th:text="${memFirstname}"></span>
+                                                                    <span th:text="${email}">
                                                                     <!-- 사용자 이메일 출력 -->
                                                                         <!-- --> ·
                                                                     </span><a href="/pages/account_profile" class="_1sikdxcl">프로필로
@@ -58,8 +61,8 @@
                                                         <div class="_1g05mp0x">
                                                             <div class="_hq87c8">
                                                                 <div class="_1obfcljv">
-                                                                    <div class="_15wuypg"><a
-                                                                            href="/pages/account_info"
+                                                                    <div class="_15wuypg">
+                                                                        <a href="/pages/account_info"
                                                                             class="_1uwb2q9">
                                                                             <div style="margin-bottom:16px"><svg
                                                                                     viewBox="0 0 32 32"
@@ -283,9 +286,6 @@
     <div id="authModals"></div>
     <script type="text/javascript" nonce="e3aafd0c78fc8039f978703376e6aaf4"
         src="/64wkjlkxwP5kY/Xiz7prYxjZ/UEW0/QiLirwcc/dW1ccAkbBg/JG/dwTHBPNzk"></script>
-    <!-- 로그인 관련 팝업 모듈-->
-    <div th:replace="fragment/login_popup::login_popup"></div>
-    <!-- 로그인 관련 팝업 모듈-->
 </body>
 <script src="/lib/js/acc_loginpop.js"></script>
 </html>

@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Menu {
+public class LoginMenu {
     private String title;
     private String url;
     private String code;

@@ -4,9 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
@@ -32,11 +30,13 @@ public class Member { // 이벤트 테이블
     private String memPw;
     private String email;
     private String birth;
+    private String memHpContr;
     private String memHp;
-    private String memContent;
     private String confirmStatus;
     private String isLogshare;
     private LocalDateTime confirmAt;
     private LocalDateTime updateAt;
     private LocalDateTime outAt;
+    private String memPic;
+    private String memPicurl;
 }

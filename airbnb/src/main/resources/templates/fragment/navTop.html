@@ -598,34 +598,16 @@
                                                     </button>
                                                         <!-- 팝업 login 후-->
                                                         <div class="c1ixqffw c3i7glo dir dir-ltr" style="display:none" tabindex="-1" id="simple-header-profile-menu"
-                                                             data-testid="simple-header-profile-menu">
-                                                            <div><a class="c1b2ssu5 c1g2wjql dir dir-ltr forlog" href="#">
-                                                                <div class="l1ql0u4u dir dir-ltr">로그인</div>
-                                                            </a><a class="c1b2ssu5 c1g2wjql dir dir-ltr" href="/pages/travel">
-                                                                <div class="l1ql0u4u dir dir-ltr">여행</div>
-                                                            </a><a class="c1b2ssu5 c1g2wjql dir dir-ltr" href="/pages/wish">
-                                                                <div class="l1ql0u4u dir dir-ltr">위시리스트</div>
-                                                            </a>
-                                                                <div class="d7qkrn2 dir dir-ltr"></div><a class="c1iyjvyv cxgxr36 dir dir-ltr" href="/pages/host_done">
-                                                                    <div class="ld7h8km dir dir-ltr">숙소 관리<div class="b1xexnrd b19hyxd0 dir dir-ltr" aria-label="알림 있음"></div>
-                                                                    </div>
-                                                                </a><a class="c1iyjvyv cxgxr36 dir dir-ltr" href="#">
-                                                                    <div class="ld7h8km dir dir-ltr">체험 관리<div class="b1xexnrd b19hyxd0 dir dir-ltr" aria-label="알림 있음"></div>
-                                                                    </div>
-                                                                </a><a class="c1iyjvyv cxgxr36 dir dir-ltr" href="#">
-                                                                    <div class="ld7h8km dir dir-ltr">호스트 추천하기</div>
-                                                                </a><a class="c1iyjvyv cxgxr36 dir dir-ltr" href="/pages/account_main">
-                                                                    <div class="ld7h8km dir dir-ltr">계정</div>
+                                                             data-testid="simple-header-profile-menu" th:fragment="navTop(code, menuList)">
+                                                            <div>
+                                                                <a class="c1b2ssu5 c1g2wjql dir dir-ltr forlog" data-testid="cypress-headernav-login" >
+                                                                    <div class="l1ql0u4u dir dir-ltr">로그인</div>
                                                                 </a>
-                                                                <div class="d7qkrn2 dir dir-ltr"></div><a class="c1iyjvyv cxgxr36 dir dir-ltr" data-no-client-routing=""
-                                                                                                          href="/pages/help">
-                                                                    <div class="ld7h8km dir dir-ltr">도움말</div>
-                                                                </a>
-                                                                <form action="/logout" method="POST" data-testid="auth-form"><input type="hidden" name="authenticity_token"
-                                                                                                                                    value="V4$.airbnb.co.kr$VmSJ1CPz1tE$JnXUTaqT_Oj0ChmxmrccxnfkrtcrHffjJmUHNH4dkZo="><button type="submit"
-                                                                                                                                                                                                                              class="c1iyjvyv cxgxr36 dir dir-ltr" data-testid="cypress-headernav-logout">
-                                                                    <div class="ld7h8km dir dir-ltr">로그아웃</div>
-                                                                </button></form>
+                                                                <th:block th:each="entry : ${menuList}">
+                                                                        <a th:href="${entry.url}" class="c1b2ssu5 c1g2wjql dir dir-ltr " th:id="${entry.id}">
+                                                                            <div th:text="${entry.title}" class="l1ql0u4u dir dir-ltr" ></div>
+                                                                        </a>
+                                                                </th:block>
                                                             </div>
                                                         </div>
 
