@@ -4745,3 +4745,13 @@
       .atm_1yfe54e_1hbpp16:disabled {
         color: var(--f-mkcy-f);
       }
+
+/* 스크롤 기능 제거 */
+
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    overflow: hidden;
+    height: 100%;
+}

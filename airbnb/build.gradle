@@ -16,11 +16,14 @@ configurations {
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.jetbrains:annotations:20.1.0'
+    implementation 'org.jetbrains:annotations:20.1.0'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     implementation 'commons-io:commons-io:2.11.0'
@@ -33,6 +36,15 @@ dependencies {
     implementation 'com.oracle.database.security:oraclepki'
     implementation 'com.oracle.database.security:osdt_core'
     implementation 'com.oracle.database.security:osdt_cert'
+
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
+
+    // https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper-spring-boot-starter
+    implementation group: 'com.github.pagehelper', name: 'pagehelper', version: '5.3.1'
+
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
 }
 
 tasks.named('test') {

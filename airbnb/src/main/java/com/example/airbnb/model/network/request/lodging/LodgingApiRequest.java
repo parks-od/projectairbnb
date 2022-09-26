@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -17,5 +19,11 @@ public class LodgingApiRequest {
     private String lodgingCovi;
     private String lodgingHref;
     private String lodgingStatus;
+    private LocalDateTime lodgingDate;
+    private LocalDateTime lodgingUpdateDate;
     private Long memId;
+    private String lodgingType1;
+    private Integer lodgingBeds;
+    private Integer lodgingBedrooms;
+    private Integer lodgingBathroom;
 }

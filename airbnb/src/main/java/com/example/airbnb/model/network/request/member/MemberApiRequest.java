@@ -18,6 +18,7 @@ public class MemberApiRequest {
     private String memName;
     private String memFirstname;
     private String memPw;
+    private String newpassword;
     private String email;
     private String birth;
     private String memHpContr;

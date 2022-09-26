@@ -16,5 +16,7 @@ public class LodgingRoomApiRequest {
     private String lodgingType3;
     private String lodgingHigh;
     private String lodgingFloor;
-    private String lodgingExtra;
+    private Integer lodgingBeds;
+    private Integer lodgingBedrooms;
+    private Integer lodgingBathroom;
 }

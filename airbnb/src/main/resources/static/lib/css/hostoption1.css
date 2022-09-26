@@ -6,6 +6,7 @@
     -ms-flex: 0 1 auto;
 }
 
+
 body {
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     font-size: 14px;
@@ -3497,3 +3498,13 @@ h1, h2, h3, h4, h5, h6 {
         font-size: inherit;
         line-height: inherit;
       }
+
+/* 스크롤 기능 제거 */
+
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    overflow: hidden;
+    height: 100%;
+}

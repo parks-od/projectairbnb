@@ -124,9 +124,14 @@
     rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
     <title>호스트가 되신 것을 환영합니다 - 에어비앤비</title>
     <link rel="stylesheet" href="/lib/css/hostoption16.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
 
   <body class="with-new-header">
+  <div th:fragment="hostoption15(id)" hidden>
+    <div id="iddiv2" th:text="${id}" hidden></div>
+  </div>
     <div id="site-skip-links"><span id="popups-everywhere-skip-link"></span></div>
     <div id="smart-banner"></div><noscript>
       <div class="alert alert-with-icon alert-error no-js-alert" data-nosnippet="true"><i
@@ -213,9 +218,9 @@
                     <div class="_tdjw9nc" style="transition:opacity 0.6s">
                       <div class="_10mqyec"><span style="font-size:0"></span>
                         <div class="_118xr10" id="FMP-target">
-                          <div class="_e5xjym4">
+                          <div id="memName" class="_e5xjym4">
                             <!--사용자이름이 들어간 환영 문구-->
-                            <h1 class="_gw2yyp">시현님, 반갑습니다!</h1>
+                            <h1 class="_gw2yyp">{{memFirstname}}님, 반갑습니다!</h1>
                             <div class="_1rbt0oa"><span class="ll4r2nl dir dir-ltr">호스트는 에어비앤비의 중심이라 할 수 있습니다. 이제 호스팅의
                                 매력을 경험해 보세요.<br> <br><span class="_1di55y9">- 브라이언 드림</span></span></div>
                           </div>
@@ -253,5 +258,5 @@
     <div id="fb-root"></div>
     <div id="authModals"></div>
   </body>
-
+  <script src="/lib/js/hostingoption/hostoption16.js"></script>
   </html>

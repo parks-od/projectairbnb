@@ -15,6 +15,9 @@
   </head>
 
   <body class="with-new-header">
+  <div th:fragment="hostoption13(id)" hidden>
+      <div id="iddiv" th:text="${lodgingId}" hidden></div>
+  </div>
     <div id="site-skip-links"><span id="popups-everywhere-skip-link"></span></div>
     <div id="smart-banner"></div><noscript>
       <div class="alert alert-with-icon alert-error no-js-alert" data-nosnippet="true"><i
@@ -208,8 +211,8 @@
                         <div class="_mg8q4fv" id="FMP-target">
                           <div class="_ak1fi9o">  
                             <!--사용자가 선택한 금액-->
-                            <div class="_avf3zc"><button class="_qvgwrg" type="button" disabled="" aria-label="감소"
-                                data-testid="undefined-decrease-button" onclick="mCount()" id="discount"><span class="_8ovatg"><svg viewBox="0 0 32 32"
+                            <div class="_avf3zc"><button class="_qvgwrg" type="button" aria-label="감소"
+                                data-testid="undefined-decrease-button" id="discount" disabled="disabled"><span class="_8ovatg"><svg viewBox="0 0 32 32"
                                     xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                                     focusable="false"
                                     style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
@@ -220,14 +223,15 @@
                                   <div class="_1h4ezu9"><label class="_1yw7hpv" for="undefined-input"><span
                                         class="a8jt5op dir dir-ltr">1박당 가격</span>
                                       <div dir="ltr">
-                                        <div class="_1naku51"><input pattern="[0-9]*" placeholder="₩00" class="_1tg6kp1"
+                                        <div class="_1naku51">
+                                           <input pattern="[0-9]*" placeholder="₩00" class="_1tg6kp1"
                                             id="undefined-input" autocomplete="off" type="text" aria-describedby=""
-                                            value=""></div>
+                                            value="10000"></div>
                                       </div>
                                     </label></div>
                                 </div>
-                              </div><button class="_qvgwrg" type="button" aria-label="증가"
-                                data-testid="undefined-increase-button" onclick="pCount()"><span class="_8ovatg"><svg viewBox="0 0 32 32"
+                              </div><button class="_qvgwrg" id="plus" type="button" aria-label="증가"
+                                data-testid="undefined-increase-button"><span class="_8ovatg"><svg viewBox="0 0 32 32"
                                     xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                                     focusable="false"
                                     style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
@@ -247,7 +251,7 @@
                                 </svg></span>기본 요금으로 ₩12,976~₩12,975,928 사이의 값을 입력해 주세요.</div>
                           </div>
                           <div class="_16gvswn9" style="animation-delay: 449.741ms;"><span aria-live="polite"
-                              aria-atomic="true">이와 비슷한 숙소의 요금은 보통 ₩99,474~₩165,790 사이입니다.</span>
+                              aria-atomic="true"></span>
                             <div class="_1tgve7z"><button aria-label="제안 요금에 대한 설명" type="button" class="_oda838"><span
                                   class="_e296pg"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
                                     aria-hidden="true"  focusable="false"
@@ -319,7 +323,7 @@
     <div id="fb-root"></div>
     <div id="authModals"></div>
 
-    <script src="/lib/js/hostoption13.js"></script>
+    <script src="/lib/js/hostingoption/hostoption13.js"></script>
   </body>
 
   </html>

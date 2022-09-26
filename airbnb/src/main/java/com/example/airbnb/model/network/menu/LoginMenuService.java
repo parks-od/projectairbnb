@@ -10,8 +10,9 @@ import java.util.List;
 public class LoginMenuService {
     public List<LoginMenu> getLoginMenu(){
         return Arrays.asList(
-                LoginMenu.builder().title("숙소 호스트 되기").url("/pages/category").code("host").build(),
-                LoginMenu.builder().title("체험 호스트 되기").url("#").code("activity").build(),
-                LoginMenu.builder().title("도움말").url("/pages/help").code("help").build());
+                LoginMenu.builder().title("로그인").url("#").code("login").classes("forlog").build(),
+                LoginMenu.builder().title("숙소 호스트 되기").url("#").code("host").classes("").build(),
+                LoginMenu.builder().title("체험 호스트 되기").url("#").code("activity").classes("").build(),
+                LoginMenu.builder().title("도움말").url("#").code("help").classes("").build());
     }
 }

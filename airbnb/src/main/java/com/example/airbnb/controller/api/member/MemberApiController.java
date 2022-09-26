@@ -21,9 +21,45 @@ public class MemberApiController implements CrudInterface<MemberApiRequest, Memb
         return memberApiLogicService.create(request);
     }
 
+    @PostMapping("/login")
+    public Header<MemberApiResponse> loginEmail(@RequestBody Header<LoginRequest> request) {
+        return memberApiLogicService.emailChecks(request);
+    }
+
+    @PostMapping("/loginPw")
+    public Header<MemberApiResponse> pwChecks(@RequestBody Header<LoginRequest> request) {
+        return memberApiLogicService.pwChecks(request);
+    }
+
+    //member read
     @Override
-    public Header<MemberApiResponse> read(Long id) {
-        return null;
+    @RequestMapping(method = RequestMethod.GET, path = "/mem")
+    public Header<MemberApiResponse> read(@RequestParam Long id) {
+        return memberApiLogicService.read(id);
+    }
+
+    // memInfo read
+    @RequestMapping(method = RequestMethod.GET, path = "/memInfo")
+    public Header<MemInfoApiResponse> readInfo(@RequestParam Long id) {
+        return memberApiLogicService.reads(id);
+    }
+
+    // memNotice read
+    @RequestMapping(method = RequestMethod.GET, path = "/memNotice")
+    public Header<MemNoticeApiResponse> readNotice(@RequestParam Long id) {
+        return memberApiLogicService.readss(id);
+    }
+
+    // memPrivacy read
+    @RequestMapping(method = RequestMethod.GET, path = "/memPrivacy")
+    public Header<MemSecurityApiResponse> readPrivacy(@RequestParam Long id) {
+        return memberApiLogicService.readsa(id);
+    }
+
+    // memGlobal
+    @RequestMapping(method = RequestMethod.GET, path = "/memGlobal")
+    public Header<MemGlobalApiResponse> memGlobal(@RequestParam Long id) {
+        return memberApiLogicService.readaa(id);
     }
 
     @Override
@@ -67,8 +103,8 @@ public class MemberApiController implements CrudInterface<MemberApiRequest, Memb
 
     // -------------------------- 로그인 및 보안 -----------------------------------------//
     @PostMapping("/pwChange")
-    public void updatePw(@RequestBody Header<MemberApiRequest> request, String newPassword) {
-        memberApiLogicService.updatePw(request, newPassword);
+    public void updatePw(@RequestBody Header<MemberApiRequest> request) {
+        memberApiLogicService.updatePw(request);
     }
     // -------------------------- #end 로그인 및 보안 -----------------------------------------//
     // -------------------------- 계정 알림 -----------------------------------------//
@@ -119,6 +155,24 @@ public class MemberApiController implements CrudInterface<MemberApiRequest, Memb
     public Header<MemberApiResponse> delete(Long id) {
         return null;
     }
+
+//    @Autowired
+//    private MailService mailService;
+//
+//    @RequestMapping("/mail/send")
+//    public String showSend(){
+//        return "/mail/send";
+//    }
+//
+//    @RequestMapping("/sendEmail")
+//    @ResponseBody
+//    public ResponseEntity<?> doSend(String email, String title, String body){
+//        mailService.send(email, title, body);
+//
+//        HttpHeaders headers = new HttpHeaders();
+//        headers.setLocation(URI.create("/user/findResult"));
+//        return new ResponseEntity<>(headers, HttpStatus.MOVED_PERMANENTLY);
+//    }
 }
 
 

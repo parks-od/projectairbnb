@@ -1,4 +1,4 @@
-package com.example.airbnb.repository;
+package com.example.airbnb.repository.lodging;
 
 
 import com.example.airbnb.model.entity.member.Member;

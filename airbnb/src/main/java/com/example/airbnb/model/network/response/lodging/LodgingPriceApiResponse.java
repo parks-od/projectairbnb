@@ -14,7 +14,7 @@ public class LodgingPriceApiResponse {
     private Integer priceNormal;
     private Integer priceMin;
     private Integer priceMax;
-    private Integer priceTo;
+    private String priceTo;
     private Integer priceClean;
     private Integer priceCleanShort;
     private Integer pricePet;

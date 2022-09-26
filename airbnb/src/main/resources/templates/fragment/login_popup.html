@@ -35,7 +35,7 @@
                                     <div class="_je2ned">
                                         <h3 class="_u72b34">에어비앤비에 오신 것을 환영합니다.</h3>
                                     </div>
-                                    <form action="/pages/loginok" method="POST" novalidate="" data-testid="auth-form">
+                                    <form method="POST" onsubmit="return emailCheck()" data-testid="auth-form" target="iframe1">
                                         <input type="hidden" name="authenticity_token" value="V4$.airbnb.co.kr$ndx2vue9KCA$AJtyxQzCRb4te9TxjvKv6q0rWSfSAjtNJkR8NyReLZ0=">
                                         <input type="hidden" name="from" value="email_login"><input type="hidden" name="airlock_id" value="">
                                         <div>
@@ -47,30 +47,13 @@
                                                     <div class="_js9i23">
                                                         <input placeholder="이메일" name="email"
                                                                                 data-testid="email-login-email" aria-required="true" class="_yrzsibu"
-                                                                                id="email-login-email" autocomplete="off" inputmode="email" type="email"
+                                                                                id="email-login-email" autocomplete="off" inputmode="email" type="text"
                                                                                 aria-describedby="email-login-email-InputField-help" value="" required>
                                                     </div>
                                                 </div>
                                             </label>
                                             </div>
-                                            <div class="_klarpw"></div>
-                                        </div>
-                                        <div>
-                                            <div class="_1jj61m9"><label class="_1yw7hpv" for="email-login-email-pw">
-                                                <div class="_1m2ich98">
-                                                    <div class="_11hx67x">비밀번호</div>
-                                                </div>
-                                                <div dir="ltr">
-                                                    <div class="_js9i23">
-                                                        <input type="password" name="memPw"
-                                                                                data-testid="email-login-email-pw" placeholder="비밀번호" aria-required="true" class="_yrzsibu"
-                                                                                id="email-login-email-pw" autocomplete="off" inputmode="email"
-                                                                                aria-describedby="email-login-email-InputField-help" value="" required>
-                                                    </div>
-                                                </div>
-                                            </label>
-                                            </div>
-                                            <div class="_klarpw"></div>
+                                            <div class="_klarpw errmsg1"></div>
                                         </div>
                                         <div id="airlock-inline-container1" aria-live="polite"></div>
                                         <div class="_wfo3ii">
@@ -83,17 +66,16 @@
                                             </button>
                                         </div>
                                     </form>
-
                                     <div class="_1x0diny1">
                                         <div class="_16fq9mb">또는</div>
                                     </div>
                                     <div class="_88xxct">
                                         <div class="_88sa87">
                                             <div class="_jwti9r">
-                                                <form action="/oauth_connect?from=facebook_login&amp;service=facebook" method="POST"
+                                                <form  method="POST"
                                                       data-testid="auth-form"><input type="hidden" name="authenticity_token"
-                                                                                     value="V4$.airbnb.co.kr$ndx2vue9KCA$AJtyxQzCRb4te9TxjvKv6q0rWSfSAjtNJkR8NyReLZ0="><button
-                                                        data-testid="social-auth-button-facebook" aria-label="페이스북으로 로그인하기" type="submit"
+                                                                                     value="V4$.airbnb.co.kr$ndx2vue9KCA$AJtyxQzCRb4te9TxjvKv6q0rWSfSAjtNJkR8NyReLZ0="><div
+                                                        data-testid="social-auth-button-facebook" aria-label="페이스북으로 로그인하기"
                                                         class="_snbhip0">
                                                     <div class="_1a2vq1h">
                                                         <div class="_fvfsqm"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
@@ -114,17 +96,15 @@
                                                                         d="M16.671 15.469L17.203 12h-3.328V9.749c0-.949.465-1.874 1.956-1.874h1.513V4.922s-1.374-.234-2.686-.234c-2.741 0-4.533 1.66-4.533 4.668V12H7.078v3.469h3.047v8.385a12.09 12.09 0 003.75 0V15.47h2.796"
                                                                         fill="#FFF"></path>
                                                             </g>
-                                                        </svg></div>
-                                                        <div class="_bc4egv">페이스북으로 로그인하기</div>
-                                                        <div class="_fvfsqm"></div>
+                                                        </svg></div><div class="_bc4egv">페이스북으로 로그인하기</div><div class="_fvfsqm"></div>
                                                     </div>
-                                                </button></form>
+                                                </div></form>
                                             </div>
                                             <div class="_jwti9r">
-                                                <form action="/oauth_connect?from=google_login&amp;service=google" method="POST"
+                                                <form method="POST"
                                                       data-testid="auth-form"><input type="hidden" name="authenticity_token"
-                                                                                     value="V4$.airbnb.co.kr$ndx2vue9KCA$AJtyxQzCRb4te9TxjvKv6q0rWSfSAjtNJkR8NyReLZ0="><button
-                                                        data-testid="social-auth-button-google" aria-label="구글로 로그인하기" type="submit" class="_snbhip0">
+                                                                                     value="V4$.airbnb.co.kr$ndx2vue9KCA$AJtyxQzCRb4te9TxjvKv6q0rWSfSAjtNJkR8NyReLZ0="><div
+                                                        data-testid="social-auth-button-google" aria-label="구글로 로그인하기" class="_snbhip0">
                                                     <div class="_1a2vq1h">
                                                         <div class="_fvfsqm"><svg viewBox="0 0 18 18" aria-hidden="true"
                                                                                   focusable="false" style="height: 20px; width: 20px; display: block;">
@@ -147,13 +127,13 @@
                                                         <div class="_bc4egv">구글로 로그인하기</div>
                                                         <div class="_fvfsqm"></div>
                                                     </div>
-                                                </button></form>
+                                                </div></form>
                                             </div>
                                             <div class="_jwti9r">
-                                                <form action="/oauth_connect?from=apple_login&amp;service=apple" method="POST"
+                                                <form method="POST"
                                                       data-testid="auth-form"><input type="hidden" name="authenticity_token"
-                                                                                     value="V4$.airbnb.co.kr$ndx2vue9KCA$AJtyxQzCRb4te9TxjvKv6q0rWSfSAjtNJkR8NyReLZ0="><button
-                                                        data-testid="social-auth-button-apple" aria-label="Apple 계정으로 계속하기" type="submit"
+                                                                                     value="V4$.airbnb.co.kr$ndx2vue9KCA$AJtyxQzCRb4te9TxjvKv6q0rWSfSAjtNJkR8NyReLZ0="><div
+                                                        data-testid="social-auth-button-apple" aria-label="Apple 계정으로 계속하기"
                                                         class="_snbhip0">
                                                     <div class="_1a2vq1h">
                                                         <div class="_fvfsqm"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +146,7 @@
                                                         <div class="_bc4egv">Apple 계정으로 계속하기</div>
                                                         <div class="_fvfsqm"></div>
                                                     </div>
-                                                </button></form>
+                                                </div></form>
                                             </div>
                                             <div class="_jwti9r">
                                                 <button id="social-member" aria-label="회원가입"
@@ -279,6 +259,7 @@
                                             <div class="_b0398r">
                                                 <div class="_pxnjg" id="email-signup__names-field-help-text">정부 발급 신분증에 표시된 이름과 일치하는지 확인하세요.</div>
                                             </div>
+                                            <div class="_klarpw errmsg2"></div>
                                             <div class="_vp4g0q">
                                                 <div class="cx1v2qp dir dir-ltr" style="border-radius: 8px;">
                                                     <div class="_jro6t0">
@@ -305,6 +286,7 @@
                                                     <div class="_pxnjg" id="email-signup__birthdate-field-help-text">만 18세 이상의 성인만 회원으로 가입할 수 있습니다.
                                                         생일은 에어비앤비의 다른 회원에게 공개되지 않습니다.</div>
                                                 </div>
+                                                <div class="_klarpw errmsg3"></div>
                                             </div>
                                             <div class="_vp4g0q">
                                                 <div>
@@ -342,9 +324,9 @@
                                                             <div class="_slm4k1"><button type="button" class="_15rpys7s">표시</button></div>
                                                         </div>
                                                     </div>
-                                                    <div class="_klarpw"></div>
+
                                                 </div>
-                                                <div data-testid="password-rules-indicator" class="_klarpw" aria-live="polite" aria-atomic="true">
+                                                <di v data-testid="password-rules-indicator" class="_klarpw errmsg4" aria-live="polite" aria-atomic="true">
                                                     <div class="_1u9fru1">
 
                                                     </div>
@@ -374,7 +356,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
                                             <div id="airlock-inline-container" aria-live="polite"></div>
                                             <div class="_1wzgqhq"></div>
                                             <div><input type="hidden" name="email-signupuser_profile_info[collection_of_personal_information]"
@@ -407,6 +388,7 @@
                                                     </label></div>
                                                 </div><button type="button" class="_za4ekfm"><span class="_1jiyo28">더 보기</span></button>
                                             </div>
+                                            <div class="_klarpw errmsg5"></div>
                                             <div><input type="hidden" name="email-signupuser_profile_info[receive_promotional_email]" id="email-signupuser_profile_info[receive_promotional_email]hidden" value="0">
                                                 <div class="_ovcpis">
                                                     <div id="email-signupuser_profile_info[receive_promotional_email]" aria-disabled="false"
@@ -455,10 +437,97 @@
                 </div>
             </div>
         </section>
+        <iframe id="iframe1" name="iframe1" style="display:none"></iframe>
         <div class="_b21f4g">
             <div aria-live="polite" aria-atomic="true"></div>
             <div aria-live="assertive" aria-atomic="true"></div>
         </div>
     </div>
+    <!-- 비밀번호 입력 -->
+    <div dir="ltr" class="login_pw" hidden>
+        <div class="_1t0jy5tw"></div>
+        <section>
+            <div class="_vxvq8x" data-testid="modal-container">
+                <div class="_z4lmgp">
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                    <div class="_z4lmgp">
+                        <div role="dialog" aria-label="로그인" aria-modal="true" class="_1ucy1zjv" style="position: relative;">
+                            <div class="_pa35zs backmain"><button aria-label="닫기" type="button"
+                                                         class="atm_26_1j28jx2 atm_1s_glywfm atm_9s_1o8liyq atm_5j_1ssbidh atm_3f_glywfm atm_kd_glywfm atm_gi_idpfg4 atm_l8_idpfg4 atm_7l_18pqv07 atm_9j_tlke0l atm_tl_1gw4zv3 atm_nvh0zw_glywfm atm_10xqkau_glywfm atm_6sivc_idpfg4 atm_1t4m47o_idpfg4 atm_so7p3s_glywfm atm_x9r51u_glywfm atm_e0aj52_glywfm atm_1b7jadx_ryfd4z atm_wa0l67_glywfm atm_z8v79x_glywfm atm_57992z_glywfm atm_1fi7hcc_idpfg4 atm_1bpl3k1_idpfg4 atm_kwr3fs_glywfm atm_1vbw7mi_glywfm atm_iqrf8d_glywfm atm_1k7j3g0_ryfd4z atm_k7s5ow_glywfm atm_1jhk75u_1piyxwk atm_174zlj6_13gfvf7 atm_1yfe54e_161hw1 atm_mk_h2mmj6 atm_uc_bm6tyn atm_5zlr7v_glywfm atm_1i1170i_1otlplk atm_1qc5akx_1nh1gcj atm_16scgop_1otlplk atm_1xc0vp4_ffmgpj atm_1hgxuhp_1nh1gcj atm_w8nnxc_glywfm atm_6hovrv_idpfg4 atm_178mhn2_idpfg4 atm_1heevni_glywfm atm_1s33t4_glywfm atm_5a8a1f_1lyxhpa atm_1o6jmyj_1nh1gcj atm_k8iwno_1lyxhpa atm_yt2vh9_1nh1gcj atm_1nw6de5_1j28jx2 atm_lzn0r3_1yyfdc7 atm_du7p7_1ulexfb atm_6hjprp_stnw88 atm_2stpi8_1ssbidh atm_44hr8e_1ssbidh atm_69el5p_1ooetej atm_1v8yup7_1vi7ecw atm_1oletfx_1vi7ecw atm_jxpu17_1ssbidh l1j9v1wn dir dir-ltr"><span
+                                    class="atm_mk_h2mmj6 dir dir-ltr"><svg viewBox="0 0 32 32"
+                                                                           xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                                           focusable="false"
+                                                                           style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                                        <g fill="none">
+                                            <path
+                                                    d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932">
+                                            </path>
+                                        </g>
+                                    </svg></span></button></div>
+                            <header class="_1youxq0">
+                                <div class="_1tng6ym"></div>
+                                <div class="_9t7ktw">
+                                    <h1 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                        <div class="_1q9sh65">로그인</div>
+                                    </h1>
+                                </div>
+                                <div class="_rrmdgl"></div>
+                            </header>
+                            <div class="_12kfhdn">
+                                <div data-testid="login-pane">
+                                    <div class="_1mgee70">
+                                        <form method="POST" action="/pages/login" novalidate="" data-testid="auth-form">
+                                            <input type="hidden" name="authenticity_token"
+                                                   value="V4$.airbnb.co.kr$VfAPxJTKmQM$h11Bq3dfJcJZIqGevY_Oo3YEEG70cXDHYr-YTlsjLRA="><input
+                                                type="hidden" name="from" value="email_login"><input type="hidden"
+                                                                                                     name="airlock_id" value="">
+                                                        <div>
+                                                            <div class="_1jj61m9"><label class="_1yw7hpv" for="email-login-email">
+                                                                <div class="_1m2ich98">
+                                                                    <div class="_11hx67x">비밀번호</div>
+                                                                </div>
+                                                                <div dir="ltr">
+                                                                    <div class="_js9i23">
+                                                                        <input placeholder="비밀번호" name="memPw" data-testid="email-login-email" aria-required="true" class="_yrzsibu" id="email-login-password" autocomplete="off" type="password" aria-describedby="email-login-email-InputField-help" value="" required="">
+                                                                        <input type="text" name="email" id="sendemails" value="" hidden>
+                                                                    </div>
+                                                    </div>
+                                                </label>
+                                                    <div class="_129y4gf">
+                                                        <div class="_slm4k1">
+                                                            <button type="button" class="atm_26_1j28jx2 atm_c8_1kw7nm4 atm_bx_1kw7nm4 atm_cs_qo5vgd atm_cd_1kw7nm4 atm_ci_1kw7nm4 atm_g3_1kw7nm4 atm_7l_18pqv07 atm_rd_8stvzk atm_48epfq_tlke0l atm_1i1170i_1otlplk atm_1q87l6g_8stvzk atm_9i92u8_1kw7nm4 atm_1jnz9t4_8stvzk atm_1s_glywfm atm_3f_glywfm atm_9j_tlke0l atm_gi_idpfg4 atm_l8_idpfg4 atm_vb_1wugsn5 atm_174zlj6_13gfvf7 atm_u2zm4s_glywfm atm_5j_mlmjl2 atm_r3_1kw7nm4 atm_i13gxs_18pqv07 atm_1qoa45s_8stvzk atm_16scgop_12u4tyr atm_1x17suq_8stvzk atm_kd_glywfm atm_w8nnxc_glywfm atm_6hovrv_idpfg4 atm_178mhn2_idpfg4 atm_1heevni_glywfm atm_1s33t4_glywfm atm_1ceipv4_18pqv07 atm_173kp0v_8stvzk atm_e0aj52_glywfm atm_1b7jadx_ryfd4z atm_wa0l67_1364l2v atm_u0uin_18pqv07 atm_abvsi8_8stvzk atm_iqrf8d_glywfm atm_1k7j3g0_ryfd4z atm_k7s5ow_1364l2v atm_1yfe54e_161hw1 atm_13103ow_8stvzk atm_11ocau6_8stvzk l1j9v1wn dir dir-ltr" id="togPw" >표시</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="" aria-live="polite"></div>
+                                            <div class="_wfo3ii"><button data-testid="signup-login-submit-btn" type="submit"
+                                                                         class="atm_26_2a2bt1 atm_9j_tlke0l atm_9s_1o8liyq atm_gi_idpfg4 atm_mk_h2mmj6 atm_r3_1h6ojuz atm_rd_glywfm atm_3f_glywfm atm_vy_1osqo2v atm_l8_srw7uq atm_7l_1hbpp16 atm_c8_8ycq01 atm_bx_1ltc5j7 atm_tl_1gw4zv3 atm_174zlj6_13gfvf7 atm_1jhk75u_kb7nvz atm_g3_adnk3f atm_cs_qo5vgd atm_5j_9l7fl4 atm_kd_glywfm atm_uc_ouvu0h atm_5zlr7v_glywfm atm_r2_1j28jx2 atm_nvh0zw_glywfm atm_10xqkau_glywfm atm_6sivc_idpfg4 atm_1t4m47o_idpfg4 atm_so7p3s_glywfm atm_x9r51u_glywfm atm_e0aj52_glywfm atm_1b7jadx_ryfd4z atm_wa0l67_tz30h1 atm_z8v79x_glywfm atm_57992z_glywfm atm_1fi7hcc_idpfg4 atm_1bpl3k1_idpfg4 atm_kwr3fs_glywfm atm_1vbw7mi_glywfm atm_iqrf8d_glywfm atm_1k7j3g0_ryfd4z atm_k7s5ow_tz30h1 atm_1xc0vp4_18md41p atm_s7wuve_glywfm atm_wolyye_2a2bt1 atm_1i1170i_1hbpp16 atm_1j4gqi5_glywfm atm_1kevezh_1wg69w8 atm_16scgop_1hbpp16 atm_1f0kgtv_glywfm atm_oln6rx_161hw1 atm_1yfe54e_1hbpp16 atm_1kkdsga_161hw1 l1j9v1wn dir dir-ltr"
+                                                                         data-veloute="submit-btn-cypress"><span
+                                                    class="atm_mk_stnw88 atm_tk_idpfg4 atm_fq_idpfg4 atm_n3_idpfg4 atm_6i_idpfg4 atm_vy_1osqo2v atm_e2_1osqo2v atm_ks_15vqwwr atm_ib_ueyaub atm_ia_ueyaub atm_5j_9l7fl4 dir dir-ltr"><span
+                                                    class="atm_9s_1ulexfb atm_vy_1osqo2v atm_e2_1osqo2v atm_jb_uuw12j atm_2w_1egmwxu atm_k4_idpfg4 atm_uc_kn5pbq atm_2g_x6ffn1 atm_1k1pljo_kb7nvz atm_f8cor4_1cydtq5 atm_1jmsv9c_idpfg4 atm_1xc0vp4_kftzq4 dir dir-ltr"
+                                                    style="background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%); --mouse-x:48.8462; --mouse-y:10.4329;"></span></span><span
+                                                    class="atm_9s_1ulexfb atm_mk_h2mmj6 atm_mj_glywfm dir dir-ltr">로그인
+                                                </span></button></div><button data-testid="forgot-password-link"잊
+                                                                              id="checkEmail"
+                                                                              type="button"
+                                                                              class="atm_26_1j28jx2 atm_c8_1kw7nm4 atm_bx_1kw7nm4 atm_cs_qo5vgd atm_cd_1kw7nm4 atm_ci_1kw7nm4 atm_g3_1kw7nm4 atm_7l_18pqv07 atm_rd_8stvzk atm_48epfq_tlke0l atm_1i1170i_1otlplk atm_1q87l6g_8stvzk atm_9i92u8_1kw7nm4 atm_1jnz9t4_8stvzk atm_1s_glywfm atm_3f_glywfm atm_9j_tlke0l atm_gi_idpfg4 atm_l8_idpfg4 atm_vb_1wugsn5 atm_174zlj6_13gfvf7 atm_u2zm4s_glywfm atm_5j_mlmjl2 atm_r3_1kw7nm4 atm_i13gxs_18pqv07 atm_1qoa45s_8stvzk atm_16scgop_12u4tyr atm_1x17suq_8stvzk atm_kd_glywfm atm_w8nnxc_glywfm atm_6hovrv_idpfg4 atm_178mhn2_idpfg4 atm_1heevni_glywfm atm_1s33t4_glywfm atm_1ceipv4_18pqv07 atm_173kp0v_8stvzk atm_e0aj52_glywfm atm_1b7jadx_ryfd4z atm_wa0l67_1364l2v atm_u0uin_18pqv07 atm_abvsi8_8stvzk atm_iqrf8d_glywfm atm_1k7j3g0_ryfd4z atm_k7s5ow_1364l2v atm_1yfe54e_161hw1 atm_13103ow_8stvzk atm_11ocau6_8stvzk l1j9v1wn dir dir-ltr">비밀번호를
+                                            잊으셨나요?</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                </div>
+            </div>
+        </section>
+        <div class="_b21f4g">
+            <div aria-live="polite" aria-atomic="true"></div>
+            <div aria-live="assertive" aria-atomic="true"></div>
+        </div>
+    </div>
+    <!-- 비밀번호 입력 -->
 </div>
 </html>

@@ -10,9 +10,14 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
 <link rel="stylesheet" type="text/css" href="/lib/css/lodging.css" />
 <link rel="stylesheet" href="/lib/css/host_nav.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body class="with-new-header">
+<div th:fragment="hostoption9(id)" hidden>
+    <div id="iddiv" th:text="${lodgingId}" hidden></div>
+    <div id="iddiv2" th:text="${id}" hidden></div>
+</div>
     <div id="site-skip-links"><a class="screen-reader-only screen-reader-only-focusable skip-to-content"
             data-hook="skip-to-content" href="#site-content">콘텐츠로 바로가기</a><span id="popups-everywhere-skip-link"></span>
     </div>
@@ -47,7 +52,7 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                         data-section-id="navBarLogo">
                                                                         <div class="_1xkpd84"><a class="_14p3wn7w"
                                                                                 aria-label="에어비앤비 호스팅 홈페이지"
-                                                                                href="/hosting">
+                                                                                href="/pages">
                                                                                 <div class="_wth1u7"><svg width="102"
                                                                                         height="32"
                                                                                         style="display:block">
@@ -76,7 +81,7 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                     <div data-plugin-in-point-id="navBarMenuGroup"
                                                                         data-section-id="navBarMenuGroup">
                                                                         <div class="_1cu8ql8">
-                                                                            <div class="_36rlri"><a href="/hosting"
+                                                                            <div class="_36rlri"><a href="/pages/host_done"
                                                                                     class="_1yydbd74">
                                                                                     <div class="_1wxj0qrv">
                                                                                         <div class=" dir dir-ltr">투데이
@@ -84,7 +89,6 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                     </div>
                                                                                 </a></div>
                                                                             <div class="_36rlri"><a
-                                                                                    href="/hosting/inbox"
                                                                                     class="_1yydbd74">
                                                                                     <div class="_1wxj0qrv">
                                                                                         <div class=" dir dir-ltr">메시지
@@ -92,7 +96,6 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                     </div>
                                                                                 </a></div>
                                                                             <div class="_36rlri"><a
-                                                                                    href="/calendar-router"
                                                                                     class="_1yydbd74">
                                                                                     <div class="_1wxj0qrv">
                                                                                         <div class=" dir dir-ltr">달력
@@ -100,7 +103,7 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                     </div>
                                                                                 </a></div>
                                                                             <div class="_36rlri"><a
-                                                                                    href="/progress/opportunity-hub"
+                                                                                    href="/pages/host_insite1"
                                                                                     class="_1yydbd74">
                                                                                     <div class="_1wxj0qrv">
                                                                                         <div class=" dir dir-ltr">인사이트
@@ -309,7 +312,7 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                             id="simple-header-profile-menu"
                                                                                             data-testid="simple-header-profile-menu">
                                                                                             <div><a class="_10flxfyq"
-                                                                                                    href="/users/show">
+                                                                                                    href="/pages/account_profile">
                                                                                                     <div class="_3hmsj">
                                                                                                         <div
                                                                                                             class="_sdqx8w">
@@ -319,7 +322,7 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                                         class="_ojs7nk">
                                                                                                         프로필</div>
                                                                                                 </a><a class="_10flxfyq"
-                                                                                                    href="/account-settings">
+                                                                                                    href="/pages/account_main">
                                                                                                     <div class="_3hmsj">
                                                                                                         <div
                                                                                                             class="_sdqx8w">
@@ -328,8 +331,7 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                                     <div
                                                                                                         class="_ojs7nk">
                                                                                                         계정</div>
-                                                                                                </a><a class="_10flxfyq"
-                                                                                                    href="/help/hosting">
+                                                                                                </a><a class="_10flxfyq">
                                                                                                     <div class="_3hmsj">
                                                                                                         <div
                                                                                                             class="_sdqx8w">
@@ -341,8 +343,7 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                                 </a>
                                                                                                 <div class="_ipygq">
                                                                                                 </div><a
-                                                                                                    class="_yy1t5kt"
-                                                                                                    href="/account-settings/preferences">
+                                                                                                    class="_yy1t5kt">
                                                                                                     <div class="_3hmsj">
                                                                                                         <div
                                                                                                             class="_sdqx8w">
@@ -351,8 +352,7 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                                     <div
                                                                                                         class="_ojs7nk">
                                                                                                         언어 및 번역</div>
-                                                                                                </a><a class="_yy1t5kt"
-                                                                                                    href="/account-settings/preferences">
+                                                                                                </a><a class="_yy1t5kt">
                                                                                                     <div class="_3hmsj">
                                                                                                         <div
                                                                                                             class="_sdqx8w">
@@ -364,8 +364,7 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                                 </a>
                                                                                                 <div class="_ipygq">
                                                                                                 </div><a
-                                                                                                    class="_yy1t5kt"
-                                                                                                    href="/refer">
+                                                                                                    class="_yy1t5kt">
                                                                                                     <div class="_3hmsj">
                                                                                                         <div
                                                                                                             class="_sdqx8w">
@@ -380,8 +379,7 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                                             혜택을 누리세요.
                                                                                                         </div>
                                                                                                     </div>
-                                                                                                </a><a class="_yy1t5kt"
-                                                                                                    href="/host/experiences">
+                                                                                                </a><a class="_yy1t5kt">
                                                                                                     <div class="_3hmsj">
                                                                                                         <div
                                                                                                             class="_sdqx8w">
@@ -391,7 +389,7 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                                         class="_ojs7nk">
                                                                                                         체험 호스팅하기</div>
                                                                                                 </a><a class="_yy1t5kt"
-                                                                                                    href="/">
+                                                                                                    href="/pages">
                                                                                                     <div class="_3hmsj">
                                                                                                         <div
                                                                                                             class="_sdqx8w">
@@ -401,7 +399,7 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                                         class="_ojs7nk">
                                                                                                         게스트 모드로 전환</div>
                                                                                                 </a>
-                                                                                                <form action="/logout"
+                                                                                                <form action="/pages/logout"
                                                                                                     method="POST"
                                                                                                     data-testid="auth-form">
                                                                                                     <button
@@ -492,8 +490,8 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                                     class="_ovs8fp">필터</span></span></span>
                                                                                     </div>
                                                                                 </button></div>
-                                                                            <div><a target="_blank" aria-label="숙소 등록하기"
-                                                                                    href="/become-a-host"
+                                                                            <div><a aria-label="숙소 등록하기"
+                                                                                    href="/pages/sub"
                                                                                     class="_1in3zfdr"><svg
                                                                                         viewBox="0 0 32 32"
                                                                                         xmlns="http://www.w3.org/2000/svg"
@@ -907,9 +905,9 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody class="_3hmsj"></tbody>
-                                                                        <tbody class="_3hmsj">
+                                                                        <tbody class="_3hmsj" id="hostList">
                                                                             <tr data-testid="host-listings-row-0"
-                                                                                class="_121i7vw3">
+                                                                                class="_121i7vw3" v-for="host in list">
                                                                                 <td data-sticky-left="true"
                                                                                     data-disable-responsive-collapse="true"
                                                                                     class="_10v9brh"><label
@@ -924,42 +922,31 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                                     class="_2ztb6e"
                                                                                                     data-checkbox="true"></span></span>
                                                                                         </div>
-                                                                                        <div class="_1vw4ib9w">ㅇㄴㅁ 선택
+                                                                                        <div class="_1vw4ib9w">
                                                                                         </div>
                                                                                     </label></td>
                                                                                 <td data-sticky-left="true"
                                                                                     data-disable-responsive-collapse="true"
                                                                                     class="_vkq6ud"><a
-                                                                                        href="/pages/hostedit"
+                                                                                        :href="`/pages/hostedit/${host.lodgingId}`"
                                                                                         class="_1k1umx3d">
                                                                                         <div class="_1rzj9z6">
                                                                                             <div class="_6lnadx">
-                                                                                                <div class="_1h6n1zu"
-                                                                                                    style="display:inline-block;vertical-align:bottom;height:100%;width:100%;min-height:1px">
-                                                                                                    <img class="_9ofhsl"
-                                                                                                        style="object-fit:cover;vertical-align:bottom"
-                                                                                                        aria-hidden="true"
-                                                                                                        alt=""
-                                                                                                        elementtiming="LCP-target"
-                                                                                                        src="https://a0.muscache.com/im/pictures/miso/Hosting-653283651777721424/original/b88bb787-c735-4104-a67e-89e23fd14c25.png?aki_policy=small"
-                                                                                                        data-original-uri="https://a0.muscache.com/im/pictures/miso/Hosting-653283651777721424/original/b88bb787-c735-4104-a67e-89e23fd14c25.png?aki_policy=small" />
-                                                                                                    <div class="_15p4g025"
-                                                                                                        style="background-image:url(https://a0.muscache.com/im/pictures/miso/Hosting-653283651777721424/original/b88bb787-c735-4104-a67e-89e23fd14c25.png?aki_policy=small);background-size:cover">
-                                                                                                    </div>
-                                                                                                </div>
+<!--                                                                                                <div class="_1h6n1zu"-->
+<!--                                                                                                    style="display:inline-block;vertical-align:bottom;height:100%;width:100%;min-height:1px">-->
+<!--                                                                                                    <div class="_1vw4ib9w">{{host.lodgingPic}}-->
+<!--                                                                                                    <div class="_15p4g025"-->
+<!--                                                                                                        style="background-image:url(https://a0.muscache.com/im/pictures/miso/Hosting-653283651777721424/original/b88bb787-c735-4104-a67e-89e23fd14c25.png?aki_policy=small);background-size:cover">-->
+<!--                                                                                                    </div>-->
+<!--                                                                                                </div>-->
+<!--                                                                                            </div>-->
+                                                                                                <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 100%; width: 100%; min-height: 1px;">
+                                                                                                    <img class="_9ofhsl" aria-hidden="true" alt="" elementtiming="LCP-target" :src="host.lodgingPicurl+'/'+host.lodgingPic" data-original-uri="https://a0.muscache.com/im/pictures/miso/Hosting-653225492607634010/original/c60afdde-01ad-4e8f-9047-8206b654aa64.png?aki_policy=small" style="object-fit: cover; vertical-align: bottom;">
+                                                                                                    <div class="_15p4g025" style="background-image: url(&quot;https://a0.muscache.com/im/pictures/miso/Hosting-653225492607634010/original/c60afdde-01ad-4e8f-9047-8206b654aa64.png?aki_policy=small&quot;); background-size: cover;"></div></div>
                                                                                             </div>
-                                                                                            <div class="_t0tx82">
-                                                                                                <!-- 숙소제목 출력 -->
-                                                                                                <div class="_wqsl5eu">
-                                                                                                    ㅇㄴㅁ</div>
-                                                                                                <!-- 숙소제목 출력 -->
-                                                                                                <div class="_1vy3vsk">
-                                                                                                    수정일: <time
-                                                                                                        dateTime="2022-06-20T08:52:29+00:00">6월
-                                                                                                        20</time></div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </a></td>
+                                                                                                <div class="_t0tx82"><div class="_wqsl5eu">{{host.lodgingTitle}}</div><div class="_1vy3vsk">수정일: <time datetime="2022-07-28T09:39:26+00:00">{{host.lodgingDate}}</time></div></div>
+
+                                                                                        </div></a></td>
                                                                                 <td data-column="LISTING_TIER_TYPE"
                                                                                     class="_xhl1if"></td>
                                                                                 <td data-column="STATUS"
@@ -978,12 +965,11 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                                         d="M25 8V3c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v5c0 3.483 1.993 6.505 4.896 8C8.993 17.495 7 20.516 7 24v5c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5c0-3.484-1.993-6.505-4.896-8C23.007 14.505 25 11.483 25 8zm-9-4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm1 3.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zm4 17a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0-5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0-5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm2.5-5.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM21 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
                                                                                                 </svg></div>
                                                                                             <div class="_8hm2ou">
-                                                                                                <div class="_l6x7wk">등록
-                                                                                                    중</div>
+                                                                                                <div class="_l6x7wk">{{host.lodgingStatus}}</div>
                                                                                             </div>
                                                                                             <div
                                                                                                 class="a8jt5op dir dir-ltr">
-                                                                                                <div>등록 중</div>
+                                                                                                <div>{{host.lodgingStatus}}</div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -1000,7 +986,6 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                 <td data-column="TODO" class="_10v9brh">
                                                                                     <div class="_j1kt73"><a
                                                                                             data-testid="todo-action-653283651777721424"
-                                                                                            href="/verify-listing/653283651777721424"
                                                                                             class="_1ju7xj0j">등록
                                                                                             완료하기</a></div>
                                                                                 </td>
@@ -1025,13 +1010,13 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                 </td>
                                                                                 <td data-column="BEDROOM"
                                                                                     class="_xhl1if">
-                                                                                    <div class="_l6x7wk">1</div>
+                                                                                    <div class="_l6x7wk">{{host.lodgingBedrooms}}</div>
                                                                                 </td>
                                                                                 <td data-column="BED" class="_xhl1if">
-                                                                                    <div class="_l6x7wk">1</div>
+                                                                                    <div class="_l6x7wk">{{host.lodgingBeds}}</div>
                                                                                 </td>
                                                                                 <td data-column="BATH" class="_xhl1if">
-                                                                                    <div class="_l6x7wk">1</div>
+                                                                                    <div class="_l6x7wk">{{host.lodgingBathroom}}</div>
                                                                                 </td>
                                                                                 <td data-column="LISTING_OWNER"
                                                                                     class="_19qq8p0">
@@ -1039,14 +1024,13 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
                                                                                 </td>
                                                                                 <td data-column="LOCATION"
                                                                                     class="_19qq8p0">
-                                                                                    <div class="_l6x7wk">Gangdong-gu, 한국
+                                                                                    <div class="_l6x7wk">{{host.locationCity}}, {{host.locationState}}
                                                                                     </div>
                                                                                 </td>
                                                                                 <td data-column="MODIFIED"
                                                                                     class="_19qq8p0">
                                                                                     <div class="_l6x7wk"><time
-                                                                                            dateTime="2022-06-20T08:52:29+00:00">6월
-                                                                                            20</time></div>
+                                                                                            dateTime="2022-06-20T08:52:29+00:00">{{host.lodgingDate}}</time></div>
                                                                                 </td>
                                                                                 <td class="_10v9brh"></td>
                                                                             </tr>
@@ -1112,5 +1096,6 @@ rel="stylesheet" type="text/css" media="all" crossorigin="anonymous" />
     location.href = "test.html";
 })
 </script>
-<script src="/lib/js/host_nav.js"></script>
+<script src="/lib/js/hostedit/host_nav.js"></script>
+<script src="/lib/js/hostedit/lodging.js"></script>
 </html>

@@ -42,7 +42,7 @@
                             </svg></div>
                         </button></div>
                     </div>
-                    <div class="_1up2wiaw">
+                    <div class="_1up2wiaw" th:fragment="sub_nav(code, menuList,hostmode, link)">
                         <div class="_1lveqk8" data-nosnippet="true">
                             <form class="fxxrw3g dir dir-ltr" action="/s/all" method="get" role="search">
                                 <div class="_1h6yktt">
@@ -243,13 +243,11 @@
                                                                     <span>체크아웃</span>
                                                                     <input id="datepicker2" width="276" height="500"/>
                                                                 </div>
-                                                                <button class="_12i6oakv sizebtn">다음</button>
                                                             </div>
                                                         </section>
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="sv3mkdx dir dir-ltr"></div>
                                             <div class="_1ypspju">
                                                 <div class="_14nll2z1 chec2" role="button" tabindex="1"
@@ -299,7 +297,7 @@
                                                 </div>
                                             </div>
                                             <div class="_18zylmz">
-                                                <button class="_1w5senko" type="button" onclick="location.href='/pages/acc'" data-testid="structured-search-input-search-button"><span class="_jxxpcd"><span class="_kaq6tx" style="background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%); --mouse-x:1.03815; --mouse-y:66.7004;"></span></span><span class="_tcp689"><div class="_186q534"><div class="_14lk9e14"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g></svg></div><div class="_vinp6dc">검색</div></div></span></button>
+                                                <button class="_1w5senko" type="button" data-testid="structured-search-input-search-button"><span class="_jxxpcd"><span class="_kaq6tx" style="background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%); --mouse-x:1.03815; --mouse-y:66.7004;"></span></span><span class="_tcp689"><div class="_186q534"><div class="_14lk9e14"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g></svg></div><div class="_vinp6dc">검색</div></div></span></button>
                                             </div>
                                         </div>
 
@@ -469,37 +467,15 @@
                                 <div class="_1d6q96u"></div>
                             </button></div>
                         </div>
-
                         <!-- 팝업 login 후-->
                         <div class="c1ixqffw c3i7glo dir dir-ltr" style="display:none" tabindex="-1" id="simple-header-profile-menu"
-                             data-testid="simple-header-profile-menu">
-                            <div><a class="c1b2ssu5 c1g2wjql dir dir-ltr forlog" href="#">
-                                <div class="l1ql0u4u dir dir-ltr">로그인</div>
-                            </a><a class="c1b2ssu5 c1g2wjql dir dir-ltr" href="/pages/travel">
-                                <div class="l1ql0u4u dir dir-ltr">여행</div>
-                            </a><a class="c1b2ssu5 c1g2wjql dir dir-ltr" href="/pages/wish">
-                                <div class="l1ql0u4u dir dir-ltr">위시리스트</div>
-                            </a>
-                                <div class="d7qkrn2 dir dir-ltr"></div><a class="c1iyjvyv cxgxr36 dir dir-ltr" href="/pages/host_done">
-                                    <div class="ld7h8km dir dir-ltr">숙소 관리<div class="b1xexnrd b19hyxd0 dir dir-ltr" aria-label="알림 있음"></div>
-                                    </div>
-                                </a><a class="c1iyjvyv cxgxr36 dir dir-ltr" href="#">
-                                    <div class="ld7h8km dir dir-ltr">체험 관리<div class="b1xexnrd b19hyxd0 dir dir-ltr" aria-label="알림 있음"></div>
-                                    </div>
-                                </a><a class="c1iyjvyv cxgxr36 dir dir-ltr" href="#">
-                                    <div class="ld7h8km dir dir-ltr">호스트 추천하기</div>
-                                </a><a class="c1iyjvyv cxgxr36 dir dir-ltr" href="/pages/account_main">
-                                    <div class="ld7h8km dir dir-ltr">계정</div>
-                                </a>
-                                <div class="d7qkrn2 dir dir-ltr"></div><a class="c1iyjvyv cxgxr36 dir dir-ltr" data-no-client-routing=""
-                                                                          href="/pages/help">
-                                    <div class="ld7h8km dir dir-ltr">도움말</div>
-                                </a>
-                                <form action="/logout" method="POST" data-testid="auth-form"><input type="hidden" name="authenticity_token"
-                                                                                                    value="V4$.airbnb.co.kr$VmSJ1CPz1tE$JnXUTaqT_Oj0ChmxmrccxnfkrtcrHffjJmUHNH4dkZo="><button type="submit"
-                                                                                                                                                                                              class="c1iyjvyv cxgxr36 dir dir-ltr" data-testid="cypress-headernav-logout">
-                                    <div class="ld7h8km dir dir-ltr">로그아웃</div>
-                                </button></form>
+                             data-testid="simple-header-profile-menu" >
+                            <div>
+                                <th:block th:each="entry : ${menuList}">
+                                    <a th:href="${entry.url}" class="c1b2ssu5 c1g2wjql dir dir-ltr "th:attrappend="class=${entry.classes}" th:id="${entry.id}">
+                                        <div th:text="${entry.title}" class="l1ql0u4u dir dir-ltr" ></div>
+                                    </a>
+                                </th:block>
                             </div>
                         </div>
                         <!-- 팝업 login 후-->

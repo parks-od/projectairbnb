@@ -1,18 +1,17 @@
 package com.example.airbnb.model.entity.lodging;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Entity
+//@EqualsAndHashCode(callSuper = false, exclude = {"lodging"})
+@ToString(exclude = {"lodging"})
 public class LodgingBefore {
     @Id
     private Long lodgingId;
@@ -24,4 +23,7 @@ public class LodgingBefore {
     private String communicateGuest3;
     private String communicateExplain;
 
+    @JsonIgnore
+    @OneToOne(fetch = FetchType.LAZY,mappedBy="lodgingBefore")
+    private Lodging lodging;
 }

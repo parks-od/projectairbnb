@@ -1,17 +1,22 @@
-package com.example.airbnb.repository;
+package com.example.airbnb.repository.lodging;
 
 import com.example.airbnb.model.entity.lodging.Lodging;
-import com.example.airbnb.model.entity.lodging.LodgingRoom;
-import org.hibernate.Session;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import javax.swing.text.html.parser.Entity;
-import java.util.Optional;
+import java.util.List;
 
 @Repository
-public interface LodgingRepository extends JpaRepository<Lodging, Long> {
-    @Autowired(required = false)
-    Optional<Lodging> findById(Long id);
+public interface LodgingRepository extends JpaRepository<Lodging, Long>{
+    @Query(value = "select l.memId from Lodging l where l.lodgingId=:id")
+    Long findByMemIds(Long id);
+    Page<Lodging> findByMemId(Long id , Pageable Pageable);
+
+    @Query(value = "select l.memId from Lodging l where l.memId=:id")
+    Long findByMemIdss(Long id);
 }
+//

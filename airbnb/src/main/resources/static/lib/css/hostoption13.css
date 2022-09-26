@@ -4626,3 +4626,13 @@ _1tg6kp1 {
         font-size: inherit;
         line-height: inherit;
       }
+
+/* 스크롤 기능 제거 */
+
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    overflow: hidden;
+    height: 100%;
+}

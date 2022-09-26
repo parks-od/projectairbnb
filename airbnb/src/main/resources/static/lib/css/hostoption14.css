@@ -4982,3 +4982,13 @@
       .dir-rtl.atm_ll_exct8b.atm_ll_exct8b {
         padding-left: 16px;
       }
+
+/* 스크롤 기능 제거 */
+
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    overflow: hidden;
+    height: 100%;
+}

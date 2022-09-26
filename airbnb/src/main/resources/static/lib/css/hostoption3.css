@@ -3321,3 +3321,26 @@
       .ll4r2nl[class][class]:nth-child(1n) .focus-visible[class][class] {
         outline: 2px solid var(--f-k-smk-x);
       }
+
+    ._1o7kvyb {
+        text-align: left !important;
+        margin: 24px 16px !important;
+        width: 100% !important;
+        color: rgb(34, 34, 34) !important;
+    }
+
+    @media (min-width: 744px){
+        ._1o7kvyb {
+            margin: 32px 24px !important;
+        }
+    }
+
+/* 스크롤 기능 제거 */
+
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    overflow: hidden;
+    height: 100%;
+}

@@ -16,6 +16,9 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class MemberApiLogicService implements CrudInterface<MemberApiRequest, MemberApiResponse> {
+//    @Autowired
+//    private JavaMailSender mailSender;
+
     private final MemberRepository memberRepository;
     private final MemGlobalRepository memGlobalRepository;
     private final MemInfoRepository memInfoRepository;
@@ -26,6 +29,41 @@ public class MemberApiLogicService implements CrudInterface<MemberApiRequest, Me
     SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
     Calendar c1 = Calendar.getInstance();
     String strToday = sdf.format(c1.getTime());
+//------------------------------ 로그인 파트 --------------------------------//
+public Header<MemberApiResponse> emailChecks(Header<LoginRequest> login){
+        LoginRequest logs = login.getData();
+        return memberRepository.findByEmail(logs.getEmail()).map(member -> response(member)).orElseGet(() -> Header.ERROR("데이터 없음"));
+    }
+
+//    // 이메일 찾는 서비스
+//    public MailDTO emailFinder(String memberEmail){
+//        String pw = memberRepository.findByEmail(memberEmail).get().getMemPw();
+//        MailDTO dto = new MailDTO();
+//        dto.setAddress(memberEmail);
+//        dto.setTitle("AirBnb 비밀번호 찾기 안내 이메일 입니다.");
+//        dto.setMessage("안녕하세요. AirBnb 비밀번호 안내 관련 이메일 입니다." + " 회원님의 비밀번호는 "
+//                + pw + " 입니다." + "로그인 후에 비밀번호를 변경을 해주세요");
+//        return dto;
+//    }
+//
+//    // 메일보내기
+//
+//    public void mailSend(MailDTO mailDTO) {
+//        System.out.println("전송 완료!");
+//        SimpleMailMessage message = new SimpleMailMessage();
+//        message.setTo(mailDTO.getAddress());
+//        message.setSubject(mailDTO.getTitle());
+//        message.setText(mailDTO.getMessage());
+//        message.setFrom("gocks4578@naver.com");
+//        message.setReplyTo("gocks4578@naver.com");
+//        System.out.println("message"+message);
+//        mailSender.send(message);
+//    }
+
+    public Header<MemberApiResponse> pwChecks(Header<LoginRequest> login){
+        LoginRequest logs = login.getData();
+        return memberRepository.findByEmailAndMemPw(logs.getEmail(),logs.getMemPw()).map(member -> response(member)).orElseGet(() -> Header.ERROR("데이터 없음"));
+    }
 
 //------------------------------- response 함수 ----------------------------//
     private Header<MemberApiResponse> response(Member member) {
@@ -70,24 +108,25 @@ public class MemberApiLogicService implements CrudInterface<MemberApiRequest, Me
     private Header<MemNoticeApiResponse> responseMemNotice(MemNotice memNotice) {
         MemNoticeApiResponse memNoticeApiResponse = MemNoticeApiResponse.builder()
                 .memId(memNotice.getMemId())
-                .isCelebrate(memNotice.getIsCelebrate())
-                .isTrip(memNotice.getIsTrip())
-                .isTrend(memNotice.getIsTrend())
-                .isHostbenefit(memNotice.getIsHostbenefit())
-                .isNews(memNotice.getIsNews())
-                .isLocalrules(memNotice.getIsLocalrules())
-                .isIdea(memNotice.getIsIdea())
-                .isPlan(memNotice.getIsPlan())
-                .isProgram(memNotice.getIsProgram())
-                .isFeedback(memNotice.getIsFeedback())
-                .isTriprules(memNotice.getIsTriprules())
-                .isAccount(memNotice.getIsAccount())
-                .isLodging(memNotice.getIsLodging())
-                .isGuest(memNotice.getIsGuest())
-                .isHost(memNotice.getIsHost())
-                .isAlarm(memNotice.getIsAlarm())
-                .isMessage(memNotice.getIsMessage())
+                .isCelebrate(memNotice.getIsCelebrate().split(" "))
+                .isTrip(memNotice.getIsTrip().split(" "))
+                .isTrend(memNotice.getIsTrend().split(" "))
+                .isHostbenefit(memNotice.getIsHostbenefit().split(" "))
+                .isNews(memNotice.getIsNews().split(" "))
+                .isLocalrules(memNotice.getIsLocalrules().split(" "))
+                .isIdea(memNotice.getIsIdea().split(" "))
+                .isPlan(memNotice.getIsPlan().split(" "))
+                .isProgram(memNotice.getIsProgram().split(" "))
+                .isFeedback(memNotice.getIsFeedback().split(" "))
+                .isTriprules(memNotice.getIsTriprules().split(" "))
+                .isAccount(memNotice.getIsAccount().split(" "))
+                .isLodging(memNotice.getIsLodging().split(" "))
+                .isGuest(memNotice.getIsGuest().split(" "))
+                .isHost(memNotice.getIsHost().split(" "))
+                .isAlarm(memNotice.getIsAlarm().split(" "))
+                .isMessage(memNotice.getIsMessage().split(" "))
                 .build();
+        System.out.println(memNoticeApiResponse);
         return Header.OK(memNoticeApiResponse);
     }
 
@@ -132,6 +171,7 @@ public class MemberApiLogicService implements CrudInterface<MemberApiRequest, Me
                 .email(memberApiRequest.getEmail())
                 .memPw(memberApiRequest.getMemPw())
                 .isLogshare(memberApiRequest.getIsLogshare())
+                .confirmAt(LocalDateTime.now())
                 .build();
         Member newUsers = memberRepository.save(member);
         MemGlobal memGlobal = MemGlobal.builder().memId(newUsers.getMemId()).build();
@@ -154,8 +194,13 @@ public class MemberApiLogicService implements CrudInterface<MemberApiRequest, Me
     }
 
 
+    public Header<MemberApiResponse> read(String email) {
+        return memberRepository.findByEmail(email).map(users -> response(users))
+                .orElseGet(() -> Header.ERROR("데이터 없음"));
+    }
+
     public Header<MemberApiResponse> read(String email, String memPw) {
-        return memberRepository.findByEmailAndMemPw(email, memPw).map(users -> response(users))
+        return memberRepository.findByEmailAndMemPw(email,memPw).map(users -> response(users))
                 .orElseGet(() -> Header.ERROR("데이터 없음"));
     }
 
@@ -276,12 +321,12 @@ public class MemberApiLogicService implements CrudInterface<MemberApiRequest, Me
 
     // -------------------------- 로그인 및 보안 -----------------------------------------//
     //비밀번호 변경
-    public void updatePw(Header<MemberApiRequest> request, String newPassword) {
+    public void updatePw(Header<MemberApiRequest> request) {
         MemberApiRequest memberApiRequest = request.getData();
         Optional<Member> member = memberRepository.findByMemIdAndMemPw(memberApiRequest.getMemId(), memberApiRequest.getMemPw());
         member.map(
                         member1 -> {
-                            member1.setMemPw(newPassword);
+                            member1.setMemPw(memberApiRequest.getNewpassword());
                             return member1;
                         }).map(member1 -> memberRepository.save(member1));
     }
@@ -402,6 +447,15 @@ public class MemberApiLogicService implements CrudInterface<MemberApiRequest, Me
     @Override
     public Header<MemberApiResponse> delete(Long id) {
         return null;
+    }
+    // -------------------------- 멤머 종류 변경 게스트 > 호스트 -----------------------------------------//
+    public void transform(Long id) {
+        Optional<Member> member = memberRepository.findById(id);
+        member.map(
+                member1 -> {
+                    member1.setMemKnd("host");
+                    return member1;
+                }).map(member1 -> memberRepository.save(member1));
     }
 }
 

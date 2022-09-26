@@ -1,9 +1,8 @@
 package com.example.airbnb.model.entity.member;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.example.airbnb.model.entity.lodging.Lodging;
+import com.example.airbnb.model.entity.review.Review;
+import lombok.*;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import javax.persistence.*;
 import java.time.LocalDateTime;

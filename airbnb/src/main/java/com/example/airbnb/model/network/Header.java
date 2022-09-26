@@ -1,6 +1,5 @@
 package com.example.airbnb.model.network;
 
-import com.example.airbnb.model.network.response.member.MemberApiResponse;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

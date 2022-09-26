@@ -1,4 +1,4 @@
-package com.example.airbnb.repository;
+package com.example.airbnb.repository.lodging;
 
 import com.example.airbnb.model.entity.lodging.Lodging;
 import com.example.airbnb.model.entity.lodging.LodgingBefore;
@@ -11,7 +11,4 @@ import java.util.Optional;
 
 @Repository
 public interface LodgingRoomRepository extends JpaRepository<LodgingRoom, Long> {
-    @Autowired(required = false)
-    Optional<LodgingRoom> findById(Long id);
-
 }

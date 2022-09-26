@@ -11,8 +11,10 @@ import java.util.Optional;
 @Repository
 public interface MemberRepository extends JpaRepository<Member,  Long> {
     //login select + from member where email =? and memPw =?
-    Optional<Member> findByEmailAndMemPw(String email, String memPw);
+    Optional<Member> findByEmail(String email);
     //pwChange select * from member where id = ? and memPw =?
     Optional<Member> findByMemIdAndMemPw(Long id, String memPw);
+    //pwChange select * from member where email = ? and memPw =?
+    Optional<Member> findByEmailAndMemPw(String email, String memPw);
     Member findByMemId(Long id);
 }

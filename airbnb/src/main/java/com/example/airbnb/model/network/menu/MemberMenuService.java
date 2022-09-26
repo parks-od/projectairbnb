@@ -12,12 +12,12 @@ import java.util.List;
 public class MemberMenuService {
     public List<MemberMenu> getMemberMenu(){
         return Arrays.asList(
-                MemberMenu.builder().title("여행").url("/pages/travel").code("users").build(),
-                MemberMenu.builder().title("위시리스트").url("/pages/wish").code("users").build(),
-                MemberMenu.builder().title("숙소 관리").url("/pages/host_done").code("host").build(),
-                MemberMenu.builder().title("체험 관리").url("#").code("activity").build(),
-                MemberMenu.builder().title("계정").url("/pages/account_main").code("activity").build(),
-                MemberMenu.builder().title("도움말").url("/pages/help").code("help").build(),
-                MemberMenu.builder().title("로그아웃").url("/pages/logout").code("help").build());
+                MemberMenu.builder().title("여행").url("/pages/travel").code("users").classes("").build(),
+                MemberMenu.builder().title("위시리스트").url("/pages/wish").code("users").classes("").build(),
+                MemberMenu.builder().title("숙소 관리").url("/pages/host_done").code("host").classes("").build(),
+                MemberMenu.builder().title("체험 관리").url("#").code("activity").classes("").build(),
+                MemberMenu.builder().title("계정").url("/pages/account_main").code("activity").classes("").build(),
+                MemberMenu.builder().title("도움말").url("#").code("help").classes("").build(),
+                MemberMenu.builder().title("로그아웃").url("/pages/logout").code("help").classes("").build());
     }
 }

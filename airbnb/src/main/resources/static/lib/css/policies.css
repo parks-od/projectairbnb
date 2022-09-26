@@ -9022,3 +9022,11 @@ a, a:hover, a:focus {
 #content1, #content2, #content3, #content4, #content5, #content6{
     display: block;
 }
+
+.del_line {
+    border-bottom: 0px !important;
+}
+
+.cre_line {
+    border-bottom: 1px solid rgb(235, 235, 235) !important;
+}

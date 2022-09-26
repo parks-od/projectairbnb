@@ -14,4 +14,5 @@ public class MemberMenu {
     private String url;
     private String code;
     private String id;
+    private String classes;
 }

@@ -3869,3 +3869,13 @@
         --g-lm-u-p: normal;
         --mq-yk-l: 0.04em;
       }
+
+/* 스크롤 기능 제거 */
+
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    overflow: hidden;
+    height: 100%;
+}

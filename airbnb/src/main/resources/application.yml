@@ -1,6 +1,23 @@
+pagehelper:
+  helper-dialect: h2
+  auto-dialect: true
+  page-size-zero: false
+  reasonable: true
+  offset-as-page-num: false
+  row-bounds-with-count: false
+  auto-runtime-dialect: false
+  close-conn: true
+  default-count: true
+
 spring:
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver
     url: jdbc:oracle:thin:@db20220624092128_high?TNS_ADMIN=/Users/baghaechan/Pictures/Wallet_DB20220624092128
     username: admin
     password: 'Fjtldk2581234@@'
+    hikari:
+      main:
+        driver-class-name: oracle.jdbc.OracleDriver
+        jdbc-url: jdbc:oracle:thin:@db20220624092128_high?TNS_ADMIN=/Users/baghaechan/Pictures/Wallet_DB20220624092128
+        username: admin
+        password: 'Fjtldk2581234@@'

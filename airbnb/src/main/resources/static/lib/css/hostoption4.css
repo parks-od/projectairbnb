@@ -3448,4 +3448,13 @@
       .ll4r2nl[class][class]:nth-child(1n) .focus-visible[class][class] {
         outline: 2px solid var(--f-k-smk-x);
       }
-    
+
+/* 스크롤 기능 제거 */
+
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    overflow: hidden;
+    height: 100%;
+}
