@@ -1,6 +1,5 @@
 # 🛩 Airbnb 클론코딩
 ### ⏭ 프로젝트 개발 환경
-* 개발인원 : 총 5명<br>
 * 역할 : 조장 및 BackEnd개발 (Member, Main, Sub, Payment 결제 페이지 구현, 카카오API 구현, 프로젝트 취합 및 조정)
 * 개발기간 : 2022.06.08 ~ 2022.08.19
 * 개발기술 : JQuery, Vue.js, Java(11.0.14), Spring, Tomcat(9.0), Oracle
